@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "routeId": "main-part1-chapter1-expert",
+  "routeName": "主线第1部 · 第1章 · EXPERT",
+  "mode": "route",
+  "configHash": "513fe392f58ebb52ef61b20375bcd523f17295ba981a6a5c47c104fddcf40d6e",
+  "scannedAt": "2026-10-13T17:14:09.288Z",
+  "sourcePage": "https://sqweb.fun/#/quest",
+  "routeSteps": [
+    {
+      "labels": [
+        "首页"
+      ],
+      "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "冒险"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "主线任务"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "第1部",
+        "1部"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "EXPERT"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labelPrefix": "第1章",
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": true
+    }
+  ],
+  "navigation": [
+    {
+      "step": 1,
+      "attempt": 1,
+      "label": "首页",
+      "path": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton",
+      "skipped": false
+    },
+    {
+      "step": 2,
+      "attempt": 1,
+      "label": "冒险",
+      "path": "Canvas/SafeArea/MyPageFooter/Footer/Tab/QuestButton",
+      "skipped": false
+    },
+    {
+      "step": 3,
+      "attempt": 1,
+      "label": "主线任务",
+      "path": "QuestScreen/MainArea/RightSide/QuestSelector/ButtonArea/MainButton",
+      "skipped": false
+    },
+    {
+      "step": 4,
+      "attempt": 1,
+      "label": "第1部",
+      "path": "QuestScreen/MainArea/RightSide/QuestPartSelector/AnimationTarget/PageSlideUI/Scroll View/Viewport/Content/QuestBoardPanel/LargeCellArea/QuestBoardLargeCell[0]",
+      "skipped": false
+    },
+    {
+      "step": 5,
+      "attempt": 1,
+      "label": "EXPERT",
+      "path": "QuestScreen/MainArea/RightSide/QuestAreaSelector/QuestAreaRightHeader/Tab/TabController/TabButtonExpert",
+      "skipped": false
+    },
+    {
+      "step": 6,
+      "attempt": 1,
+      "label": "第1章 和这新的伙伴一起冒险！",
+      "path": "QuestScreen/MainArea/RightSide/QuestAreaSelector/AnimationTarget/PageSlideUI/Scroll View/Viewport/Content/QuestBoardPanel/SmallCellArea/QuestBoardSmallCell[0]",
+      "skipped": false
+    }
+  ],
+  "levels": [
+    {
+      "label": "1章-1 (EXPERT)",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[0]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "35000",
+      "texts": [
+        "1章-1 (EXPERT)",
+        "推荐战力",
+        "35000"
+      ],
+      "id": "101013",
+      "stamina": 10
+    },
+    {
+      "label": "1章-2 (EXPERT)",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[1]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "35999",
+      "texts": [
+        "1章-2 (EXPERT)",
+        "推荐战力",
+        "35999"
+      ],
+      "id": "101023",
+      "stamina": 10
+    }
+  ],
+  "extras": []
+}

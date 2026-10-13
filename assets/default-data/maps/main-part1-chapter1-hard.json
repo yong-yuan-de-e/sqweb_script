@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "routeId": "main-part1-chapter1-hard",
+  "routeName": "主线第1部 · 第1章 · HARD",
+  "mode": "route",
+  "configHash": "5c9b96ed632bf34164b248472482d5d5e22a22ab02f1786902e57ca300e55627",
+  "scannedAt": "2026-10-13T11:40:32.730Z",
+  "sourcePage": "https://sqweb.fun/#/quest",
+  "levels": [
+    {
+      "label": "1章-1 (HARD)",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[0]",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "3600",
+      "texts": [
+        "1章-1 (HARD)",
+        "推荐战力",
+        "3600"
+      ]
+    },
+    {
+      "label": "1章-2 (HARD)",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[1]",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "4800",
+      "texts": [
+        "1章-2 (HARD)",
+        "推荐战力",
+        "4800"
+      ]
+    },
+    {
+      "label": "1章-3 (HARD)",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[2]",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "5850",
+      "texts": [
+        "1章-3 (HARD)",
+        "推荐战力",
+        "5850"
+      ]
+    },
+    {
+      "label": "1章-4 (HARD)",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[3]",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "7500",
+      "texts": [
+        "1章-4 (HARD)",
+        "推荐战力",
+        "7500"
+      ]
+    }
+  ]
+}

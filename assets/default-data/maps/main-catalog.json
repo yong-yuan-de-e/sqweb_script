@@ -1,0 +1,6898 @@
+{
+  "version": 1,
+  "capturedAt": "2026-10-13T18:47:49.497Z",
+  "parts": [
+    {
+      "id": "1",
+      "name": "第1部",
+      "unlock": "0"
+    },
+    {
+      "id": "2",
+      "name": "第2部",
+      "unlock": "111201"
+    },
+    {
+      "id": "3",
+      "name": "第3部",
+      "unlock": "122201"
+    },
+    {
+      "id": "4",
+      "name": "第4部",
+      "unlock": "133201"
+    }
+  ],
+  "chapters": [
+    {
+      "part": "1",
+      "id": "1",
+      "title": "和这新的伙伴一起冒险！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "101011",
+              "label": "1章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "101021",
+              "label": "1章-2",
+              "stamina": 5,
+              "unlock": "101011"
+            },
+            {
+              "id": "101031",
+              "label": "1章-3",
+              "stamina": 5,
+              "unlock": "101021"
+            },
+            {
+              "id": "101041",
+              "label": "1章-4",
+              "stamina": 5,
+              "unlock": "101031"
+            },
+            {
+              "id": "101051",
+              "label": "1章-5",
+              "stamina": 5,
+              "unlock": "101041"
+            },
+            {
+              "id": "101061",
+              "label": "1章-6",
+              "stamina": 5,
+              "unlock": "101051"
+            },
+            {
+              "id": "101071",
+              "label": "1章-7",
+              "stamina": 5,
+              "unlock": "101061"
+            },
+            {
+              "id": "101081",
+              "label": "1章-8",
+              "stamina": 5,
+              "unlock": "101071"
+            },
+            {
+              "id": "101091",
+              "label": "1章-9",
+              "stamina": 5,
+              "unlock": "101081"
+            },
+            {
+              "id": "101101",
+              "label": "1章-10",
+              "stamina": 5,
+              "unlock": "101091"
+            },
+            {
+              "id": "101111",
+              "label": "1章-11",
+              "stamina": 5,
+              "unlock": "101101"
+            },
+            {
+              "id": "101121",
+              "label": "1章-12",
+              "stamina": 5,
+              "unlock": "101111"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "101012",
+              "label": "1章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "101121"
+            },
+            {
+              "id": "101022",
+              "label": "1章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "101012"
+            },
+            {
+              "id": "101032",
+              "label": "1章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "101022"
+            },
+            {
+              "id": "101042",
+              "label": "1章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "101032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "101013",
+              "label": "1章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "111042"
+            },
+            {
+              "id": "101023",
+              "label": "1章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "101013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "1",
+      "id": "2",
+      "title": "靠这群有个性的舞娘做生意！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "102011",
+              "label": "2章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "102021",
+              "label": "2章-2",
+              "stamina": 5,
+              "unlock": "102011"
+            },
+            {
+              "id": "102031",
+              "label": "2章-3",
+              "stamina": 5,
+              "unlock": "102021"
+            },
+            {
+              "id": "102041",
+              "label": "2章-4",
+              "stamina": 5,
+              "unlock": "102031"
+            },
+            {
+              "id": "102051",
+              "label": "2章-5",
+              "stamina": 5,
+              "unlock": "102041"
+            },
+            {
+              "id": "102061",
+              "label": "2章-6",
+              "stamina": 5,
+              "unlock": "102051"
+            },
+            {
+              "id": "102071",
+              "label": "2章-7",
+              "stamina": 5,
+              "unlock": "102061"
+            },
+            {
+              "id": "102081",
+              "label": "2章-8",
+              "stamina": 5,
+              "unlock": "102071"
+            },
+            {
+              "id": "102091",
+              "label": "2章-9",
+              "stamina": 5,
+              "unlock": "102081"
+            },
+            {
+              "id": "102101",
+              "label": "2章-10",
+              "stamina": 5,
+              "unlock": "102091"
+            },
+            {
+              "id": "102111",
+              "label": "2章-11",
+              "stamina": 5,
+              "unlock": "102101"
+            },
+            {
+              "id": "102121",
+              "label": "2章-12",
+              "stamina": 5,
+              "unlock": "102111"
+            },
+            {
+              "id": "102131",
+              "label": "2章-13",
+              "stamina": 5,
+              "unlock": "102121"
+            },
+            {
+              "id": "102141",
+              "label": "2章-14",
+              "stamina": 5,
+              "unlock": "102131"
+            },
+            {
+              "id": "102151",
+              "label": "2章-15",
+              "stamina": 5,
+              "unlock": "102141"
+            },
+            {
+              "id": "102161",
+              "label": "2章-16",
+              "stamina": 5,
+              "unlock": "102151"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "102012",
+              "label": "2章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "101042"
+            },
+            {
+              "id": "102022",
+              "label": "2章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "102012"
+            },
+            {
+              "id": "102032",
+              "label": "2章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "102022"
+            },
+            {
+              "id": "102042",
+              "label": "2章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "102032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "102013",
+              "label": "2章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "101023"
+            },
+            {
+              "id": "102023",
+              "label": "2章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "102013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "1",
+      "id": "3",
+      "title": "潜入这戒备森严的金库！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "103011",
+              "label": "3章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "103021",
+              "label": "3章-2",
+              "stamina": 5,
+              "unlock": "103011"
+            },
+            {
+              "id": "103031",
+              "label": "3章-3",
+              "stamina": 5,
+              "unlock": "103021"
+            },
+            {
+              "id": "103041",
+              "label": "3章-4",
+              "stamina": 5,
+              "unlock": "103031"
+            },
+            {
+              "id": "103051",
+              "label": "3章-5",
+              "stamina": 5,
+              "unlock": "103041"
+            },
+            {
+              "id": "103061",
+              "label": "3章-6",
+              "stamina": 5,
+              "unlock": "103051"
+            },
+            {
+              "id": "103071",
+              "label": "3章-7",
+              "stamina": 5,
+              "unlock": "103061"
+            },
+            {
+              "id": "103081",
+              "label": "3章-8",
+              "stamina": 5,
+              "unlock": "103071"
+            },
+            {
+              "id": "103091",
+              "label": "3章-9",
+              "stamina": 5,
+              "unlock": "103081"
+            },
+            {
+              "id": "103101",
+              "label": "3章-10",
+              "stamina": 5,
+              "unlock": "103091"
+            },
+            {
+              "id": "103111",
+              "label": "3章-11",
+              "stamina": 5,
+              "unlock": "103101"
+            },
+            {
+              "id": "103121",
+              "label": "3章-12",
+              "stamina": 5,
+              "unlock": "103111"
+            },
+            {
+              "id": "103131",
+              "label": "3章-13",
+              "stamina": 5,
+              "unlock": "103121"
+            },
+            {
+              "id": "103141",
+              "label": "3章-14",
+              "stamina": 5,
+              "unlock": "103131"
+            },
+            {
+              "id": "103151",
+              "label": "3章-15",
+              "stamina": 5,
+              "unlock": "103141"
+            },
+            {
+              "id": "103161",
+              "label": "3章-16",
+              "stamina": 5,
+              "unlock": "103151"
+            },
+            {
+              "id": "103171",
+              "label": "3章-17",
+              "stamina": 5,
+              "unlock": "103161"
+            },
+            {
+              "id": "103181",
+              "label": "3章-18",
+              "stamina": 5,
+              "unlock": "103171"
+            },
+            {
+              "id": "103191",
+              "label": "3章-19",
+              "stamina": 5,
+              "unlock": "103181"
+            },
+            {
+              "id": "103201",
+              "label": "3章-20",
+              "stamina": 5,
+              "unlock": "103191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "103012",
+              "label": "3章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "102042"
+            },
+            {
+              "id": "103022",
+              "label": "3章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "103012"
+            },
+            {
+              "id": "103032",
+              "label": "3章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "103022"
+            },
+            {
+              "id": "103042",
+              "label": "3章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "103032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "103013",
+              "label": "3章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "102023"
+            },
+            {
+              "id": "103023",
+              "label": "3章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "103013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "1",
+      "id": "4",
+      "title": "和这两位兽人一起卖蔬菜！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "104011",
+              "label": "4章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "104021",
+              "label": "4章-2",
+              "stamina": 5,
+              "unlock": "104011"
+            },
+            {
+              "id": "104031",
+              "label": "4章-3",
+              "stamina": 5,
+              "unlock": "104021"
+            },
+            {
+              "id": "104041",
+              "label": "4章-4",
+              "stamina": 5,
+              "unlock": "104031"
+            },
+            {
+              "id": "104051",
+              "label": "4章-5",
+              "stamina": 5,
+              "unlock": "104041"
+            },
+            {
+              "id": "104061",
+              "label": "4章-6",
+              "stamina": 5,
+              "unlock": "104051"
+            },
+            {
+              "id": "104071",
+              "label": "4章-7",
+              "stamina": 5,
+              "unlock": "104061"
+            },
+            {
+              "id": "104081",
+              "label": "4章-8",
+              "stamina": 5,
+              "unlock": "104071"
+            },
+            {
+              "id": "104091",
+              "label": "4章-9",
+              "stamina": 5,
+              "unlock": "104081"
+            },
+            {
+              "id": "104101",
+              "label": "4章-10",
+              "stamina": 5,
+              "unlock": "104091"
+            },
+            {
+              "id": "104111",
+              "label": "4章-11",
+              "stamina": 5,
+              "unlock": "104101"
+            },
+            {
+              "id": "104121",
+              "label": "4章-12",
+              "stamina": 5,
+              "unlock": "104111"
+            },
+            {
+              "id": "104131",
+              "label": "4章-13",
+              "stamina": 5,
+              "unlock": "104121"
+            },
+            {
+              "id": "104141",
+              "label": "4章-14",
+              "stamina": 5,
+              "unlock": "104131"
+            },
+            {
+              "id": "104151",
+              "label": "4章-15",
+              "stamina": 5,
+              "unlock": "104141"
+            },
+            {
+              "id": "104161",
+              "label": "4章-16",
+              "stamina": 5,
+              "unlock": "104151"
+            },
+            {
+              "id": "104171",
+              "label": "4章-17",
+              "stamina": 5,
+              "unlock": "104161"
+            },
+            {
+              "id": "104181",
+              "label": "4章-18",
+              "stamina": 5,
+              "unlock": "104171"
+            },
+            {
+              "id": "104191",
+              "label": "4章-19",
+              "stamina": 5,
+              "unlock": "104181"
+            },
+            {
+              "id": "104201",
+              "label": "4章-20",
+              "stamina": 5,
+              "unlock": "104191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "104012",
+              "label": "4章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "103042"
+            },
+            {
+              "id": "104022",
+              "label": "4章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "104012"
+            },
+            {
+              "id": "104032",
+              "label": "4章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "104022"
+            },
+            {
+              "id": "104042",
+              "label": "4章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "104032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "104013",
+              "label": "4章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "103023"
+            },
+            {
+              "id": "104023",
+              "label": "4章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "104013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "1",
+      "id": "5",
+      "title": "参加这场舞娘大赛！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "105011",
+              "label": "5章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "105021",
+              "label": "5章-2",
+              "stamina": 5,
+              "unlock": "105011"
+            },
+            {
+              "id": "105031",
+              "label": "5章-3",
+              "stamina": 5,
+              "unlock": "105021"
+            },
+            {
+              "id": "105041",
+              "label": "5章-4",
+              "stamina": 5,
+              "unlock": "105031"
+            },
+            {
+              "id": "105051",
+              "label": "5章-5",
+              "stamina": 5,
+              "unlock": "105041"
+            },
+            {
+              "id": "105061",
+              "label": "5章-6",
+              "stamina": 5,
+              "unlock": "105051"
+            },
+            {
+              "id": "105071",
+              "label": "5章-7",
+              "stamina": 5,
+              "unlock": "105061"
+            },
+            {
+              "id": "105081",
+              "label": "5章-8",
+              "stamina": 5,
+              "unlock": "105071"
+            },
+            {
+              "id": "105091",
+              "label": "5章-9",
+              "stamina": 5,
+              "unlock": "105081"
+            },
+            {
+              "id": "105101",
+              "label": "5章-10",
+              "stamina": 5,
+              "unlock": "105091"
+            },
+            {
+              "id": "105111",
+              "label": "5章-11",
+              "stamina": 5,
+              "unlock": "105101"
+            },
+            {
+              "id": "105121",
+              "label": "5章-12",
+              "stamina": 5,
+              "unlock": "105111"
+            },
+            {
+              "id": "105131",
+              "label": "5章-13",
+              "stamina": 5,
+              "unlock": "105121"
+            },
+            {
+              "id": "105141",
+              "label": "5章-14",
+              "stamina": 5,
+              "unlock": "105131"
+            },
+            {
+              "id": "105151",
+              "label": "5章-15",
+              "stamina": 5,
+              "unlock": "105141"
+            },
+            {
+              "id": "105161",
+              "label": "5章-16",
+              "stamina": 5,
+              "unlock": "105151"
+            },
+            {
+              "id": "105171",
+              "label": "5章-17",
+              "stamina": 5,
+              "unlock": "105161"
+            },
+            {
+              "id": "105181",
+              "label": "5章-18",
+              "stamina": 5,
+              "unlock": "105171"
+            },
+            {
+              "id": "105191",
+              "label": "5章-19",
+              "stamina": 5,
+              "unlock": "105181"
+            },
+            {
+              "id": "105201",
+              "label": "5章-20",
+              "stamina": 5,
+              "unlock": "105191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "105012",
+              "label": "5章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "104042"
+            },
+            {
+              "id": "105022",
+              "label": "5章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "105012"
+            },
+            {
+              "id": "105032",
+              "label": "5章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "105022"
+            },
+            {
+              "id": "105042",
+              "label": "5章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "105032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "105013",
+              "label": "5章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "104023"
+            },
+            {
+              "id": "105023",
+              "label": "5章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "105013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "1",
+      "id": "6",
+      "title": "潜入这座巨魔领主之城！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "106011",
+              "label": "6章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "106021",
+              "label": "6章-2",
+              "stamina": 5,
+              "unlock": "106011"
+            },
+            {
+              "id": "106031",
+              "label": "6章-3",
+              "stamina": 5,
+              "unlock": "106021"
+            },
+            {
+              "id": "106041",
+              "label": "6章-4",
+              "stamina": 5,
+              "unlock": "106031"
+            },
+            {
+              "id": "106051",
+              "label": "6章-5",
+              "stamina": 5,
+              "unlock": "106041"
+            },
+            {
+              "id": "106061",
+              "label": "6章-6",
+              "stamina": 5,
+              "unlock": "106051"
+            },
+            {
+              "id": "106071",
+              "label": "6章-7",
+              "stamina": 5,
+              "unlock": "106061"
+            },
+            {
+              "id": "106081",
+              "label": "6章-8",
+              "stamina": 5,
+              "unlock": "106071"
+            },
+            {
+              "id": "106091",
+              "label": "6章-9",
+              "stamina": 5,
+              "unlock": "106081"
+            },
+            {
+              "id": "106101",
+              "label": "6章-10",
+              "stamina": 5,
+              "unlock": "106091"
+            },
+            {
+              "id": "106111",
+              "label": "6章-11",
+              "stamina": 5,
+              "unlock": "106101"
+            },
+            {
+              "id": "106121",
+              "label": "6章-12",
+              "stamina": 5,
+              "unlock": "106111"
+            },
+            {
+              "id": "106131",
+              "label": "6章-13",
+              "stamina": 5,
+              "unlock": "106121"
+            },
+            {
+              "id": "106141",
+              "label": "6章-14",
+              "stamina": 5,
+              "unlock": "106131"
+            },
+            {
+              "id": "106151",
+              "label": "6章-15",
+              "stamina": 5,
+              "unlock": "106141"
+            },
+            {
+              "id": "106161",
+              "label": "6章-16",
+              "stamina": 5,
+              "unlock": "106151"
+            },
+            {
+              "id": "106171",
+              "label": "6章-17",
+              "stamina": 5,
+              "unlock": "106161"
+            },
+            {
+              "id": "106181",
+              "label": "6章-18",
+              "stamina": 5,
+              "unlock": "106171"
+            },
+            {
+              "id": "106191",
+              "label": "6章-19",
+              "stamina": 5,
+              "unlock": "106181"
+            },
+            {
+              "id": "106201",
+              "label": "6章-20",
+              "stamina": 5,
+              "unlock": "106191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "106012",
+              "label": "6章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "105042"
+            },
+            {
+              "id": "106022",
+              "label": "6章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "106012"
+            },
+            {
+              "id": "106032",
+              "label": "6章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "106022"
+            },
+            {
+              "id": "106042",
+              "label": "6章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "106032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "106013",
+              "label": "6章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "105023"
+            },
+            {
+              "id": "106023",
+              "label": "6章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "106013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "1",
+      "id": "7",
+      "title": "在这片银白世界中探索！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "107011",
+              "label": "7章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "107021",
+              "label": "7章-2",
+              "stamina": 5,
+              "unlock": "107011"
+            },
+            {
+              "id": "107031",
+              "label": "7章-3",
+              "stamina": 5,
+              "unlock": "107021"
+            },
+            {
+              "id": "107041",
+              "label": "7章-4",
+              "stamina": 5,
+              "unlock": "107031"
+            },
+            {
+              "id": "107051",
+              "label": "7章-5",
+              "stamina": 5,
+              "unlock": "107041"
+            },
+            {
+              "id": "107061",
+              "label": "7章-6",
+              "stamina": 5,
+              "unlock": "107051"
+            },
+            {
+              "id": "107071",
+              "label": "7章-7",
+              "stamina": 5,
+              "unlock": "107061"
+            },
+            {
+              "id": "107081",
+              "label": "7章-8",
+              "stamina": 5,
+              "unlock": "107071"
+            },
+            {
+              "id": "107091",
+              "label": "7章-9",
+              "stamina": 5,
+              "unlock": "107081"
+            },
+            {
+              "id": "107101",
+              "label": "7章-10",
+              "stamina": 5,
+              "unlock": "107091"
+            },
+            {
+              "id": "107111",
+              "label": "7章-11",
+              "stamina": 5,
+              "unlock": "107101"
+            },
+            {
+              "id": "107121",
+              "label": "7章-12",
+              "stamina": 5,
+              "unlock": "107111"
+            },
+            {
+              "id": "107131",
+              "label": "7章-13",
+              "stamina": 5,
+              "unlock": "107121"
+            },
+            {
+              "id": "107141",
+              "label": "7章-14",
+              "stamina": 5,
+              "unlock": "107131"
+            },
+            {
+              "id": "107151",
+              "label": "7章-15",
+              "stamina": 5,
+              "unlock": "107141"
+            },
+            {
+              "id": "107161",
+              "label": "7章-16",
+              "stamina": 5,
+              "unlock": "107151"
+            },
+            {
+              "id": "107171",
+              "label": "7章-17",
+              "stamina": 5,
+              "unlock": "107161"
+            },
+            {
+              "id": "107181",
+              "label": "7章-18",
+              "stamina": 5,
+              "unlock": "107171"
+            },
+            {
+              "id": "107191",
+              "label": "7章-19",
+              "stamina": 5,
+              "unlock": "107181"
+            },
+            {
+              "id": "107201",
+              "label": "7章-20",
+              "stamina": 5,
+              "unlock": "107191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "107012",
+              "label": "7章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "106042"
+            },
+            {
+              "id": "107022",
+              "label": "7章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "107012"
+            },
+            {
+              "id": "107032",
+              "label": "7章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "107022"
+            },
+            {
+              "id": "107042",
+              "label": "7章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "107032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "107013",
+              "label": "7章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "106023"
+            },
+            {
+              "id": "107023",
+              "label": "7章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "107013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "1",
+      "id": "8",
+      "title": "为这困境送上救援之手！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "108011",
+              "label": "8章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "108021",
+              "label": "8章-2",
+              "stamina": 5,
+              "unlock": "108011"
+            },
+            {
+              "id": "108031",
+              "label": "8章-3",
+              "stamina": 5,
+              "unlock": "108021"
+            },
+            {
+              "id": "108041",
+              "label": "8章-4",
+              "stamina": 5,
+              "unlock": "108031"
+            },
+            {
+              "id": "108051",
+              "label": "8章-5",
+              "stamina": 5,
+              "unlock": "108041"
+            },
+            {
+              "id": "108061",
+              "label": "8章-6",
+              "stamina": 5,
+              "unlock": "108051"
+            },
+            {
+              "id": "108071",
+              "label": "8章-7",
+              "stamina": 5,
+              "unlock": "108061"
+            },
+            {
+              "id": "108081",
+              "label": "8章-8",
+              "stamina": 5,
+              "unlock": "108071"
+            },
+            {
+              "id": "108091",
+              "label": "8章-9",
+              "stamina": 5,
+              "unlock": "108081"
+            },
+            {
+              "id": "108101",
+              "label": "8章-10",
+              "stamina": 5,
+              "unlock": "108091"
+            },
+            {
+              "id": "108111",
+              "label": "8章-11",
+              "stamina": 5,
+              "unlock": "108101"
+            },
+            {
+              "id": "108121",
+              "label": "8章-12",
+              "stamina": 5,
+              "unlock": "108111"
+            },
+            {
+              "id": "108131",
+              "label": "8章-13",
+              "stamina": 5,
+              "unlock": "108121"
+            },
+            {
+              "id": "108141",
+              "label": "8章-14",
+              "stamina": 5,
+              "unlock": "108131"
+            },
+            {
+              "id": "108151",
+              "label": "8章-15",
+              "stamina": 5,
+              "unlock": "108141"
+            },
+            {
+              "id": "108161",
+              "label": "8章-16",
+              "stamina": 5,
+              "unlock": "108151"
+            },
+            {
+              "id": "108171",
+              "label": "8章-17",
+              "stamina": 5,
+              "unlock": "108161"
+            },
+            {
+              "id": "108181",
+              "label": "8章-18",
+              "stamina": 5,
+              "unlock": "108171"
+            },
+            {
+              "id": "108191",
+              "label": "8章-19",
+              "stamina": 5,
+              "unlock": "108181"
+            },
+            {
+              "id": "108201",
+              "label": "8章-20",
+              "stamina": 5,
+              "unlock": "108191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "108012",
+              "label": "8章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "107042"
+            },
+            {
+              "id": "108022",
+              "label": "8章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "108012"
+            },
+            {
+              "id": "108032",
+              "label": "8章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "108022"
+            },
+            {
+              "id": "108042",
+              "label": "8章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "108032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "108013",
+              "label": "8章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "107023"
+            },
+            {
+              "id": "108023",
+              "label": "8章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "108013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "1",
+      "id": "9",
+      "title": "在这新手冒险者之城决战！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "109011",
+              "label": "9章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "109021",
+              "label": "9章-2",
+              "stamina": 5,
+              "unlock": "109011"
+            },
+            {
+              "id": "109031",
+              "label": "9章-3",
+              "stamina": 5,
+              "unlock": "109021"
+            },
+            {
+              "id": "109041",
+              "label": "9章-4",
+              "stamina": 5,
+              "unlock": "109031"
+            },
+            {
+              "id": "109051",
+              "label": "9章-5",
+              "stamina": 5,
+              "unlock": "109041"
+            },
+            {
+              "id": "109061",
+              "label": "9章-6",
+              "stamina": 5,
+              "unlock": "109051"
+            },
+            {
+              "id": "109071",
+              "label": "9章-7",
+              "stamina": 5,
+              "unlock": "109061"
+            },
+            {
+              "id": "109081",
+              "label": "9章-8",
+              "stamina": 5,
+              "unlock": "109071"
+            },
+            {
+              "id": "109091",
+              "label": "9章-9",
+              "stamina": 5,
+              "unlock": "109081"
+            },
+            {
+              "id": "109101",
+              "label": "9章-10",
+              "stamina": 5,
+              "unlock": "109091"
+            },
+            {
+              "id": "109111",
+              "label": "9章-11",
+              "stamina": 5,
+              "unlock": "109101"
+            },
+            {
+              "id": "109121",
+              "label": "9章-12",
+              "stamina": 5,
+              "unlock": "109111"
+            },
+            {
+              "id": "109131",
+              "label": "9章-13",
+              "stamina": 5,
+              "unlock": "109121"
+            },
+            {
+              "id": "109141",
+              "label": "9章-14",
+              "stamina": 5,
+              "unlock": "109131"
+            },
+            {
+              "id": "109151",
+              "label": "9章-15",
+              "stamina": 5,
+              "unlock": "109141"
+            },
+            {
+              "id": "109161",
+              "label": "9章-16",
+              "stamina": 5,
+              "unlock": "109151"
+            },
+            {
+              "id": "109171",
+              "label": "9章-17",
+              "stamina": 5,
+              "unlock": "109161"
+            },
+            {
+              "id": "109181",
+              "label": "9章-18",
+              "stamina": 5,
+              "unlock": "109171"
+            },
+            {
+              "id": "109191",
+              "label": "9章-19",
+              "stamina": 5,
+              "unlock": "109181"
+            },
+            {
+              "id": "109201",
+              "label": "9章-20",
+              "stamina": 5,
+              "unlock": "109191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "109012",
+              "label": "9章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "108042"
+            },
+            {
+              "id": "109022",
+              "label": "9章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "109012"
+            },
+            {
+              "id": "109032",
+              "label": "9章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "109022"
+            },
+            {
+              "id": "109042",
+              "label": "9章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "109032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "109013",
+              "label": "9章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "108023"
+            },
+            {
+              "id": "109023",
+              "label": "9章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "109013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "1",
+      "id": "10",
+      "title": "为这场大赛献上大团圆！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "110011",
+              "label": "10章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "110021",
+              "label": "10章-2",
+              "stamina": 5,
+              "unlock": "110011"
+            },
+            {
+              "id": "110031",
+              "label": "10章-3",
+              "stamina": 5,
+              "unlock": "110021"
+            },
+            {
+              "id": "110041",
+              "label": "10章-4",
+              "stamina": 5,
+              "unlock": "110031"
+            },
+            {
+              "id": "110051",
+              "label": "10章-5",
+              "stamina": 5,
+              "unlock": "110041"
+            },
+            {
+              "id": "110061",
+              "label": "10章-6",
+              "stamina": 5,
+              "unlock": "110051"
+            },
+            {
+              "id": "110071",
+              "label": "10章-7",
+              "stamina": 5,
+              "unlock": "110061"
+            },
+            {
+              "id": "110081",
+              "label": "10章-8",
+              "stamina": 5,
+              "unlock": "110071"
+            },
+            {
+              "id": "110091",
+              "label": "10章-9",
+              "stamina": 5,
+              "unlock": "110081"
+            },
+            {
+              "id": "110101",
+              "label": "10章-10",
+              "stamina": 5,
+              "unlock": "110091"
+            },
+            {
+              "id": "110111",
+              "label": "10章-11",
+              "stamina": 5,
+              "unlock": "110101"
+            },
+            {
+              "id": "110121",
+              "label": "10章-12",
+              "stamina": 5,
+              "unlock": "110111"
+            },
+            {
+              "id": "110131",
+              "label": "10章-13",
+              "stamina": 5,
+              "unlock": "110121"
+            },
+            {
+              "id": "110141",
+              "label": "10章-14",
+              "stamina": 5,
+              "unlock": "110131"
+            },
+            {
+              "id": "110151",
+              "label": "10章-15",
+              "stamina": 5,
+              "unlock": "110141"
+            },
+            {
+              "id": "110161",
+              "label": "10章-16",
+              "stamina": 5,
+              "unlock": "110151"
+            },
+            {
+              "id": "110171",
+              "label": "10章-17",
+              "stamina": 5,
+              "unlock": "110161"
+            },
+            {
+              "id": "110181",
+              "label": "10章-18",
+              "stamina": 5,
+              "unlock": "110171"
+            },
+            {
+              "id": "110191",
+              "label": "10章-19",
+              "stamina": 5,
+              "unlock": "110181"
+            },
+            {
+              "id": "110201",
+              "label": "10章-20",
+              "stamina": 5,
+              "unlock": "110191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "110012",
+              "label": "10章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "109042"
+            },
+            {
+              "id": "110022",
+              "label": "10章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "110012"
+            },
+            {
+              "id": "110032",
+              "label": "10章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "110022"
+            },
+            {
+              "id": "110042",
+              "label": "10章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "110032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "110013",
+              "label": "10章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "109023"
+            },
+            {
+              "id": "110023",
+              "label": "10章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "110013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "1",
+      "id": "11",
+      "title": "为这出色的功臣献上慰劳！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "111011",
+              "label": "幕间-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "111021",
+              "label": "幕间-2",
+              "stamina": 5,
+              "unlock": "111011"
+            },
+            {
+              "id": "111031",
+              "label": "幕间-3",
+              "stamina": 5,
+              "unlock": "111021"
+            },
+            {
+              "id": "111041",
+              "label": "幕间-4",
+              "stamina": 5,
+              "unlock": "111031"
+            },
+            {
+              "id": "111051",
+              "label": "幕间-5",
+              "stamina": 5,
+              "unlock": "111041"
+            },
+            {
+              "id": "111061",
+              "label": "幕间-6",
+              "stamina": 5,
+              "unlock": "111051"
+            },
+            {
+              "id": "111071",
+              "label": "幕间-7",
+              "stamina": 5,
+              "unlock": "111061"
+            },
+            {
+              "id": "111081",
+              "label": "幕间-8",
+              "stamina": 5,
+              "unlock": "111071"
+            },
+            {
+              "id": "111091",
+              "label": "幕间-9",
+              "stamina": 5,
+              "unlock": "111081"
+            },
+            {
+              "id": "111101",
+              "label": "幕间-10",
+              "stamina": 5,
+              "unlock": "111091"
+            },
+            {
+              "id": "111111",
+              "label": "幕间-11",
+              "stamina": 5,
+              "unlock": "111101"
+            },
+            {
+              "id": "111121",
+              "label": "幕间-12",
+              "stamina": 5,
+              "unlock": "111111"
+            },
+            {
+              "id": "111131",
+              "label": "幕间-13",
+              "stamina": 5,
+              "unlock": "111121"
+            },
+            {
+              "id": "111141",
+              "label": "幕间-14",
+              "stamina": 5,
+              "unlock": "111131"
+            },
+            {
+              "id": "111151",
+              "label": "幕间-15",
+              "stamina": 5,
+              "unlock": "111141"
+            },
+            {
+              "id": "111161",
+              "label": "幕间-16",
+              "stamina": 5,
+              "unlock": "111151"
+            },
+            {
+              "id": "111171",
+              "label": "幕间-17",
+              "stamina": 5,
+              "unlock": "111161"
+            },
+            {
+              "id": "111181",
+              "label": "幕间-18",
+              "stamina": 5,
+              "unlock": "111171"
+            },
+            {
+              "id": "111191",
+              "label": "幕间-19",
+              "stamina": 5,
+              "unlock": "111181"
+            },
+            {
+              "id": "111201",
+              "label": "幕间-20",
+              "stamina": 5,
+              "unlock": "111191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "111012",
+              "label": "幕间-1 (HARD)",
+              "stamina": 10,
+              "unlock": "110042"
+            },
+            {
+              "id": "111022",
+              "label": "幕间-2 (HARD)",
+              "stamina": 10,
+              "unlock": "111012"
+            },
+            {
+              "id": "111032",
+              "label": "幕间-3 (HARD)",
+              "stamina": 10,
+              "unlock": "111022"
+            },
+            {
+              "id": "111042",
+              "label": "幕间-4 (HARD)",
+              "stamina": 10,
+              "unlock": "111032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "111013",
+              "label": "幕间-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "110023"
+            },
+            {
+              "id": "111023",
+              "label": "幕间-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "111013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "2",
+      "id": "12",
+      "title": "向这兽人们的故乡伸出援手！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "112011",
+              "label": "1章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "112021",
+              "label": "1章-2",
+              "stamina": 5,
+              "unlock": "112011"
+            },
+            {
+              "id": "112031",
+              "label": "1章-3",
+              "stamina": 5,
+              "unlock": "112021"
+            },
+            {
+              "id": "112041",
+              "label": "1章-4",
+              "stamina": 5,
+              "unlock": "112031"
+            },
+            {
+              "id": "112051",
+              "label": "1章-5",
+              "stamina": 5,
+              "unlock": "112041"
+            },
+            {
+              "id": "112061",
+              "label": "1章-6",
+              "stamina": 5,
+              "unlock": "112051"
+            },
+            {
+              "id": "112071",
+              "label": "1章-7",
+              "stamina": 5,
+              "unlock": "112061"
+            },
+            {
+              "id": "112081",
+              "label": "1章-8",
+              "stamina": 5,
+              "unlock": "112071"
+            },
+            {
+              "id": "112091",
+              "label": "1章-9",
+              "stamina": 5,
+              "unlock": "112081"
+            },
+            {
+              "id": "112101",
+              "label": "1章-10",
+              "stamina": 5,
+              "unlock": "112091"
+            },
+            {
+              "id": "112111",
+              "label": "1章-11",
+              "stamina": 5,
+              "unlock": "112101"
+            },
+            {
+              "id": "112121",
+              "label": "1章-12",
+              "stamina": 5,
+              "unlock": "112111"
+            },
+            {
+              "id": "112131",
+              "label": "1章-13",
+              "stamina": 5,
+              "unlock": "112121"
+            },
+            {
+              "id": "112141",
+              "label": "1章-14",
+              "stamina": 5,
+              "unlock": "112131"
+            },
+            {
+              "id": "112151",
+              "label": "1章-15",
+              "stamina": 5,
+              "unlock": "112141"
+            },
+            {
+              "id": "112161",
+              "label": "1章-16",
+              "stamina": 5,
+              "unlock": "112151"
+            },
+            {
+              "id": "112171",
+              "label": "1章-17",
+              "stamina": 5,
+              "unlock": "112161"
+            },
+            {
+              "id": "112181",
+              "label": "1章-18",
+              "stamina": 5,
+              "unlock": "112171"
+            },
+            {
+              "id": "112191",
+              "label": "1章-19",
+              "stamina": 5,
+              "unlock": "112181"
+            },
+            {
+              "id": "112201",
+              "label": "1章-20",
+              "stamina": 5,
+              "unlock": "112191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "112012",
+              "label": "1章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "111042"
+            },
+            {
+              "id": "112022",
+              "label": "1章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "112012"
+            },
+            {
+              "id": "112032",
+              "label": "1章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "112022"
+            },
+            {
+              "id": "112042",
+              "label": "1章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "112032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "112013",
+              "label": "1章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "111023"
+            },
+            {
+              "id": "112023",
+              "label": "1章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "112013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "2",
+      "id": "13",
+      "title": "为这场严重寒潮画上句号！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "113011",
+              "label": "2章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "113021",
+              "label": "2章-2",
+              "stamina": 5,
+              "unlock": "113011"
+            },
+            {
+              "id": "113031",
+              "label": "2章-3",
+              "stamina": 5,
+              "unlock": "113021"
+            },
+            {
+              "id": "113041",
+              "label": "2章-4",
+              "stamina": 5,
+              "unlock": "113031"
+            },
+            {
+              "id": "113051",
+              "label": "2章-5",
+              "stamina": 5,
+              "unlock": "113041"
+            },
+            {
+              "id": "113061",
+              "label": "2章-6",
+              "stamina": 5,
+              "unlock": "113051"
+            },
+            {
+              "id": "113071",
+              "label": "2章-7",
+              "stamina": 5,
+              "unlock": "113061"
+            },
+            {
+              "id": "113081",
+              "label": "2章-8",
+              "stamina": 5,
+              "unlock": "113071"
+            },
+            {
+              "id": "113091",
+              "label": "2章-9",
+              "stamina": 5,
+              "unlock": "113081"
+            },
+            {
+              "id": "113101",
+              "label": "2章-10",
+              "stamina": 5,
+              "unlock": "113091"
+            },
+            {
+              "id": "113111",
+              "label": "2章-11",
+              "stamina": 5,
+              "unlock": "113101"
+            },
+            {
+              "id": "113121",
+              "label": "2章-12",
+              "stamina": 5,
+              "unlock": "113111"
+            },
+            {
+              "id": "113131",
+              "label": "2章-13",
+              "stamina": 5,
+              "unlock": "113121"
+            },
+            {
+              "id": "113141",
+              "label": "2章-14",
+              "stamina": 5,
+              "unlock": "113131"
+            },
+            {
+              "id": "113151",
+              "label": "2章-15",
+              "stamina": 5,
+              "unlock": "113141"
+            },
+            {
+              "id": "113161",
+              "label": "2章-16",
+              "stamina": 5,
+              "unlock": "113151"
+            },
+            {
+              "id": "113171",
+              "label": "2章-17",
+              "stamina": 5,
+              "unlock": "113161"
+            },
+            {
+              "id": "113181",
+              "label": "2章-18",
+              "stamina": 5,
+              "unlock": "113171"
+            },
+            {
+              "id": "113191",
+              "label": "2章-19",
+              "stamina": 5,
+              "unlock": "113181"
+            },
+            {
+              "id": "113201",
+              "label": "2章-20",
+              "stamina": 5,
+              "unlock": "113191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "113012",
+              "label": "2章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "112042"
+            },
+            {
+              "id": "113022",
+              "label": "2章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "113012"
+            },
+            {
+              "id": "113032",
+              "label": "2章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "113022"
+            },
+            {
+              "id": "113042",
+              "label": "2章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "113032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "113013",
+              "label": "2章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "112023"
+            },
+            {
+              "id": "113023",
+              "label": "2章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "113013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "2",
+      "id": "14",
+      "title": "为这怕寂寞的精灵献上朋友！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "114011",
+              "label": "3章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "114021",
+              "label": "3章-2",
+              "stamina": 5,
+              "unlock": "114011"
+            },
+            {
+              "id": "114031",
+              "label": "3章-3",
+              "stamina": 5,
+              "unlock": "114021"
+            },
+            {
+              "id": "114041",
+              "label": "3章-4",
+              "stamina": 5,
+              "unlock": "114031"
+            },
+            {
+              "id": "114051",
+              "label": "3章-5",
+              "stamina": 5,
+              "unlock": "114041"
+            },
+            {
+              "id": "114061",
+              "label": "3章-6",
+              "stamina": 5,
+              "unlock": "114051"
+            },
+            {
+              "id": "114071",
+              "label": "3章-7",
+              "stamina": 5,
+              "unlock": "114061"
+            },
+            {
+              "id": "114081",
+              "label": "3章-8",
+              "stamina": 5,
+              "unlock": "114071"
+            },
+            {
+              "id": "114091",
+              "label": "3章-9",
+              "stamina": 5,
+              "unlock": "114081"
+            },
+            {
+              "id": "114101",
+              "label": "3章-10",
+              "stamina": 5,
+              "unlock": "114091"
+            },
+            {
+              "id": "114111",
+              "label": "3章-11",
+              "stamina": 5,
+              "unlock": "114101"
+            },
+            {
+              "id": "114121",
+              "label": "3章-12",
+              "stamina": 5,
+              "unlock": "114111"
+            },
+            {
+              "id": "114131",
+              "label": "3章-13",
+              "stamina": 5,
+              "unlock": "114121"
+            },
+            {
+              "id": "114141",
+              "label": "3章-14",
+              "stamina": 5,
+              "unlock": "114131"
+            },
+            {
+              "id": "114151",
+              "label": "3章-15",
+              "stamina": 5,
+              "unlock": "114141"
+            },
+            {
+              "id": "114161",
+              "label": "3章-16",
+              "stamina": 5,
+              "unlock": "114151"
+            },
+            {
+              "id": "114171",
+              "label": "3章-17",
+              "stamina": 5,
+              "unlock": "114161"
+            },
+            {
+              "id": "114181",
+              "label": "3章-18",
+              "stamina": 5,
+              "unlock": "114171"
+            },
+            {
+              "id": "114191",
+              "label": "3章-19",
+              "stamina": 5,
+              "unlock": "114181"
+            },
+            {
+              "id": "114201",
+              "label": "3章-20",
+              "stamina": 5,
+              "unlock": "114191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "114012",
+              "label": "3章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "113042"
+            },
+            {
+              "id": "114022",
+              "label": "3章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "114012"
+            },
+            {
+              "id": "114032",
+              "label": "3章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "114022"
+            },
+            {
+              "id": "114042",
+              "label": "3章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "114032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "114013",
+              "label": "3章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "113023"
+            },
+            {
+              "id": "114023",
+              "label": "3章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "114013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "2",
+      "id": "15",
+      "title": "用这萨姆伊多的蔬菜开店！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "115011",
+              "label": "4章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "115021",
+              "label": "4章-2",
+              "stamina": 5,
+              "unlock": "115011"
+            },
+            {
+              "id": "115031",
+              "label": "4章-3",
+              "stamina": 5,
+              "unlock": "115021"
+            },
+            {
+              "id": "115041",
+              "label": "4章-4",
+              "stamina": 5,
+              "unlock": "115031"
+            },
+            {
+              "id": "115051",
+              "label": "4章-5",
+              "stamina": 5,
+              "unlock": "115041"
+            },
+            {
+              "id": "115061",
+              "label": "4章-6",
+              "stamina": 5,
+              "unlock": "115051"
+            },
+            {
+              "id": "115071",
+              "label": "4章-7",
+              "stamina": 5,
+              "unlock": "115061"
+            },
+            {
+              "id": "115081",
+              "label": "4章-8",
+              "stamina": 5,
+              "unlock": "115071"
+            },
+            {
+              "id": "115091",
+              "label": "4章-9",
+              "stamina": 5,
+              "unlock": "115081"
+            },
+            {
+              "id": "115101",
+              "label": "4章-10",
+              "stamina": 5,
+              "unlock": "115091"
+            },
+            {
+              "id": "115111",
+              "label": "4章-11",
+              "stamina": 5,
+              "unlock": "115101"
+            },
+            {
+              "id": "115121",
+              "label": "4章-12",
+              "stamina": 5,
+              "unlock": "115111"
+            },
+            {
+              "id": "115131",
+              "label": "4章-13",
+              "stamina": 5,
+              "unlock": "115121"
+            },
+            {
+              "id": "115141",
+              "label": "4章-14",
+              "stamina": 5,
+              "unlock": "115131"
+            },
+            {
+              "id": "115151",
+              "label": "4章-15",
+              "stamina": 5,
+              "unlock": "115141"
+            },
+            {
+              "id": "115161",
+              "label": "4章-16",
+              "stamina": 5,
+              "unlock": "115151"
+            },
+            {
+              "id": "115171",
+              "label": "4章-17",
+              "stamina": 5,
+              "unlock": "115161"
+            },
+            {
+              "id": "115181",
+              "label": "4章-18",
+              "stamina": 5,
+              "unlock": "115171"
+            },
+            {
+              "id": "115191",
+              "label": "4章-19",
+              "stamina": 5,
+              "unlock": "115181"
+            },
+            {
+              "id": "115201",
+              "label": "4章-20",
+              "stamina": 5,
+              "unlock": "115191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "115012",
+              "label": "4章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "114042"
+            },
+            {
+              "id": "115022",
+              "label": "4章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "115012"
+            },
+            {
+              "id": "115032",
+              "label": "4章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "115022"
+            },
+            {
+              "id": "115042",
+              "label": "4章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "115032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "115013",
+              "label": "4章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "114023"
+            },
+            {
+              "id": "115023",
+              "label": "4章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "115013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "2",
+      "id": "16",
+      "title": "与这顽固的肌肉脑贵族和解！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "116011",
+              "label": "5章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "116021",
+              "label": "5章-2",
+              "stamina": 5,
+              "unlock": "116011"
+            },
+            {
+              "id": "116031",
+              "label": "5章-3",
+              "stamina": 5,
+              "unlock": "116021"
+            },
+            {
+              "id": "116041",
+              "label": "5章-4",
+              "stamina": 5,
+              "unlock": "116031"
+            },
+            {
+              "id": "116051",
+              "label": "5章-5",
+              "stamina": 5,
+              "unlock": "116041"
+            },
+            {
+              "id": "116061",
+              "label": "5章-6",
+              "stamina": 5,
+              "unlock": "116051"
+            },
+            {
+              "id": "116071",
+              "label": "5章-7",
+              "stamina": 5,
+              "unlock": "116061"
+            },
+            {
+              "id": "116081",
+              "label": "5章-8",
+              "stamina": 5,
+              "unlock": "116071"
+            },
+            {
+              "id": "116091",
+              "label": "5章-9",
+              "stamina": 5,
+              "unlock": "116081"
+            },
+            {
+              "id": "116101",
+              "label": "5章-10",
+              "stamina": 5,
+              "unlock": "116091"
+            },
+            {
+              "id": "116111",
+              "label": "5章-11",
+              "stamina": 5,
+              "unlock": "116101"
+            },
+            {
+              "id": "116121",
+              "label": "5章-12",
+              "stamina": 5,
+              "unlock": "116111"
+            },
+            {
+              "id": "116131",
+              "label": "5章-13",
+              "stamina": 5,
+              "unlock": "116121"
+            },
+            {
+              "id": "116141",
+              "label": "5章-14",
+              "stamina": 5,
+              "unlock": "116131"
+            },
+            {
+              "id": "116151",
+              "label": "5章-15",
+              "stamina": 5,
+              "unlock": "116141"
+            },
+            {
+              "id": "116161",
+              "label": "5章-16",
+              "stamina": 5,
+              "unlock": "116151"
+            },
+            {
+              "id": "116171",
+              "label": "5章-17",
+              "stamina": 5,
+              "unlock": "116161"
+            },
+            {
+              "id": "116181",
+              "label": "5章-18",
+              "stamina": 5,
+              "unlock": "116171"
+            },
+            {
+              "id": "116191",
+              "label": "5章-19",
+              "stamina": 5,
+              "unlock": "116181"
+            },
+            {
+              "id": "116201",
+              "label": "5章-20",
+              "stamina": 5,
+              "unlock": "116191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "116012",
+              "label": "5章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "115042"
+            },
+            {
+              "id": "116022",
+              "label": "5章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "116012"
+            },
+            {
+              "id": "116032",
+              "label": "5章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "116022"
+            },
+            {
+              "id": "116042",
+              "label": "5章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "116032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "116013",
+              "label": "5章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "115023"
+            },
+            {
+              "id": "116023",
+              "label": "5章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "116013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "2",
+      "id": "17",
+      "title": "为这恶作剧精灵献上挚友！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "117011",
+              "label": "6章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "117021",
+              "label": "6章-2",
+              "stamina": 5,
+              "unlock": "117011"
+            },
+            {
+              "id": "117031",
+              "label": "6章-3",
+              "stamina": 5,
+              "unlock": "117021"
+            },
+            {
+              "id": "117041",
+              "label": "6章-4",
+              "stamina": 5,
+              "unlock": "117031"
+            },
+            {
+              "id": "117051",
+              "label": "6章-5",
+              "stamina": 5,
+              "unlock": "117041"
+            },
+            {
+              "id": "117061",
+              "label": "6章-6",
+              "stamina": 5,
+              "unlock": "117051"
+            },
+            {
+              "id": "117071",
+              "label": "6章-7",
+              "stamina": 5,
+              "unlock": "117061"
+            },
+            {
+              "id": "117081",
+              "label": "6章-8",
+              "stamina": 5,
+              "unlock": "117071"
+            },
+            {
+              "id": "117091",
+              "label": "6章-9",
+              "stamina": 5,
+              "unlock": "117081"
+            },
+            {
+              "id": "117101",
+              "label": "6章-10",
+              "stamina": 5,
+              "unlock": "117091"
+            },
+            {
+              "id": "117111",
+              "label": "6章-11",
+              "stamina": 5,
+              "unlock": "117101"
+            },
+            {
+              "id": "117121",
+              "label": "6章-12",
+              "stamina": 5,
+              "unlock": "117111"
+            },
+            {
+              "id": "117131",
+              "label": "6章-13",
+              "stamina": 5,
+              "unlock": "117121"
+            },
+            {
+              "id": "117141",
+              "label": "6章-14",
+              "stamina": 5,
+              "unlock": "117131"
+            },
+            {
+              "id": "117151",
+              "label": "6章-15",
+              "stamina": 5,
+              "unlock": "117141"
+            },
+            {
+              "id": "117161",
+              "label": "6章-16",
+              "stamina": 5,
+              "unlock": "117151"
+            },
+            {
+              "id": "117171",
+              "label": "6章-17",
+              "stamina": 5,
+              "unlock": "117161"
+            },
+            {
+              "id": "117181",
+              "label": "6章-18",
+              "stamina": 5,
+              "unlock": "117171"
+            },
+            {
+              "id": "117191",
+              "label": "6章-19",
+              "stamina": 5,
+              "unlock": "117181"
+            },
+            {
+              "id": "117201",
+              "label": "6章-20",
+              "stamina": 5,
+              "unlock": "117191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "117012",
+              "label": "6章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "116042"
+            },
+            {
+              "id": "117022",
+              "label": "6章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "117012"
+            },
+            {
+              "id": "117032",
+              "label": "6章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "117022"
+            },
+            {
+              "id": "117042",
+              "label": "6章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "117032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "117013",
+              "label": "6章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "116023"
+            },
+            {
+              "id": "117023",
+              "label": "6章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "117013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "2",
+      "id": "18",
+      "title": "与这怕寂寞的精灵结下友情！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "118011",
+              "label": "7章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "118021",
+              "label": "7章-2",
+              "stamina": 5,
+              "unlock": "118011"
+            },
+            {
+              "id": "118031",
+              "label": "7章-3",
+              "stamina": 5,
+              "unlock": "118021"
+            },
+            {
+              "id": "118041",
+              "label": "7章-4",
+              "stamina": 5,
+              "unlock": "118031"
+            },
+            {
+              "id": "118051",
+              "label": "7章-5",
+              "stamina": 5,
+              "unlock": "118041"
+            },
+            {
+              "id": "118061",
+              "label": "7章-6",
+              "stamina": 5,
+              "unlock": "118051"
+            },
+            {
+              "id": "118071",
+              "label": "7章-7",
+              "stamina": 5,
+              "unlock": "118061"
+            },
+            {
+              "id": "118081",
+              "label": "7章-8",
+              "stamina": 5,
+              "unlock": "118071"
+            },
+            {
+              "id": "118091",
+              "label": "7章-9",
+              "stamina": 5,
+              "unlock": "118081"
+            },
+            {
+              "id": "118101",
+              "label": "7章-10",
+              "stamina": 5,
+              "unlock": "118091"
+            },
+            {
+              "id": "118111",
+              "label": "7章-11",
+              "stamina": 5,
+              "unlock": "118101"
+            },
+            {
+              "id": "118121",
+              "label": "7章-12",
+              "stamina": 5,
+              "unlock": "118111"
+            },
+            {
+              "id": "118131",
+              "label": "7章-13",
+              "stamina": 5,
+              "unlock": "118121"
+            },
+            {
+              "id": "118141",
+              "label": "7章-14",
+              "stamina": 5,
+              "unlock": "118131"
+            },
+            {
+              "id": "118151",
+              "label": "7章-15",
+              "stamina": 5,
+              "unlock": "118141"
+            },
+            {
+              "id": "118161",
+              "label": "7章-16",
+              "stamina": 5,
+              "unlock": "118151"
+            },
+            {
+              "id": "118171",
+              "label": "7章-17",
+              "stamina": 5,
+              "unlock": "118161"
+            },
+            {
+              "id": "118181",
+              "label": "7章-18",
+              "stamina": 5,
+              "unlock": "118171"
+            },
+            {
+              "id": "118191",
+              "label": "7章-19",
+              "stamina": 5,
+              "unlock": "118181"
+            },
+            {
+              "id": "118201",
+              "label": "7章-20",
+              "stamina": 5,
+              "unlock": "118191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "118012",
+              "label": "7章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "117042"
+            },
+            {
+              "id": "118022",
+              "label": "7章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "118012"
+            },
+            {
+              "id": "118032",
+              "label": "7章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "118022"
+            },
+            {
+              "id": "118042",
+              "label": "7章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "118032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "118013",
+              "label": "7章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "117023"
+            },
+            {
+              "id": "118023",
+              "label": "7章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "118013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "2",
+      "id": "19",
+      "title": "与这幸运又不走运的主角演一场戏！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "119011",
+              "label": "8章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "119021",
+              "label": "8章-2",
+              "stamina": 5,
+              "unlock": "119011"
+            },
+            {
+              "id": "119031",
+              "label": "8章-3",
+              "stamina": 5,
+              "unlock": "119021"
+            },
+            {
+              "id": "119041",
+              "label": "8章-4",
+              "stamina": 5,
+              "unlock": "119031"
+            },
+            {
+              "id": "119051",
+              "label": "8章-5",
+              "stamina": 5,
+              "unlock": "119041"
+            },
+            {
+              "id": "119061",
+              "label": "8章-6",
+              "stamina": 5,
+              "unlock": "119051"
+            },
+            {
+              "id": "119071",
+              "label": "8章-7",
+              "stamina": 5,
+              "unlock": "119061"
+            },
+            {
+              "id": "119081",
+              "label": "8章-8",
+              "stamina": 5,
+              "unlock": "119071"
+            },
+            {
+              "id": "119091",
+              "label": "8章-9",
+              "stamina": 5,
+              "unlock": "119081"
+            },
+            {
+              "id": "119101",
+              "label": "8章-10",
+              "stamina": 5,
+              "unlock": "119091"
+            },
+            {
+              "id": "119111",
+              "label": "8章-11",
+              "stamina": 5,
+              "unlock": "119101"
+            },
+            {
+              "id": "119121",
+              "label": "8章-12",
+              "stamina": 5,
+              "unlock": "119111"
+            },
+            {
+              "id": "119131",
+              "label": "8章-13",
+              "stamina": 5,
+              "unlock": "119121"
+            },
+            {
+              "id": "119141",
+              "label": "8章-14",
+              "stamina": 5,
+              "unlock": "119131"
+            },
+            {
+              "id": "119151",
+              "label": "8章-15",
+              "stamina": 5,
+              "unlock": "119141"
+            },
+            {
+              "id": "119161",
+              "label": "8章-16",
+              "stamina": 5,
+              "unlock": "119151"
+            },
+            {
+              "id": "119171",
+              "label": "8章-17",
+              "stamina": 5,
+              "unlock": "119161"
+            },
+            {
+              "id": "119181",
+              "label": "8章-18",
+              "stamina": 5,
+              "unlock": "119171"
+            },
+            {
+              "id": "119191",
+              "label": "8章-19",
+              "stamina": 5,
+              "unlock": "119181"
+            },
+            {
+              "id": "119201",
+              "label": "8章-20",
+              "stamina": 5,
+              "unlock": "119191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "119012",
+              "label": "8章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "118042"
+            },
+            {
+              "id": "119022",
+              "label": "8章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "119012"
+            },
+            {
+              "id": "119032",
+              "label": "8章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "119022"
+            },
+            {
+              "id": "119042",
+              "label": "8章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "119032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "119013",
+              "label": "8章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "118023"
+            },
+            {
+              "id": "119023",
+              "label": "8章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "119013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "2",
+      "id": "20",
+      "title": "与这可爱的雷电少女共度日常！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "120011",
+              "label": "9章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "120021",
+              "label": "9章-2",
+              "stamina": 5,
+              "unlock": "120011"
+            },
+            {
+              "id": "120031",
+              "label": "9章-3",
+              "stamina": 5,
+              "unlock": "120021"
+            },
+            {
+              "id": "120041",
+              "label": "9章-4",
+              "stamina": 5,
+              "unlock": "120031"
+            },
+            {
+              "id": "120051",
+              "label": "9章-5",
+              "stamina": 5,
+              "unlock": "120041"
+            },
+            {
+              "id": "120061",
+              "label": "9章-6",
+              "stamina": 5,
+              "unlock": "120051"
+            },
+            {
+              "id": "120071",
+              "label": "9章-7",
+              "stamina": 5,
+              "unlock": "120061"
+            },
+            {
+              "id": "120081",
+              "label": "9章-8",
+              "stamina": 5,
+              "unlock": "120071"
+            },
+            {
+              "id": "120091",
+              "label": "9章-9",
+              "stamina": 5,
+              "unlock": "120081"
+            },
+            {
+              "id": "120101",
+              "label": "9章-10",
+              "stamina": 5,
+              "unlock": "120091"
+            },
+            {
+              "id": "120111",
+              "label": "9章-11",
+              "stamina": 5,
+              "unlock": "120101"
+            },
+            {
+              "id": "120121",
+              "label": "9章-12",
+              "stamina": 5,
+              "unlock": "120111"
+            },
+            {
+              "id": "120131",
+              "label": "9章-13",
+              "stamina": 5,
+              "unlock": "120121"
+            },
+            {
+              "id": "120141",
+              "label": "9章-14",
+              "stamina": 5,
+              "unlock": "120131"
+            },
+            {
+              "id": "120151",
+              "label": "9章-15",
+              "stamina": 5,
+              "unlock": "120141"
+            },
+            {
+              "id": "120161",
+              "label": "9章-16",
+              "stamina": 5,
+              "unlock": "120151"
+            },
+            {
+              "id": "120171",
+              "label": "9章-17",
+              "stamina": 5,
+              "unlock": "120161"
+            },
+            {
+              "id": "120181",
+              "label": "9章-18",
+              "stamina": 5,
+              "unlock": "120171"
+            },
+            {
+              "id": "120191",
+              "label": "9章-19",
+              "stamina": 5,
+              "unlock": "120181"
+            },
+            {
+              "id": "120201",
+              "label": "9章-20",
+              "stamina": 5,
+              "unlock": "120191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "120012",
+              "label": "9章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "119042"
+            },
+            {
+              "id": "120022",
+              "label": "9章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "120012"
+            },
+            {
+              "id": "120032",
+              "label": "9章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "120022"
+            },
+            {
+              "id": "120042",
+              "label": "9章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "120032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "120013",
+              "label": "9章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "119023"
+            },
+            {
+              "id": "120023",
+              "label": "9章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "120013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "2",
+      "id": "21",
+      "title": "为这美好的朋友献上祝福！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "121011",
+              "label": "10章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "121021",
+              "label": "10章-2",
+              "stamina": 5,
+              "unlock": "121011"
+            },
+            {
+              "id": "121031",
+              "label": "10章-3",
+              "stamina": 5,
+              "unlock": "121021"
+            },
+            {
+              "id": "121041",
+              "label": "10章-4",
+              "stamina": 5,
+              "unlock": "121031"
+            },
+            {
+              "id": "121051",
+              "label": "10章-5",
+              "stamina": 5,
+              "unlock": "121041"
+            },
+            {
+              "id": "121061",
+              "label": "10章-6",
+              "stamina": 5,
+              "unlock": "121051"
+            },
+            {
+              "id": "121071",
+              "label": "10章-7",
+              "stamina": 5,
+              "unlock": "121061"
+            },
+            {
+              "id": "121081",
+              "label": "10章-8",
+              "stamina": 5,
+              "unlock": "121071"
+            },
+            {
+              "id": "121091",
+              "label": "10章-9",
+              "stamina": 5,
+              "unlock": "121081"
+            },
+            {
+              "id": "121101",
+              "label": "10章-10",
+              "stamina": 5,
+              "unlock": "121091"
+            },
+            {
+              "id": "121111",
+              "label": "10章-11",
+              "stamina": 5,
+              "unlock": "121101"
+            },
+            {
+              "id": "121121",
+              "label": "10章-12",
+              "stamina": 5,
+              "unlock": "121111"
+            },
+            {
+              "id": "121131",
+              "label": "10章-13",
+              "stamina": 5,
+              "unlock": "121121"
+            },
+            {
+              "id": "121141",
+              "label": "10章-14",
+              "stamina": 5,
+              "unlock": "121131"
+            },
+            {
+              "id": "121151",
+              "label": "10章-15",
+              "stamina": 5,
+              "unlock": "121141"
+            },
+            {
+              "id": "121161",
+              "label": "10章-16",
+              "stamina": 5,
+              "unlock": "121151"
+            },
+            {
+              "id": "121171",
+              "label": "10章-17",
+              "stamina": 5,
+              "unlock": "121161"
+            },
+            {
+              "id": "121181",
+              "label": "10章-18",
+              "stamina": 5,
+              "unlock": "121171"
+            },
+            {
+              "id": "121191",
+              "label": "10章-19",
+              "stamina": 5,
+              "unlock": "121181"
+            },
+            {
+              "id": "121201",
+              "label": "10章-20",
+              "stamina": 5,
+              "unlock": "121191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "121012",
+              "label": "10章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "120042"
+            },
+            {
+              "id": "121022",
+              "label": "10章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "121012"
+            },
+            {
+              "id": "121032",
+              "label": "10章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "121022"
+            },
+            {
+              "id": "121042",
+              "label": "10章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "121032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "121013",
+              "label": "10章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "120023"
+            },
+            {
+              "id": "121023",
+              "label": "10章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "121013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "2",
+      "id": "22",
+      "title": "与这新朋友来一场精彩表演！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "122011",
+              "label": "幕间-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "122021",
+              "label": "幕间-2",
+              "stamina": 5,
+              "unlock": "122011"
+            },
+            {
+              "id": "122031",
+              "label": "幕间-3",
+              "stamina": 5,
+              "unlock": "122021"
+            },
+            {
+              "id": "122041",
+              "label": "幕间-4",
+              "stamina": 5,
+              "unlock": "122031"
+            },
+            {
+              "id": "122051",
+              "label": "幕间-5",
+              "stamina": 5,
+              "unlock": "122041"
+            },
+            {
+              "id": "122061",
+              "label": "幕间-6",
+              "stamina": 5,
+              "unlock": "122051"
+            },
+            {
+              "id": "122071",
+              "label": "幕间-7",
+              "stamina": 5,
+              "unlock": "122061"
+            },
+            {
+              "id": "122081",
+              "label": "幕间-8",
+              "stamina": 5,
+              "unlock": "122071"
+            },
+            {
+              "id": "122091",
+              "label": "幕间-9",
+              "stamina": 5,
+              "unlock": "122081"
+            },
+            {
+              "id": "122101",
+              "label": "幕间-10",
+              "stamina": 5,
+              "unlock": "122091"
+            },
+            {
+              "id": "122111",
+              "label": "幕间-11",
+              "stamina": 5,
+              "unlock": "122101"
+            },
+            {
+              "id": "122121",
+              "label": "幕间-12",
+              "stamina": 5,
+              "unlock": "122111"
+            },
+            {
+              "id": "122131",
+              "label": "幕间-13",
+              "stamina": 5,
+              "unlock": "122121"
+            },
+            {
+              "id": "122141",
+              "label": "幕间-14",
+              "stamina": 5,
+              "unlock": "122131"
+            },
+            {
+              "id": "122151",
+              "label": "幕间-15",
+              "stamina": 5,
+              "unlock": "122141"
+            },
+            {
+              "id": "122161",
+              "label": "幕间-16",
+              "stamina": 5,
+              "unlock": "122151"
+            },
+            {
+              "id": "122171",
+              "label": "幕间-17",
+              "stamina": 5,
+              "unlock": "122161"
+            },
+            {
+              "id": "122181",
+              "label": "幕间-18",
+              "stamina": 5,
+              "unlock": "122171"
+            },
+            {
+              "id": "122191",
+              "label": "幕间-19",
+              "stamina": 5,
+              "unlock": "122181"
+            },
+            {
+              "id": "122201",
+              "label": "幕间-20",
+              "stamina": 5,
+              "unlock": "122191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "122012",
+              "label": "幕间-1 (HARD)",
+              "stamina": 10,
+              "unlock": "121042"
+            },
+            {
+              "id": "122022",
+              "label": "幕间-2 (HARD)",
+              "stamina": 10,
+              "unlock": "122012"
+            },
+            {
+              "id": "122032",
+              "label": "幕间-3 (HARD)",
+              "stamina": 10,
+              "unlock": "122022"
+            },
+            {
+              "id": "122042",
+              "label": "幕间-4 (HARD)",
+              "stamina": 10,
+              "unlock": "122032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "122013",
+              "label": "幕间-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "121023"
+            },
+            {
+              "id": "122023",
+              "label": "幕间-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "122013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "3",
+      "id": "23",
+      "title": "为这失忆的公主献上魔道具！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "123011",
+              "label": "1章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "123021",
+              "label": "1章-2",
+              "stamina": 5,
+              "unlock": "123011"
+            },
+            {
+              "id": "123031",
+              "label": "1章-3",
+              "stamina": 5,
+              "unlock": "123021"
+            },
+            {
+              "id": "123041",
+              "label": "1章-4",
+              "stamina": 5,
+              "unlock": "123031"
+            },
+            {
+              "id": "123051",
+              "label": "1章-5",
+              "stamina": 5,
+              "unlock": "123041"
+            },
+            {
+              "id": "123061",
+              "label": "1章-6",
+              "stamina": 5,
+              "unlock": "123051"
+            },
+            {
+              "id": "123071",
+              "label": "1章-7",
+              "stamina": 5,
+              "unlock": "123061"
+            },
+            {
+              "id": "123081",
+              "label": "1章-8",
+              "stamina": 5,
+              "unlock": "123071"
+            },
+            {
+              "id": "123091",
+              "label": "1章-9",
+              "stamina": 5,
+              "unlock": "123081"
+            },
+            {
+              "id": "123101",
+              "label": "1章-10",
+              "stamina": 5,
+              "unlock": "123091"
+            },
+            {
+              "id": "123111",
+              "label": "1章-11",
+              "stamina": 5,
+              "unlock": "123101"
+            },
+            {
+              "id": "123121",
+              "label": "1章-12",
+              "stamina": 5,
+              "unlock": "123111"
+            },
+            {
+              "id": "123131",
+              "label": "1章-13",
+              "stamina": 5,
+              "unlock": "123121"
+            },
+            {
+              "id": "123141",
+              "label": "1章-14",
+              "stamina": 5,
+              "unlock": "123131"
+            },
+            {
+              "id": "123151",
+              "label": "1章-15",
+              "stamina": 5,
+              "unlock": "123141"
+            },
+            {
+              "id": "123161",
+              "label": "1章-16",
+              "stamina": 5,
+              "unlock": "123151"
+            },
+            {
+              "id": "123171",
+              "label": "1章-17",
+              "stamina": 5,
+              "unlock": "123161"
+            },
+            {
+              "id": "123181",
+              "label": "1章-18",
+              "stamina": 5,
+              "unlock": "123171"
+            },
+            {
+              "id": "123191",
+              "label": "1章-19",
+              "stamina": 5,
+              "unlock": "123181"
+            },
+            {
+              "id": "123201",
+              "label": "1章-20",
+              "stamina": 5,
+              "unlock": "123191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "123012",
+              "label": "1章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "122042"
+            },
+            {
+              "id": "123022",
+              "label": "1章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "123012"
+            },
+            {
+              "id": "123032",
+              "label": "1章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "123022"
+            },
+            {
+              "id": "123042",
+              "label": "1章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "123032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "123013",
+              "label": "1章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "122023"
+            },
+            {
+              "id": "123023",
+              "label": "1章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "123013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "3",
+      "id": "24",
+      "title": "与这魔道具研究家交涉！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "124011",
+              "label": "2章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "124021",
+              "label": "2章-2",
+              "stamina": 5,
+              "unlock": "124011"
+            },
+            {
+              "id": "124031",
+              "label": "2章-3",
+              "stamina": 5,
+              "unlock": "124021"
+            },
+            {
+              "id": "124041",
+              "label": "2章-4",
+              "stamina": 5,
+              "unlock": "124031"
+            },
+            {
+              "id": "124051",
+              "label": "2章-5",
+              "stamina": 5,
+              "unlock": "124041"
+            },
+            {
+              "id": "124061",
+              "label": "2章-6",
+              "stamina": 5,
+              "unlock": "124051"
+            },
+            {
+              "id": "124071",
+              "label": "2章-7",
+              "stamina": 5,
+              "unlock": "124061"
+            },
+            {
+              "id": "124081",
+              "label": "2章-8",
+              "stamina": 5,
+              "unlock": "124071"
+            },
+            {
+              "id": "124091",
+              "label": "2章-9",
+              "stamina": 5,
+              "unlock": "124081"
+            },
+            {
+              "id": "124101",
+              "label": "2章-10",
+              "stamina": 5,
+              "unlock": "124091"
+            },
+            {
+              "id": "124111",
+              "label": "2章-11",
+              "stamina": 5,
+              "unlock": "124101"
+            },
+            {
+              "id": "124121",
+              "label": "2章-12",
+              "stamina": 5,
+              "unlock": "124111"
+            },
+            {
+              "id": "124131",
+              "label": "2章-13",
+              "stamina": 5,
+              "unlock": "124121"
+            },
+            {
+              "id": "124141",
+              "label": "2章-14",
+              "stamina": 5,
+              "unlock": "124131"
+            },
+            {
+              "id": "124151",
+              "label": "2章-15",
+              "stamina": 5,
+              "unlock": "124141"
+            },
+            {
+              "id": "124161",
+              "label": "2章-16",
+              "stamina": 5,
+              "unlock": "124151"
+            },
+            {
+              "id": "124171",
+              "label": "2章-17",
+              "stamina": 5,
+              "unlock": "124161"
+            },
+            {
+              "id": "124181",
+              "label": "2章-18",
+              "stamina": 5,
+              "unlock": "124171"
+            },
+            {
+              "id": "124191",
+              "label": "2章-19",
+              "stamina": 5,
+              "unlock": "124181"
+            },
+            {
+              "id": "124201",
+              "label": "2章-20",
+              "stamina": 5,
+              "unlock": "124191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "124012",
+              "label": "2章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "123042"
+            },
+            {
+              "id": "124022",
+              "label": "2章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "124012"
+            },
+            {
+              "id": "124032",
+              "label": "2章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "124022"
+            },
+            {
+              "id": "124042",
+              "label": "2章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "124032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "124013",
+              "label": "2章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "123023"
+            },
+            {
+              "id": "124023",
+              "label": "2章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "124013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "3",
+      "id": "25",
+      "title": "为这魔道具的下落带来光明！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "125011",
+              "label": "3章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "125021",
+              "label": "3章-2",
+              "stamina": 5,
+              "unlock": "125011"
+            },
+            {
+              "id": "125031",
+              "label": "3章-3",
+              "stamina": 5,
+              "unlock": "125021"
+            },
+            {
+              "id": "125041",
+              "label": "3章-4",
+              "stamina": 5,
+              "unlock": "125031"
+            },
+            {
+              "id": "125051",
+              "label": "3章-5",
+              "stamina": 5,
+              "unlock": "125041"
+            },
+            {
+              "id": "125061",
+              "label": "3章-6",
+              "stamina": 5,
+              "unlock": "125051"
+            },
+            {
+              "id": "125071",
+              "label": "3章-7",
+              "stamina": 5,
+              "unlock": "125061"
+            },
+            {
+              "id": "125081",
+              "label": "3章-8",
+              "stamina": 5,
+              "unlock": "125071"
+            },
+            {
+              "id": "125091",
+              "label": "3章-9",
+              "stamina": 5,
+              "unlock": "125081"
+            },
+            {
+              "id": "125101",
+              "label": "3章-10",
+              "stamina": 5,
+              "unlock": "125091"
+            },
+            {
+              "id": "125111",
+              "label": "3章-11",
+              "stamina": 5,
+              "unlock": "125101"
+            },
+            {
+              "id": "125121",
+              "label": "3章-12",
+              "stamina": 5,
+              "unlock": "125111"
+            },
+            {
+              "id": "125131",
+              "label": "3章-13",
+              "stamina": 5,
+              "unlock": "125121"
+            },
+            {
+              "id": "125141",
+              "label": "3章-14",
+              "stamina": 5,
+              "unlock": "125131"
+            },
+            {
+              "id": "125151",
+              "label": "3章-15",
+              "stamina": 5,
+              "unlock": "125141"
+            },
+            {
+              "id": "125161",
+              "label": "3章-16",
+              "stamina": 5,
+              "unlock": "125151"
+            },
+            {
+              "id": "125171",
+              "label": "3章-17",
+              "stamina": 5,
+              "unlock": "125161"
+            },
+            {
+              "id": "125181",
+              "label": "3章-18",
+              "stamina": 5,
+              "unlock": "125171"
+            },
+            {
+              "id": "125191",
+              "label": "3章-19",
+              "stamina": 5,
+              "unlock": "125181"
+            },
+            {
+              "id": "125201",
+              "label": "3章-20",
+              "stamina": 5,
+              "unlock": "125191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "125012",
+              "label": "3章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "124042"
+            },
+            {
+              "id": "125022",
+              "label": "3章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "125012"
+            },
+            {
+              "id": "125032",
+              "label": "3章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "125022"
+            },
+            {
+              "id": "125042",
+              "label": "3章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "125032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "125013",
+              "label": "3章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "124023"
+            },
+            {
+              "id": "125023",
+              "label": "3章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "125013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "3",
+      "id": "26",
+      "title": "为这坏掉的魔道具献上矿石！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "126011",
+              "label": "4章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "126021",
+              "label": "4章-2",
+              "stamina": 5,
+              "unlock": "126011"
+            },
+            {
+              "id": "126031",
+              "label": "4章-3",
+              "stamina": 5,
+              "unlock": "126021"
+            },
+            {
+              "id": "126041",
+              "label": "4章-4",
+              "stamina": 5,
+              "unlock": "126031"
+            },
+            {
+              "id": "126051",
+              "label": "4章-5",
+              "stamina": 5,
+              "unlock": "126041"
+            },
+            {
+              "id": "126061",
+              "label": "4章-6",
+              "stamina": 5,
+              "unlock": "126051"
+            },
+            {
+              "id": "126071",
+              "label": "4章-7",
+              "stamina": 5,
+              "unlock": "126061"
+            },
+            {
+              "id": "126081",
+              "label": "4章-8",
+              "stamina": 5,
+              "unlock": "126071"
+            },
+            {
+              "id": "126091",
+              "label": "4章-9",
+              "stamina": 5,
+              "unlock": "126081"
+            },
+            {
+              "id": "126101",
+              "label": "4章-10",
+              "stamina": 5,
+              "unlock": "126091"
+            },
+            {
+              "id": "126111",
+              "label": "4章-11",
+              "stamina": 5,
+              "unlock": "126101"
+            },
+            {
+              "id": "126121",
+              "label": "4章-12",
+              "stamina": 5,
+              "unlock": "126111"
+            },
+            {
+              "id": "126131",
+              "label": "4章-13",
+              "stamina": 5,
+              "unlock": "126121"
+            },
+            {
+              "id": "126141",
+              "label": "4章-14",
+              "stamina": 5,
+              "unlock": "126131"
+            },
+            {
+              "id": "126151",
+              "label": "4章-15",
+              "stamina": 5,
+              "unlock": "126141"
+            },
+            {
+              "id": "126161",
+              "label": "4章-16",
+              "stamina": 5,
+              "unlock": "126151"
+            },
+            {
+              "id": "126171",
+              "label": "4章-17",
+              "stamina": 5,
+              "unlock": "126161"
+            },
+            {
+              "id": "126181",
+              "label": "4章-18",
+              "stamina": 5,
+              "unlock": "126171"
+            },
+            {
+              "id": "126191",
+              "label": "4章-19",
+              "stamina": 5,
+              "unlock": "126181"
+            },
+            {
+              "id": "126201",
+              "label": "4章-20",
+              "stamina": 5,
+              "unlock": "126191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "126012",
+              "label": "4章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "125042"
+            },
+            {
+              "id": "126022",
+              "label": "4章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "126012"
+            },
+            {
+              "id": "126032",
+              "label": "4章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "126022"
+            },
+            {
+              "id": "126042",
+              "label": "4章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "126032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "126013",
+              "label": "4章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "125023"
+            },
+            {
+              "id": "126023",
+              "label": "4章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "126013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "3",
+      "id": "27",
+      "title": "为这下定决心的公主献上荣光！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "127011",
+              "label": "5章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "127021",
+              "label": "5章-2",
+              "stamina": 5,
+              "unlock": "127011"
+            },
+            {
+              "id": "127031",
+              "label": "5章-3",
+              "stamina": 5,
+              "unlock": "127021"
+            },
+            {
+              "id": "127041",
+              "label": "5章-4",
+              "stamina": 5,
+              "unlock": "127031"
+            },
+            {
+              "id": "127051",
+              "label": "5章-5",
+              "stamina": 5,
+              "unlock": "127041"
+            },
+            {
+              "id": "127061",
+              "label": "5章-6",
+              "stamina": 5,
+              "unlock": "127051"
+            },
+            {
+              "id": "127071",
+              "label": "5章-7",
+              "stamina": 5,
+              "unlock": "127061"
+            },
+            {
+              "id": "127081",
+              "label": "5章-8",
+              "stamina": 5,
+              "unlock": "127071"
+            },
+            {
+              "id": "127091",
+              "label": "5章-9",
+              "stamina": 5,
+              "unlock": "127081"
+            },
+            {
+              "id": "127101",
+              "label": "5章-10",
+              "stamina": 5,
+              "unlock": "127091"
+            },
+            {
+              "id": "127111",
+              "label": "5章-11",
+              "stamina": 5,
+              "unlock": "127101"
+            },
+            {
+              "id": "127121",
+              "label": "5章-12",
+              "stamina": 5,
+              "unlock": "127111"
+            },
+            {
+              "id": "127131",
+              "label": "5章-13",
+              "stamina": 5,
+              "unlock": "127121"
+            },
+            {
+              "id": "127141",
+              "label": "5章-14",
+              "stamina": 5,
+              "unlock": "127131"
+            },
+            {
+              "id": "127151",
+              "label": "5章-15",
+              "stamina": 5,
+              "unlock": "127141"
+            },
+            {
+              "id": "127161",
+              "label": "5章-16",
+              "stamina": 5,
+              "unlock": "127151"
+            },
+            {
+              "id": "127171",
+              "label": "5章-17",
+              "stamina": 5,
+              "unlock": "127161"
+            },
+            {
+              "id": "127181",
+              "label": "5章-18",
+              "stamina": 5,
+              "unlock": "127171"
+            },
+            {
+              "id": "127191",
+              "label": "5章-19",
+              "stamina": 5,
+              "unlock": "127181"
+            },
+            {
+              "id": "127201",
+              "label": "5章-20",
+              "stamina": 5,
+              "unlock": "127191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "127012",
+              "label": "5章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "126042"
+            },
+            {
+              "id": "127022",
+              "label": "5章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "127012"
+            },
+            {
+              "id": "127032",
+              "label": "5章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "127022"
+            },
+            {
+              "id": "127042",
+              "label": "5章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "127032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "127013",
+              "label": "5章-1(EXPERT)",
+              "stamina": 10,
+              "unlock": "126023"
+            },
+            {
+              "id": "127023",
+              "label": "5章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "127013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "3",
+      "id": "28",
+      "title": "与这辣妹魅魔立下约定！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "128011",
+              "label": "6章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "128021",
+              "label": "6章-2",
+              "stamina": 5,
+              "unlock": "128011"
+            },
+            {
+              "id": "128031",
+              "label": "6章-3",
+              "stamina": 5,
+              "unlock": "128021"
+            },
+            {
+              "id": "128041",
+              "label": "6章-4",
+              "stamina": 5,
+              "unlock": "128031"
+            },
+            {
+              "id": "128051",
+              "label": "6章-5",
+              "stamina": 5,
+              "unlock": "128041"
+            },
+            {
+              "id": "128061",
+              "label": "6章-6",
+              "stamina": 5,
+              "unlock": "128051"
+            },
+            {
+              "id": "128071",
+              "label": "6章-7",
+              "stamina": 5,
+              "unlock": "128061"
+            },
+            {
+              "id": "128081",
+              "label": "6章-8",
+              "stamina": 5,
+              "unlock": "128071"
+            },
+            {
+              "id": "128091",
+              "label": "6章-9",
+              "stamina": 5,
+              "unlock": "128081"
+            },
+            {
+              "id": "128101",
+              "label": "6章-10",
+              "stamina": 5,
+              "unlock": "128091"
+            },
+            {
+              "id": "128111",
+              "label": "6章-11",
+              "stamina": 5,
+              "unlock": "128101"
+            },
+            {
+              "id": "128121",
+              "label": "6章-12",
+              "stamina": 5,
+              "unlock": "128111"
+            },
+            {
+              "id": "128131",
+              "label": "6章-13",
+              "stamina": 5,
+              "unlock": "128121"
+            },
+            {
+              "id": "128141",
+              "label": "6章-14",
+              "stamina": 5,
+              "unlock": "128131"
+            },
+            {
+              "id": "128151",
+              "label": "6章-15",
+              "stamina": 5,
+              "unlock": "128141"
+            },
+            {
+              "id": "128161",
+              "label": "6章-16",
+              "stamina": 5,
+              "unlock": "128151"
+            },
+            {
+              "id": "128171",
+              "label": "6章-17",
+              "stamina": 5,
+              "unlock": "128161"
+            },
+            {
+              "id": "128181",
+              "label": "6章-18",
+              "stamina": 5,
+              "unlock": "128171"
+            },
+            {
+              "id": "128191",
+              "label": "6章-19",
+              "stamina": 5,
+              "unlock": "128181"
+            },
+            {
+              "id": "128201",
+              "label": "6章-20",
+              "stamina": 5,
+              "unlock": "128191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "128012",
+              "label": "6章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "127042"
+            },
+            {
+              "id": "128022",
+              "label": "6章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "128012"
+            },
+            {
+              "id": "128032",
+              "label": "6章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "128022"
+            },
+            {
+              "id": "128042",
+              "label": "6章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "128032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "128013",
+              "label": "6章-1(EXPERT)",
+              "stamina": 10,
+              "unlock": "127023"
+            },
+            {
+              "id": "128023",
+              "label": "6章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "128013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "3",
+      "id": "29",
+      "title": "向这假面恶魔发起攻势！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "129011",
+              "label": "7章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "129021",
+              "label": "7章-2",
+              "stamina": 5,
+              "unlock": "129011"
+            },
+            {
+              "id": "129031",
+              "label": "7章-3",
+              "stamina": 5,
+              "unlock": "129021"
+            },
+            {
+              "id": "129041",
+              "label": "7章-4",
+              "stamina": 5,
+              "unlock": "129031"
+            },
+            {
+              "id": "129051",
+              "label": "7章-5",
+              "stamina": 5,
+              "unlock": "129041"
+            },
+            {
+              "id": "129061",
+              "label": "7章-6",
+              "stamina": 5,
+              "unlock": "129051"
+            },
+            {
+              "id": "129071",
+              "label": "7章-7",
+              "stamina": 5,
+              "unlock": "129061"
+            },
+            {
+              "id": "129081",
+              "label": "7章-8",
+              "stamina": 5,
+              "unlock": "129071"
+            },
+            {
+              "id": "129091",
+              "label": "7章-9",
+              "stamina": 5,
+              "unlock": "129081"
+            },
+            {
+              "id": "129101",
+              "label": "7章-10",
+              "stamina": 5,
+              "unlock": "129091"
+            },
+            {
+              "id": "129111",
+              "label": "7章-11",
+              "stamina": 5,
+              "unlock": "129101"
+            },
+            {
+              "id": "129121",
+              "label": "7章-12",
+              "stamina": 5,
+              "unlock": "129111"
+            },
+            {
+              "id": "129131",
+              "label": "7章-13",
+              "stamina": 5,
+              "unlock": "129121"
+            },
+            {
+              "id": "129141",
+              "label": "7章-14",
+              "stamina": 5,
+              "unlock": "129131"
+            },
+            {
+              "id": "129151",
+              "label": "7章-15",
+              "stamina": 5,
+              "unlock": "129141"
+            },
+            {
+              "id": "129161",
+              "label": "7章-16",
+              "stamina": 5,
+              "unlock": "129151"
+            },
+            {
+              "id": "129171",
+              "label": "7章-17",
+              "stamina": 5,
+              "unlock": "129161"
+            },
+            {
+              "id": "129181",
+              "label": "7章-18",
+              "stamina": 5,
+              "unlock": "129171"
+            },
+            {
+              "id": "129191",
+              "label": "7章-19",
+              "stamina": 5,
+              "unlock": "129181"
+            },
+            {
+              "id": "129201",
+              "label": "7章-20",
+              "stamina": 5,
+              "unlock": "129191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "129012",
+              "label": "7章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "128042"
+            },
+            {
+              "id": "129022",
+              "label": "7章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "129012"
+            },
+            {
+              "id": "129032",
+              "label": "7章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "129022"
+            },
+            {
+              "id": "129042",
+              "label": "7章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "129032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "129013",
+              "label": "7章-1(EXPERT)",
+              "stamina": 10,
+              "unlock": "128023"
+            },
+            {
+              "id": "129023",
+              "label": "7章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "129013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "3",
+      "id": "30",
+      "title": "在这起始之镇开一家新店！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "130011",
+              "label": "8章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "130021",
+              "label": "8章-2",
+              "stamina": 5,
+              "unlock": "130011"
+            },
+            {
+              "id": "130031",
+              "label": "8章-3",
+              "stamina": 5,
+              "unlock": "130021"
+            },
+            {
+              "id": "130041",
+              "label": "8章-4",
+              "stamina": 5,
+              "unlock": "130031"
+            },
+            {
+              "id": "130051",
+              "label": "8章-5",
+              "stamina": 5,
+              "unlock": "130041"
+            },
+            {
+              "id": "130061",
+              "label": "8章-6",
+              "stamina": 5,
+              "unlock": "130051"
+            },
+            {
+              "id": "130071",
+              "label": "8章-7",
+              "stamina": 5,
+              "unlock": "130061"
+            },
+            {
+              "id": "130081",
+              "label": "8章-8",
+              "stamina": 5,
+              "unlock": "130071"
+            },
+            {
+              "id": "130091",
+              "label": "8章-9",
+              "stamina": 5,
+              "unlock": "130081"
+            },
+            {
+              "id": "130101",
+              "label": "8章-10",
+              "stamina": 5,
+              "unlock": "130091"
+            },
+            {
+              "id": "130111",
+              "label": "8章-11",
+              "stamina": 5,
+              "unlock": "130101"
+            },
+            {
+              "id": "130121",
+              "label": "8章-12",
+              "stamina": 5,
+              "unlock": "130111"
+            },
+            {
+              "id": "130131",
+              "label": "8章-13",
+              "stamina": 5,
+              "unlock": "130121"
+            },
+            {
+              "id": "130141",
+              "label": "8章-14",
+              "stamina": 5,
+              "unlock": "130131"
+            },
+            {
+              "id": "130151",
+              "label": "8章-15",
+              "stamina": 5,
+              "unlock": "130141"
+            },
+            {
+              "id": "130161",
+              "label": "8章-16",
+              "stamina": 5,
+              "unlock": "130151"
+            },
+            {
+              "id": "130171",
+              "label": "8章-17",
+              "stamina": 5,
+              "unlock": "130161"
+            },
+            {
+              "id": "130181",
+              "label": "8章-18",
+              "stamina": 5,
+              "unlock": "130171"
+            },
+            {
+              "id": "130191",
+              "label": "8章-19",
+              "stamina": 5,
+              "unlock": "130181"
+            },
+            {
+              "id": "130201",
+              "label": "8章-20",
+              "stamina": 5,
+              "unlock": "130191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "130012",
+              "label": "8章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "129042"
+            },
+            {
+              "id": "130022",
+              "label": "8章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "130012"
+            },
+            {
+              "id": "130032",
+              "label": "8章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "130022"
+            },
+            {
+              "id": "130042",
+              "label": "8章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "130032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "130013",
+              "label": "8章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "129023"
+            },
+            {
+              "id": "130023",
+              "label": "8章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "130013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "3",
+      "id": "31",
+      "title": "为这伤心的魅魔献上线索！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "131011",
+              "label": "9章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "131021",
+              "label": "9章-2",
+              "stamina": 5,
+              "unlock": "131011"
+            },
+            {
+              "id": "131031",
+              "label": "9章-3",
+              "stamina": 5,
+              "unlock": "131021"
+            },
+            {
+              "id": "131041",
+              "label": "9章-4",
+              "stamina": 5,
+              "unlock": "131031"
+            },
+            {
+              "id": "131051",
+              "label": "9章-5",
+              "stamina": 5,
+              "unlock": "131041"
+            },
+            {
+              "id": "131061",
+              "label": "9章-6",
+              "stamina": 5,
+              "unlock": "131051"
+            },
+            {
+              "id": "131071",
+              "label": "9章-7",
+              "stamina": 5,
+              "unlock": "131061"
+            },
+            {
+              "id": "131081",
+              "label": "9章-8",
+              "stamina": 5,
+              "unlock": "131071"
+            },
+            {
+              "id": "131091",
+              "label": "9章-9",
+              "stamina": 5,
+              "unlock": "131081"
+            },
+            {
+              "id": "131101",
+              "label": "9章-10",
+              "stamina": 5,
+              "unlock": "131091"
+            },
+            {
+              "id": "131111",
+              "label": "9章-11",
+              "stamina": 5,
+              "unlock": "131101"
+            },
+            {
+              "id": "131121",
+              "label": "9章-12",
+              "stamina": 5,
+              "unlock": "131111"
+            },
+            {
+              "id": "131131",
+              "label": "9章-13",
+              "stamina": 5,
+              "unlock": "131121"
+            },
+            {
+              "id": "131141",
+              "label": "9章-14",
+              "stamina": 5,
+              "unlock": "131131"
+            },
+            {
+              "id": "131151",
+              "label": "9章-15",
+              "stamina": 5,
+              "unlock": "131141"
+            },
+            {
+              "id": "131161",
+              "label": "9章-16",
+              "stamina": 5,
+              "unlock": "131151"
+            },
+            {
+              "id": "131171",
+              "label": "9章-17",
+              "stamina": 5,
+              "unlock": "131161"
+            },
+            {
+              "id": "131181",
+              "label": "9章-18",
+              "stamina": 5,
+              "unlock": "131171"
+            },
+            {
+              "id": "131191",
+              "label": "9章-19",
+              "stamina": 5,
+              "unlock": "131181"
+            },
+            {
+              "id": "131201",
+              "label": "9章-20",
+              "stamina": 5,
+              "unlock": "131191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "131012",
+              "label": "9章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "130042"
+            },
+            {
+              "id": "131022",
+              "label": "9章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "131012"
+            },
+            {
+              "id": "131032",
+              "label": "9章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "131022"
+            },
+            {
+              "id": "131042",
+              "label": "9章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "131032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "131013",
+              "label": "9章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "130023"
+            },
+            {
+              "id": "131023",
+              "label": "9章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "131013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "3",
+      "id": "32",
+      "title": "与这魅魔女王一决胜负！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "132011",
+              "label": "10章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "132021",
+              "label": "10章-2",
+              "stamina": 5,
+              "unlock": "132011"
+            },
+            {
+              "id": "132031",
+              "label": "10章-3",
+              "stamina": 5,
+              "unlock": "132021"
+            },
+            {
+              "id": "132041",
+              "label": "10章-4",
+              "stamina": 5,
+              "unlock": "132031"
+            },
+            {
+              "id": "132051",
+              "label": "10章-5",
+              "stamina": 5,
+              "unlock": "132041"
+            },
+            {
+              "id": "132061",
+              "label": "10章-6",
+              "stamina": 5,
+              "unlock": "132051"
+            },
+            {
+              "id": "132071",
+              "label": "10章-7",
+              "stamina": 5,
+              "unlock": "132061"
+            },
+            {
+              "id": "132081",
+              "label": "10章-8",
+              "stamina": 5,
+              "unlock": "132071"
+            },
+            {
+              "id": "132091",
+              "label": "10章-9",
+              "stamina": 5,
+              "unlock": "132081"
+            },
+            {
+              "id": "132101",
+              "label": "10章-10",
+              "stamina": 5,
+              "unlock": "132091"
+            },
+            {
+              "id": "132111",
+              "label": "10章-11",
+              "stamina": 5,
+              "unlock": "132101"
+            },
+            {
+              "id": "132121",
+              "label": "10章-12",
+              "stamina": 5,
+              "unlock": "132111"
+            },
+            {
+              "id": "132131",
+              "label": "10章-13",
+              "stamina": 5,
+              "unlock": "132121"
+            },
+            {
+              "id": "132141",
+              "label": "10章-14",
+              "stamina": 5,
+              "unlock": "132131"
+            },
+            {
+              "id": "132151",
+              "label": "10章-15",
+              "stamina": 5,
+              "unlock": "132141"
+            },
+            {
+              "id": "132161",
+              "label": "10章-16",
+              "stamina": 5,
+              "unlock": "132151"
+            },
+            {
+              "id": "132171",
+              "label": "10章-17",
+              "stamina": 5,
+              "unlock": "132161"
+            },
+            {
+              "id": "132181",
+              "label": "10章-18",
+              "stamina": 5,
+              "unlock": "132171"
+            },
+            {
+              "id": "132191",
+              "label": "10章-19",
+              "stamina": 5,
+              "unlock": "132181"
+            },
+            {
+              "id": "132201",
+              "label": "10章-20",
+              "stamina": 5,
+              "unlock": "132191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "132012",
+              "label": "10章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "131042"
+            },
+            {
+              "id": "132022",
+              "label": "10章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "132012"
+            },
+            {
+              "id": "132032",
+              "label": "10章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "132022"
+            },
+            {
+              "id": "132042",
+              "label": "10章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "132032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "132013",
+              "label": "10章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "131023"
+            },
+            {
+              "id": "132023",
+              "label": "10章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "132013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "3",
+      "id": "33",
+      "title": "让这糟糕透顶的名声恢复！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "133011",
+              "label": "幕间-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "133021",
+              "label": "幕间-2",
+              "stamina": 5,
+              "unlock": "133011"
+            },
+            {
+              "id": "133031",
+              "label": "幕间-3",
+              "stamina": 5,
+              "unlock": "133021"
+            },
+            {
+              "id": "133041",
+              "label": "幕间-4",
+              "stamina": 5,
+              "unlock": "133031"
+            },
+            {
+              "id": "133051",
+              "label": "幕间-5",
+              "stamina": 5,
+              "unlock": "133041"
+            },
+            {
+              "id": "133061",
+              "label": "幕间-6",
+              "stamina": 5,
+              "unlock": "133051"
+            },
+            {
+              "id": "133071",
+              "label": "幕间-7",
+              "stamina": 5,
+              "unlock": "133061"
+            },
+            {
+              "id": "133081",
+              "label": "幕间-8",
+              "stamina": 5,
+              "unlock": "133071"
+            },
+            {
+              "id": "133091",
+              "label": "幕间-9",
+              "stamina": 5,
+              "unlock": "133081"
+            },
+            {
+              "id": "133101",
+              "label": "幕间-10",
+              "stamina": 5,
+              "unlock": "133091"
+            },
+            {
+              "id": "133111",
+              "label": "幕间-11",
+              "stamina": 5,
+              "unlock": "133101"
+            },
+            {
+              "id": "133121",
+              "label": "幕间-12",
+              "stamina": 5,
+              "unlock": "133111"
+            },
+            {
+              "id": "133131",
+              "label": "幕间-13",
+              "stamina": 5,
+              "unlock": "133121"
+            },
+            {
+              "id": "133141",
+              "label": "幕间-14",
+              "stamina": 5,
+              "unlock": "133131"
+            },
+            {
+              "id": "133151",
+              "label": "幕间-15",
+              "stamina": 5,
+              "unlock": "133141"
+            },
+            {
+              "id": "133161",
+              "label": "幕间-16",
+              "stamina": 5,
+              "unlock": "133151"
+            },
+            {
+              "id": "133171",
+              "label": "幕间-17",
+              "stamina": 5,
+              "unlock": "133161"
+            },
+            {
+              "id": "133181",
+              "label": "幕间-18",
+              "stamina": 5,
+              "unlock": "133171"
+            },
+            {
+              "id": "133191",
+              "label": "幕间-19",
+              "stamina": 5,
+              "unlock": "133181"
+            },
+            {
+              "id": "133201",
+              "label": "幕间-20",
+              "stamina": 5,
+              "unlock": "133191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "133012",
+              "label": "幕间-1 (HARD)",
+              "stamina": 10,
+              "unlock": "132042"
+            },
+            {
+              "id": "133022",
+              "label": "幕间-2 (HARD)",
+              "stamina": 10,
+              "unlock": "133012"
+            },
+            {
+              "id": "133032",
+              "label": "幕间-3 (HARD)",
+              "stamina": 10,
+              "unlock": "133022"
+            },
+            {
+              "id": "133042",
+              "label": "幕间-4 (HARD)",
+              "stamina": 10,
+              "unlock": "133032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "133013",
+              "label": "幕间-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "132023"
+            },
+            {
+              "id": "133023",
+              "label": "幕间-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "133013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "4",
+      "id": "34",
+      "title": "为这奇怪的种族献上常识！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "134011",
+              "label": "1章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "134021",
+              "label": "1章-2",
+              "stamina": 5,
+              "unlock": "134011"
+            },
+            {
+              "id": "134031",
+              "label": "1章-3",
+              "stamina": 5,
+              "unlock": "134021"
+            },
+            {
+              "id": "134041",
+              "label": "1章-4",
+              "stamina": 5,
+              "unlock": "134031"
+            },
+            {
+              "id": "134051",
+              "label": "1章-5",
+              "stamina": 5,
+              "unlock": "134041"
+            },
+            {
+              "id": "134061",
+              "label": "1章-6",
+              "stamina": 5,
+              "unlock": "134051"
+            },
+            {
+              "id": "134071",
+              "label": "1章-7",
+              "stamina": 5,
+              "unlock": "134061"
+            },
+            {
+              "id": "134081",
+              "label": "1章-8",
+              "stamina": 5,
+              "unlock": "134071"
+            },
+            {
+              "id": "134091",
+              "label": "1章-9",
+              "stamina": 5,
+              "unlock": "134081"
+            },
+            {
+              "id": "134101",
+              "label": "1章-10",
+              "stamina": 5,
+              "unlock": "134091"
+            },
+            {
+              "id": "134111",
+              "label": "1章-11",
+              "stamina": 5,
+              "unlock": "134101"
+            },
+            {
+              "id": "134121",
+              "label": "1章-12",
+              "stamina": 5,
+              "unlock": "134111"
+            },
+            {
+              "id": "134131",
+              "label": "1章-13",
+              "stamina": 5,
+              "unlock": "134121"
+            },
+            {
+              "id": "134141",
+              "label": "1章-14",
+              "stamina": 5,
+              "unlock": "134131"
+            },
+            {
+              "id": "134151",
+              "label": "1章-15",
+              "stamina": 5,
+              "unlock": "134141"
+            },
+            {
+              "id": "134161",
+              "label": "1章-16",
+              "stamina": 5,
+              "unlock": "134151"
+            },
+            {
+              "id": "134171",
+              "label": "1章-17",
+              "stamina": 5,
+              "unlock": "134161"
+            },
+            {
+              "id": "134181",
+              "label": "1章-18",
+              "stamina": 5,
+              "unlock": "134171"
+            },
+            {
+              "id": "134191",
+              "label": "1章-19",
+              "stamina": 5,
+              "unlock": "134181"
+            },
+            {
+              "id": "134201",
+              "label": "1章-20",
+              "stamina": 5,
+              "unlock": "134191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "134012",
+              "label": "1章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "133042"
+            },
+            {
+              "id": "134022",
+              "label": "1章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "134012"
+            },
+            {
+              "id": "134032",
+              "label": "1章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "134022"
+            },
+            {
+              "id": "134042",
+              "label": "1章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "134032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "134013",
+              "label": "1章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "133023"
+            },
+            {
+              "id": "134023",
+              "label": "1章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "134013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "4",
+      "id": "35",
+      "title": "修复这变了样的关系！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "135011",
+              "label": "2章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "135021",
+              "label": "2章-2",
+              "stamina": 5,
+              "unlock": "135011"
+            },
+            {
+              "id": "135031",
+              "label": "2章-3",
+              "stamina": 5,
+              "unlock": "135021"
+            },
+            {
+              "id": "135041",
+              "label": "2章-4",
+              "stamina": 5,
+              "unlock": "135031"
+            },
+            {
+              "id": "135051",
+              "label": "2章-5",
+              "stamina": 5,
+              "unlock": "135041"
+            },
+            {
+              "id": "135061",
+              "label": "2章-6",
+              "stamina": 5,
+              "unlock": "135051"
+            },
+            {
+              "id": "135071",
+              "label": "2章-7",
+              "stamina": 5,
+              "unlock": "135061"
+            },
+            {
+              "id": "135081",
+              "label": "2章-8",
+              "stamina": 5,
+              "unlock": "135071"
+            },
+            {
+              "id": "135091",
+              "label": "2章-9",
+              "stamina": 5,
+              "unlock": "135081"
+            },
+            {
+              "id": "135101",
+              "label": "2章-10",
+              "stamina": 5,
+              "unlock": "135091"
+            },
+            {
+              "id": "135111",
+              "label": "2章-11",
+              "stamina": 5,
+              "unlock": "135101"
+            },
+            {
+              "id": "135121",
+              "label": "2章-12",
+              "stamina": 5,
+              "unlock": "135111"
+            },
+            {
+              "id": "135131",
+              "label": "2章-13",
+              "stamina": 5,
+              "unlock": "135121"
+            },
+            {
+              "id": "135141",
+              "label": "2章-14",
+              "stamina": 5,
+              "unlock": "135131"
+            },
+            {
+              "id": "135151",
+              "label": "2章-15",
+              "stamina": 5,
+              "unlock": "135141"
+            },
+            {
+              "id": "135161",
+              "label": "2章-16",
+              "stamina": 5,
+              "unlock": "135151"
+            },
+            {
+              "id": "135171",
+              "label": "2章-17",
+              "stamina": 5,
+              "unlock": "135161"
+            },
+            {
+              "id": "135181",
+              "label": "2章-18",
+              "stamina": 5,
+              "unlock": "135171"
+            },
+            {
+              "id": "135191",
+              "label": "2章-19",
+              "stamina": 5,
+              "unlock": "135181"
+            },
+            {
+              "id": "135201",
+              "label": "2章-20",
+              "stamina": 5,
+              "unlock": "135191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "135012",
+              "label": "2章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "134042"
+            },
+            {
+              "id": "135022",
+              "label": "2章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "135012"
+            },
+            {
+              "id": "135032",
+              "label": "2章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "135022"
+            },
+            {
+              "id": "135042",
+              "label": "2章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "135032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "135013",
+              "label": "2章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "134023"
+            },
+            {
+              "id": "135023",
+              "label": "2章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "135013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "4",
+      "id": "36",
+      "title": "为这正常的种族找份工作！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "136011",
+              "label": "3章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "136021",
+              "label": "3章-2",
+              "stamina": 5,
+              "unlock": "136011"
+            },
+            {
+              "id": "136031",
+              "label": "3章-3",
+              "stamina": 5,
+              "unlock": "136021"
+            },
+            {
+              "id": "136041",
+              "label": "3章-4",
+              "stamina": 5,
+              "unlock": "136031"
+            },
+            {
+              "id": "136051",
+              "label": "3章-5",
+              "stamina": 5,
+              "unlock": "136041"
+            },
+            {
+              "id": "136061",
+              "label": "3章-6",
+              "stamina": 5,
+              "unlock": "136051"
+            },
+            {
+              "id": "136071",
+              "label": "3章-7",
+              "stamina": 5,
+              "unlock": "136061"
+            },
+            {
+              "id": "136081",
+              "label": "3章-8",
+              "stamina": 5,
+              "unlock": "136071"
+            },
+            {
+              "id": "136091",
+              "label": "3章-9",
+              "stamina": 5,
+              "unlock": "136081"
+            },
+            {
+              "id": "136101",
+              "label": "3章-10",
+              "stamina": 5,
+              "unlock": "136091"
+            },
+            {
+              "id": "136111",
+              "label": "3章-11",
+              "stamina": 5,
+              "unlock": "136101"
+            },
+            {
+              "id": "136121",
+              "label": "3章-12",
+              "stamina": 5,
+              "unlock": "136111"
+            },
+            {
+              "id": "136131",
+              "label": "3章-13",
+              "stamina": 5,
+              "unlock": "136121"
+            },
+            {
+              "id": "136141",
+              "label": "3章-14",
+              "stamina": 5,
+              "unlock": "136131"
+            },
+            {
+              "id": "136151",
+              "label": "3章-15",
+              "stamina": 5,
+              "unlock": "136141"
+            },
+            {
+              "id": "136161",
+              "label": "3章-16",
+              "stamina": 5,
+              "unlock": "136151"
+            },
+            {
+              "id": "136171",
+              "label": "3章-17",
+              "stamina": 5,
+              "unlock": "136161"
+            },
+            {
+              "id": "136181",
+              "label": "3章-18",
+              "stamina": 5,
+              "unlock": "136171"
+            },
+            {
+              "id": "136191",
+              "label": "3章-19",
+              "stamina": 5,
+              "unlock": "136181"
+            },
+            {
+              "id": "136201",
+              "label": "3章-20",
+              "stamina": 5,
+              "unlock": "136191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "136012",
+              "label": "3章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "135042"
+            },
+            {
+              "id": "136022",
+              "label": "3章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "136012"
+            },
+            {
+              "id": "136032",
+              "label": "3章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "136022"
+            },
+            {
+              "id": "136042",
+              "label": "3章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "136032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "136013",
+              "label": "3章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "135023"
+            },
+            {
+              "id": "136023",
+              "label": "3章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "136013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "4",
+      "id": "37",
+      "title": "与这危险的地藏一起陷入混沌！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "137011",
+              "label": "4章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "137021",
+              "label": "4章-2",
+              "stamina": 5,
+              "unlock": "137011"
+            },
+            {
+              "id": "137031",
+              "label": "4章-3",
+              "stamina": 5,
+              "unlock": "137021"
+            },
+            {
+              "id": "137041",
+              "label": "4章-4",
+              "stamina": 5,
+              "unlock": "137031"
+            },
+            {
+              "id": "137051",
+              "label": "4章-5",
+              "stamina": 5,
+              "unlock": "137041"
+            },
+            {
+              "id": "137061",
+              "label": "4章-6",
+              "stamina": 5,
+              "unlock": "137051"
+            },
+            {
+              "id": "137071",
+              "label": "4章-7",
+              "stamina": 5,
+              "unlock": "137061"
+            },
+            {
+              "id": "137081",
+              "label": "4章-8",
+              "stamina": 5,
+              "unlock": "137071"
+            },
+            {
+              "id": "137091",
+              "label": "4章-9",
+              "stamina": 5,
+              "unlock": "137081"
+            },
+            {
+              "id": "137101",
+              "label": "4章-10",
+              "stamina": 5,
+              "unlock": "137091"
+            },
+            {
+              "id": "137111",
+              "label": "4章-11",
+              "stamina": 5,
+              "unlock": "137101"
+            },
+            {
+              "id": "137121",
+              "label": "4章-12",
+              "stamina": 5,
+              "unlock": "137111"
+            },
+            {
+              "id": "137131",
+              "label": "4章-13",
+              "stamina": 5,
+              "unlock": "137121"
+            },
+            {
+              "id": "137141",
+              "label": "4章-14",
+              "stamina": 5,
+              "unlock": "137131"
+            },
+            {
+              "id": "137151",
+              "label": "4章-15",
+              "stamina": 5,
+              "unlock": "137141"
+            },
+            {
+              "id": "137161",
+              "label": "4章-16",
+              "stamina": 5,
+              "unlock": "137151"
+            },
+            {
+              "id": "137171",
+              "label": "4章-17",
+              "stamina": 5,
+              "unlock": "137161"
+            },
+            {
+              "id": "137181",
+              "label": "4章-18",
+              "stamina": 5,
+              "unlock": "137171"
+            },
+            {
+              "id": "137191",
+              "label": "4章-19",
+              "stamina": 5,
+              "unlock": "137181"
+            },
+            {
+              "id": "137201",
+              "label": "4章-20",
+              "stamina": 5,
+              "unlock": "137191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "137012",
+              "label": "4章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "136042"
+            },
+            {
+              "id": "137022",
+              "label": "4章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "137012"
+            },
+            {
+              "id": "137032",
+              "label": "4章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "137022"
+            },
+            {
+              "id": "137042",
+              "label": "4章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "137032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "137013",
+              "label": "4章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "136023"
+            },
+            {
+              "id": "137023",
+              "label": "4章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "137013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "4",
+      "id": "38",
+      "title": "为这红魔族的骄傲献上喝彩！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "138011",
+              "label": "5章-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "138021",
+              "label": "5章-2",
+              "stamina": 5,
+              "unlock": "138011"
+            },
+            {
+              "id": "138031",
+              "label": "5章-3",
+              "stamina": 5,
+              "unlock": "138021"
+            },
+            {
+              "id": "138041",
+              "label": "5章-4",
+              "stamina": 5,
+              "unlock": "138031"
+            },
+            {
+              "id": "138051",
+              "label": "5章-5",
+              "stamina": 5,
+              "unlock": "138041"
+            },
+            {
+              "id": "138061",
+              "label": "5章-6",
+              "stamina": 5,
+              "unlock": "138051"
+            },
+            {
+              "id": "138071",
+              "label": "5章-7",
+              "stamina": 5,
+              "unlock": "138061"
+            },
+            {
+              "id": "138081",
+              "label": "5章-8",
+              "stamina": 5,
+              "unlock": "138071"
+            },
+            {
+              "id": "138091",
+              "label": "5章-9",
+              "stamina": 5,
+              "unlock": "138081"
+            },
+            {
+              "id": "138101",
+              "label": "5章-10",
+              "stamina": 5,
+              "unlock": "138091"
+            },
+            {
+              "id": "138111",
+              "label": "5章-11",
+              "stamina": 5,
+              "unlock": "138101"
+            },
+            {
+              "id": "138121",
+              "label": "5章-12",
+              "stamina": 5,
+              "unlock": "138111"
+            },
+            {
+              "id": "138131",
+              "label": "5章-13",
+              "stamina": 5,
+              "unlock": "138121"
+            },
+            {
+              "id": "138141",
+              "label": "5章-14",
+              "stamina": 5,
+              "unlock": "138131"
+            },
+            {
+              "id": "138151",
+              "label": "5章-15",
+              "stamina": 5,
+              "unlock": "138141"
+            },
+            {
+              "id": "138161",
+              "label": "5章-16",
+              "stamina": 5,
+              "unlock": "138151"
+            },
+            {
+              "id": "138171",
+              "label": "5章-17",
+              "stamina": 5,
+              "unlock": "138161"
+            },
+            {
+              "id": "138181",
+              "label": "5章-18",
+              "stamina": 5,
+              "unlock": "138171"
+            },
+            {
+              "id": "138191",
+              "label": "5章-19",
+              "stamina": 5,
+              "unlock": "138181"
+            },
+            {
+              "id": "138201",
+              "label": "5章-20",
+              "stamina": 5,
+              "unlock": "138191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "138012",
+              "label": "5章-1 (HARD)",
+              "stamina": 10,
+              "unlock": "137042"
+            },
+            {
+              "id": "138022",
+              "label": "5章-2 (HARD)",
+              "stamina": 10,
+              "unlock": "138012"
+            },
+            {
+              "id": "138032",
+              "label": "5章-3 (HARD)",
+              "stamina": 10,
+              "unlock": "138022"
+            },
+            {
+              "id": "138042",
+              "label": "5章-4 (HARD)",
+              "stamina": 10,
+              "unlock": "138032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "138013",
+              "label": "5章-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "137023"
+            },
+            {
+              "id": "138023",
+              "label": "5章-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "138013"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "4",
+      "id": "39",
+      "title": "与这红魔少女们共度幸福时光！",
+      "modes": [
+        {
+          "id": "1",
+          "stages": [
+            {
+              "id": "139011",
+              "label": "幕间-1",
+              "stamina": 5,
+              "unlock": "0"
+            },
+            {
+              "id": "139021",
+              "label": "幕间-2",
+              "stamina": 5,
+              "unlock": "139011"
+            },
+            {
+              "id": "139031",
+              "label": "幕间-3",
+              "stamina": 5,
+              "unlock": "139021"
+            },
+            {
+              "id": "139041",
+              "label": "幕间-4",
+              "stamina": 5,
+              "unlock": "139031"
+            },
+            {
+              "id": "139051",
+              "label": "幕间-5",
+              "stamina": 5,
+              "unlock": "139041"
+            },
+            {
+              "id": "139061",
+              "label": "幕间-6",
+              "stamina": 5,
+              "unlock": "139051"
+            },
+            {
+              "id": "139071",
+              "label": "幕间-7",
+              "stamina": 5,
+              "unlock": "139061"
+            },
+            {
+              "id": "139081",
+              "label": "幕间-8",
+              "stamina": 5,
+              "unlock": "139071"
+            },
+            {
+              "id": "139091",
+              "label": "幕间-9",
+              "stamina": 5,
+              "unlock": "139081"
+            },
+            {
+              "id": "139101",
+              "label": "幕间-10",
+              "stamina": 5,
+              "unlock": "139091"
+            },
+            {
+              "id": "139111",
+              "label": "幕间-11",
+              "stamina": 5,
+              "unlock": "139101"
+            },
+            {
+              "id": "139121",
+              "label": "幕间-12",
+              "stamina": 5,
+              "unlock": "139111"
+            },
+            {
+              "id": "139131",
+              "label": "幕间-13",
+              "stamina": 5,
+              "unlock": "139121"
+            },
+            {
+              "id": "139141",
+              "label": "幕间-14",
+              "stamina": 5,
+              "unlock": "139131"
+            },
+            {
+              "id": "139151",
+              "label": "幕间-15",
+              "stamina": 5,
+              "unlock": "139141"
+            },
+            {
+              "id": "139161",
+              "label": "幕间-16",
+              "stamina": 5,
+              "unlock": "139151"
+            },
+            {
+              "id": "139171",
+              "label": "幕间-17",
+              "stamina": 5,
+              "unlock": "139161"
+            },
+            {
+              "id": "139181",
+              "label": "幕间-18",
+              "stamina": 5,
+              "unlock": "139171"
+            },
+            {
+              "id": "139191",
+              "label": "幕间-19",
+              "stamina": 5,
+              "unlock": "139181"
+            },
+            {
+              "id": "139201",
+              "label": "幕间-20",
+              "stamina": 5,
+              "unlock": "139191"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stages": [
+            {
+              "id": "139012",
+              "label": "幕间-1 (HARD)",
+              "stamina": 10,
+              "unlock": "138042"
+            },
+            {
+              "id": "139022",
+              "label": "幕间-2 (HARD)",
+              "stamina": 10,
+              "unlock": "139012"
+            },
+            {
+              "id": "139032",
+              "label": "幕间-3 (HARD)",
+              "stamina": 10,
+              "unlock": "139022"
+            },
+            {
+              "id": "139042",
+              "label": "幕间-4 (HARD)",
+              "stamina": 10,
+              "unlock": "139032"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stages": [
+            {
+              "id": "139013",
+              "label": "幕间-1 (EXPERT)",
+              "stamina": 10,
+              "unlock": "138023"
+            },
+            {
+              "id": "139023",
+              "label": "幕间-2 (EXPERT)",
+              "stamina": 10,
+              "unlock": "139013"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

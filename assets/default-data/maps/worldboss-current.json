@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "routeId": "worldboss-current",
+  "routeName": "世界Boss · 当前白鲸",
+  "mode": "route",
+  "configHash": "d9f505b25c1aef19805563cd589067b7e83b7ae16bb07c4112901a79b6ea0d4a",
+  "scannedAt": "2026-10-13T19:53:13.763Z",
+  "sourcePage": "https://sqweb.fun/#/worldboss",
+  "routeSteps": [
+    {
+      "labels": [
+        "首页"
+      ],
+      "pathIncludes": "MyPageFooter",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "世界BOSS"
+      ],
+      "pathIncludes": "MyPageScreen/MainArea/RightSide/ButtonAreaVert/MissionButton",
+      "optional": false,
+      "boundary": false
+    }
+  ],
+  "navigation": [
+    {
+      "step": 1,
+      "attempt": 1,
+      "label": "首页",
+      "path": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton",
+      "skipped": false
+    },
+    {
+      "step": 2,
+      "attempt": 1,
+      "label": "世界BOSS",
+      "path": "MyPageScreen/MainArea/RightSide/ButtonAreaVert/MissionButton",
+      "skipped": false
+    }
+  ],
+  "levels": [
+    {
+      "id": "whale-6",
+      "label": "白鲸",
+      "path": "Canvas/SafeArea/MainScreenArea/WorldBossScreen/ScoreChallengeRankingDialog/WindowBG/MainArea/Scroll View/Viewport/Content/ScorechallengeRankingCell[0]/DescriptionArea/DetailButton",
+      "kind": "worldboss",
+      "stamina": 0,
+      "manualBattle": true,
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "texts": [
+        "白鲸"
+      ],
+      "public": {
+        "enemy": "22400029",
+        "art": "whale",
+        "start": 1791734400000,
+        "end": 1794326400000,
+        "dailyTries": 3
+      }
+    }
+  ],
+  "extras": []
+}

@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "routeId": "main-part3-chapter28",
+  "routeName": "主线第3部 · 第28章 · NORMAL",
+  "mode": "route",
+  "configHash": "89a9851c728e103b4c9b82d150aa15446226f3bebf85bdab5eef85e42e4b63e1",
+  "scannedAt": "2026-10-13T17:02:41.204Z",
+  "sourcePage": "https://sqweb.fun/#/quest",
+  "routeSteps": [
+    {
+      "labels": [
+        "首页"
+      ],
+      "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "冒险"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "主线任务"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "下一页"
+      ],
+      "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "第3部",
+        "3部"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "NORMAL"
+      ],
+      "pathIncludes": "",
+      "optional": true,
+      "boundary": false
+    },
+    {
+      "labelPrefix": "第28章",
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": true
+    }
+  ],
+  "navigation": [
+    {
+      "step": 1,
+      "attempt": 1,
+      "label": "首页",
+      "path": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton",
+      "skipped": false
+    },
+    {
+      "step": 2,
+      "attempt": 1,
+      "label": "冒险",
+      "path": "Canvas/SafeArea/MyPageFooter/Footer/Tab/QuestButton",
+      "skipped": false
+    },
+    {
+      "step": 3,
+      "attempt": 1,
+      "label": "主线任务",
+      "path": "QuestScreen/MainArea/RightSide/QuestSelector/ButtonArea/MainButton",
+      "skipped": false
+    },
+    {
+      "step": 4,
+      "attempt": 1,
+      "label": "下一页",
+      "path": "QuestScreen/MainArea/RightSide/QuestPartSelector/AnimationTarget/RightArrowButton ",
+      "skipped": false
+    },
+    {
+      "step": 5,
+      "attempt": 1,
+      "label": "第3部",
+      "path": "QuestScreen/MainArea/RightSide/QuestPartSelector/AnimationTarget/PageSlideUI/Scroll View/Viewport/Content/QuestBoardPanel/LargeCellArea/QuestBoardLargeCell[0]",
+      "skipped": false
+    },
+    {
+      "step": 6,
+      "attempt": 1,
+      "label": "NORMAL",
+      "path": "QuestScreen/MainArea/RightSide/QuestAreaSelector/QuestAreaRightHeader/Tab/TabController/TabButtonNormal",
+      "skipped": false
+    },
+    {
+      "step": 7,
+      "attempt": 1,
+      "label": "第28章 与这辣妹魅魔立下约定！",
+      "path": "QuestScreen/MainArea/RightSide/QuestAreaSelector/AnimationTarget/PageSlideUI/Scroll View/Viewport/Content/QuestBoardPanel/SmallCellArea/QuestBoardSmallCell[5]",
+      "skipped": false
+    }
+  ],
+  "levels": [
+    {
+      "label": "6章-1",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[0]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "35955",
+      "texts": [
+        "6章-1",
+        "推荐战力",
+        "35955"
+      ],
+      "id": "128011",
+      "stamina": 5
+    },
+    {
+      "label": "6章-2",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[1]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "36096",
+      "texts": [
+        "6章-2",
+        "推荐战力",
+        "36096"
+      ],
+      "id": "128021",
+      "stamina": 5
+    },
+    {
+      "label": "6章-3",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[2]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "36237",
+      "texts": [
+        "6章-3",
+        "推荐战力",
+        "36237"
+      ],
+      "id": "128031",
+      "stamina": 5
+    },
+    {
+      "label": "6章-4",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[3]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "36519",
+      "texts": [
+        "6章-4",
+        "推荐战力",
+        "36519"
+      ],
+      "id": "128041",
+      "stamina": 5
+    },
+    {
+      "label": "6章-5",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[4]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "36660",
+      "texts": [
+        "6章-5",
+        "推荐战力",
+        "36660"
+      ],
+      "id": "128051",
+      "stamina": 5
+    },
+    {
+      "label": "6章-6",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[5]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "36660",
+      "texts": [
+        "6章-6",
+        "推荐战力",
+        "36660"
+      ],
+      "id": "128061",
+      "stamina": 5
+    },
+    {
+      "label": "6章-7",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[6]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "36660",
+      "texts": [
+        "6章-7",
+        "推荐战力",
+        "36660"
+      ],
+      "id": "128071",
+      "stamina": 5
+    },
+    {
+      "label": "6章-8",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[7]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "36942",
+      "texts": [
+        "6章-8",
+        "推荐战力",
+        "36942"
+      ],
+      "id": "128081",
+      "stamina": 5
+    },
+    {
+      "label": "6章-9",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[8]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "37083",
+      "texts": [
+        "6章-9",
+        "推荐战力",
+        "37083"
+      ],
+      "id": "128091",
+      "stamina": 5
+    },
+    {
+      "label": "6章-10",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[9]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "37365",
+      "texts": [
+        "6章-10",
+        "推荐战力",
+        "37365"
+      ],
+      "id": "128101",
+      "stamina": 5
+    },
+    {
+      "label": "6章-11",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[10]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "37647",
+      "texts": [
+        "6章-11",
+        "推荐战力",
+        "37647"
+      ],
+      "id": "128111",
+      "stamina": 5
+    },
+    {
+      "label": "6章-12",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[11]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "37788",
+      "texts": [
+        "6章-12",
+        "推荐战力",
+        "37788"
+      ],
+      "id": "128121",
+      "stamina": 5
+    },
+    {
+      "label": "6章-13",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[12]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "38070",
+      "texts": [
+        "6章-13",
+        "推荐战力",
+        "38070"
+      ],
+      "id": "128131",
+      "stamina": 5
+    },
+    {
+      "label": "6章-14",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[13]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "38070",
+      "texts": [
+        "6章-14",
+        "推荐战力",
+        "38070"
+      ],
+      "id": "128141",
+      "stamina": 5
+    },
+    {
+      "label": "6章-15",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[14]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "38352",
+      "texts": [
+        "6章-15",
+        "推荐战力",
+        "38352"
+      ],
+      "id": "128151",
+      "stamina": 5
+    },
+    {
+      "label": "6章-16",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[15]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "38493",
+      "texts": [
+        "6章-16",
+        "推荐战力",
+        "38493"
+      ],
+      "id": "128161",
+      "stamina": 5
+    },
+    {
+      "label": "6章-17",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[16]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "38775",
+      "texts": [
+        "6章-17",
+        "推荐战力",
+        "38775"
+      ],
+      "id": "128171",
+      "stamina": 5
+    },
+    {
+      "label": "6章-18",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[17]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "39198",
+      "texts": [
+        "6章-18",
+        "推荐战力",
+        "39198"
+      ],
+      "id": "128181",
+      "stamina": 5
+    },
+    {
+      "label": "6章-19",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[18]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "39198",
+      "texts": [
+        "6章-19",
+        "推荐战力",
+        "39198"
+      ],
+      "id": "128191",
+      "stamina": 5
+    },
+    {
+      "label": "6章-20",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[19]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "39480",
+      "texts": [
+        "6章-20",
+        "推荐战力",
+        "39480"
+      ],
+      "id": "128201",
+      "stamina": 5
+    }
+  ],
+  "extras": []
+}

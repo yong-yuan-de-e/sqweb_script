@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "routeId": "rescue-main-state",
+  "routeName": "归一 · 回到主线任务标签层或分部列表（探针，非战斗关卡）",
+  "mode": "route",
+  "configHash": "513fe392f58ebb52ef61b20375bcd523f17295ba981a6a5c47c104fddcf40d6e",
+  "scannedAt": "2026-10-13T17:14:11.800Z",
+  "sourcePage": "https://sqweb.fun/#/quest",
+  "routeSteps": [
+    {
+      "labels": [
+        "首页"
+      ],
+      "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "冒险"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "返回"
+      ],
+      "pathIncludes": "",
+      "optional": true,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "返回"
+      ],
+      "pathIncludes": "",
+      "optional": true,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "返回"
+      ],
+      "pathIncludes": "",
+      "optional": true,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "主线任务"
+      ],
+      "pathIncludes": "",
+      "optional": true,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "上一页"
+      ],
+      "pathIncludes": "QuestPartSelector/AnimationTarget/LeftArrowButton",
+      "optional": true,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "上一页"
+      ],
+      "pathIncludes": "QuestPartSelector/AnimationTarget/LeftArrowButton",
+      "optional": true,
+      "boundary": false
+    }
+  ],
+  "navigation": [
+    {
+      "step": 1,
+      "attempt": 1,
+      "label": "首页",
+      "path": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton",
+      "skipped": false
+    },
+    {
+      "step": 2,
+      "attempt": 1,
+      "label": "冒险",
+      "path": "Canvas/SafeArea/MyPageFooter/Footer/Tab/QuestButton",
+      "skipped": false
+    },
+    {
+      "step": 3,
+      "selector": {
+        "labels": [
+          "返回"
+        ],
+        "pathIncludes": "",
+        "optional": true,
+        "boundary": false
+      },
+      "skipped": true
+    },
+    {
+      "step": 4,
+      "selector": {
+        "labels": [
+          "返回"
+        ],
+        "pathIncludes": "",
+        "optional": true,
+        "boundary": false
+      },
+      "skipped": true
+    },
+    {
+      "step": 5,
+      "selector": {
+        "labels": [
+          "返回"
+        ],
+        "pathIncludes": "",
+        "optional": true,
+        "boundary": false
+      },
+      "skipped": true
+    },
+    {
+      "step": 6,
+      "attempt": 1,
+      "label": "主线任务",
+      "path": "QuestScreen/MainArea/RightSide/QuestSelector/ButtonArea/MainButton",
+      "skipped": false
+    },
+    {
+      "step": 7,
+      "selector": {
+        "labels": [
+          "上一页"
+        ],
+        "pathIncludes": "QuestPartSelector/AnimationTarget/LeftArrowButton",
+        "optional": true,
+        "boundary": false
+      },
+      "skipped": true
+    },
+    {
+      "step": 8,
+      "selector": {
+        "labels": [
+          "上一页"
+        ],
+        "pathIncludes": "QuestPartSelector/AnimationTarget/LeftArrowButton",
+        "optional": true,
+        "boundary": false
+      },
+      "skipped": true
+    }
+  ],
+  "levels": [
+    {
+      "label": "返回",
+      "path": "QuestScreen/MainArea/RightSide/QuestPartSelector/RightHeader/BackButton",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": null,
+      "texts": [
+        "返回"
+      ]
+    },
+    {
+      "label": "主线剧情",
+      "path": "QuestScreen/MainArea/RightSide/QuestPartSelector/RightHeader/MainStoryButton",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": null,
+      "texts": []
+    },
+    {
+      "label": "第1部",
+      "path": "QuestScreen/MainArea/RightSide/QuestPartSelector/AnimationTarget/PageSlideUI/Scroll View/Viewport/Content/QuestBoardPanel/LargeCellArea/QuestBoardLargeCell[0]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": null,
+      "texts": []
+    },
+    {
+      "label": "第2部",
+      "path": "QuestScreen/MainArea/RightSide/QuestPartSelector/AnimationTarget/PageSlideUI/Scroll View/Viewport/Content/QuestBoardPanel/LargeCellArea/QuestBoardLargeCell[1]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": null,
+      "texts": []
+    },
+    {
+      "label": "下一页",
+      "path": "QuestScreen/MainArea/RightSide/QuestPartSelector/AnimationTarget/RightArrowButton ",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": null,
+      "texts": []
+    }
+  ],
+  "extras": []
+}

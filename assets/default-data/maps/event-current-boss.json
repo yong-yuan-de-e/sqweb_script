@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "routeId": "event-current-boss",
+  "routeName": "Re0当前活动 · 首领战",
+  "mode": "route",
+  "configHash": "88642550179c1aa12738c2174e018b66ef3ee2aa99e97f565c544b26ed9a51d3",
+  "scannedAt": "2026-10-13T19:48:49.272Z",
+  "sourcePage": "https://sqweb.fun/#/quest",
+  "routeSteps": [
+    {
+      "labels": [
+        "首页"
+      ],
+      "pathIncludes": "MyPageFooter",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "冒险"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "活动"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "首领战"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    }
+  ],
+  "navigation": [
+    {
+      "step": 1,
+      "attempt": 1,
+      "label": "首页",
+      "path": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton",
+      "skipped": false
+    },
+    {
+      "step": 2,
+      "attempt": 1,
+      "label": "冒险",
+      "path": "Canvas/SafeArea/MyPageFooter/Footer/Tab/QuestButton",
+      "skipped": false
+    },
+    {
+      "step": 3,
+      "attempt": 1,
+      "label": "活动",
+      "path": "QuestScreen/MainArea/RightSide/QuestSelector/ButtonArea/EventButton",
+      "skipped": false
+    },
+    {
+      "step": 4,
+      "attempt": 1,
+      "label": "首领战",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestTop/EventMarathonPanel/CenterArea/DefaultButtonArea/EventTopBossButton",
+      "skipped": false
+    }
+  ],
+  "levels": [
+    {
+      "label": "首领 NORMAL",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestBossStageSelector/Contents/Contets/ScrollArea/Scroll View/Viewport/Content/EventQuestBossStageItemCell[1]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "7590",
+      "texts": [
+        "NORMAL",
+        "推荐战力",
+        "7590"
+      ],
+      "id": "511661",
+      "stamina": 0
+    },
+    {
+      "label": "首领 HARD",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestBossStageSelector/Contents/Contets/ScrollArea/Scroll View/Viewport/Content/EventQuestBossStageItemCell[2]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "13750",
+      "texts": [
+        "HARD",
+        "推荐战力",
+        "13750"
+      ],
+      "id": "511662",
+      "stamina": 0
+    },
+    {
+      "label": "首领 EXPERT",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestBossStageSelector/Contents/Contets/ScrollArea/Scroll View/Viewport/Content/EventQuestBossStageItemCell[3]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "22000",
+      "texts": [
+        "EXPERT",
+        "推荐战力",
+        "22000"
+      ],
+      "id": "511663",
+      "stamina": 0
+    }
+  ],
+  "extras": []
+}

@@ -1,0 +1,68 @@
+{
+  "name": "sqweb-assistant",
+  "version": "1.0.0",
+  "description": "SQWeb 作战、召唤和行情 CSV 采集桌面助手",
+  "main": "src/main/index.js",
+  "author": "SQWeb Assistant contributors",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "attach": "node scripts/attach.js",
+    "collect": "node scripts/collect.js",
+    "check": "node scripts/check.js",
+    "pack": "electron-builder --dir",
+    "dist:win": "electron-builder --win portable --x64",
+    "dist:mac": "electron-builder --mac dmg",
+    "dist:linux": "electron-builder --linux AppImage",
+    "prepack": "node scripts/prepare-release-data.js",
+    "release:folder": "node scripts/assemble-release.js",
+    "release:source": "node scripts/create-public-source.js"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "dependencies": {
+    "puppeteer-core": "25.13.0"
+  },
+  "devDependencies": {
+    "electron": "44.7.0",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "fun.sqweb.assistant",
+    "productName": "SQWeb Assistant",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "electronDist": "node_modules/electron/dist",
+    "win": {
+      "target": "portable",
+      "signAndEditExecutable": false
+    },
+    "portable": {
+      "artifactName": "SQWeb-Assistant-${version}-${arch}.exe"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.utilities"
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Utility"
+    },
+    "extraResources": [
+      {
+        "from": ".release-data",
+        "to": "default-data",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
+  }
+}

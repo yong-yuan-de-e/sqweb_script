@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.cache/
+.runtime/
+data/
+*.log
+.release-data/
+.env
+.env.*
+*.zip
+/docs/
+/AGENTS.md

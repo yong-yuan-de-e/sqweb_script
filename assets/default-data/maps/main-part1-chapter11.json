@@ -1,0 +1,460 @@
+{
+  "version": 1,
+  "routeId": "main-part1-chapter11",
+  "routeName": "主线第1部 · 第11章 · NORMAL",
+  "mode": "route",
+  "configHash": "53321e50df93b56927f3f1381d0d0c0f63d4b683452ea7e7a3303ed4e822d80d",
+  "scannedAt": "2026-10-13T16:57:13.706Z",
+  "sourcePage": "https://sqweb.fun/#/quest",
+  "routeSteps": [
+    {
+      "labels": [
+        "首页"
+      ],
+      "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "冒险"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "主线任务"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "第1部",
+        "1部"
+      ],
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "NORMAL"
+      ],
+      "pathIncludes": "",
+      "optional": true,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "上一页"
+      ],
+      "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+      "optional": true,
+      "boundary": false
+    },
+    {
+      "labels": [
+        "下一页"
+      ],
+      "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton",
+      "optional": false,
+      "boundary": false
+    },
+    {
+      "labelPrefix": "第11章",
+      "pathIncludes": "",
+      "optional": false,
+      "boundary": true
+    }
+  ],
+  "navigation": [
+    {
+      "step": 1,
+      "attempt": 1,
+      "label": "首页",
+      "path": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton",
+      "skipped": false
+    },
+    {
+      "step": 2,
+      "attempt": 1,
+      "label": "冒险",
+      "path": "Canvas/SafeArea/MyPageFooter/Footer/Tab/QuestButton",
+      "skipped": false
+    },
+    {
+      "step": 3,
+      "attempt": 1,
+      "label": "主线任务",
+      "path": "QuestScreen/MainArea/RightSide/QuestSelector/ButtonArea/MainButton",
+      "skipped": false
+    },
+    {
+      "step": 4,
+      "attempt": 1,
+      "label": "第1部",
+      "path": "QuestScreen/MainArea/RightSide/QuestPartSelector/AnimationTarget/PageSlideUI/Scroll View/Viewport/Content/QuestBoardPanel/LargeCellArea/QuestBoardLargeCell[0]",
+      "skipped": false
+    },
+    {
+      "step": 5,
+      "attempt": 1,
+      "label": "NORMAL",
+      "path": "QuestScreen/MainArea/RightSide/QuestAreaSelector/QuestAreaRightHeader/Tab/TabController/TabButtonNormal",
+      "skipped": false
+    },
+    {
+      "step": 6,
+      "selector": {
+        "labels": [
+          "上一页"
+        ],
+        "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+        "optional": true,
+        "boundary": false
+      },
+      "skipped": true
+    },
+    {
+      "step": 7,
+      "attempt": 1,
+      "label": "下一页",
+      "path": "QuestScreen/MainArea/RightSide/QuestAreaSelector/AnimationTarget/RightArrowButton ",
+      "skipped": false
+    },
+    {
+      "step": 8,
+      "attempt": 1,
+      "label": "第11章 为这出色的功臣献上慰劳！",
+      "path": "QuestScreen/MainArea/RightSide/QuestAreaSelector/AnimationTarget/PageSlideUI/Scroll View/Viewport/Content/QuestBoardPanel/SmallCellArea/QuestBoardSmallCell[4]",
+      "skipped": false
+    }
+  ],
+  "levels": [
+    {
+      "label": "幕间-1",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[0]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "24320",
+      "texts": [
+        "幕间-1",
+        "推荐战力",
+        "24320"
+      ],
+      "id": "111011",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-2",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[1]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "24576",
+      "texts": [
+        "幕间-2",
+        "推荐战力",
+        "24576"
+      ],
+      "id": "111021",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-3",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[2]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "24704",
+      "texts": [
+        "幕间-3",
+        "推荐战力",
+        "24704"
+      ],
+      "id": "111031",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-4",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[3]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "24960",
+      "texts": [
+        "幕间-4",
+        "推荐战力",
+        "24960"
+      ],
+      "id": "111041",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-5",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[4]",
+      "kind": "stage",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "25088",
+      "texts": [
+        "幕间-5",
+        "推荐战力",
+        "25088"
+      ],
+      "id": "111051",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-6",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[5]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "25216",
+      "texts": [
+        "幕间-6",
+        "推荐战力",
+        "25216"
+      ],
+      "id": "111061",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-7",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[6]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "25344",
+      "texts": [
+        "幕间-7",
+        "推荐战力",
+        "25344"
+      ],
+      "id": "111071",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-8",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[7]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "25600",
+      "texts": [
+        "幕间-8",
+        "推荐战力",
+        "25600"
+      ],
+      "id": "111081",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-9",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[8]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "25600",
+      "texts": [
+        "幕间-9",
+        "推荐战力",
+        "25600"
+      ],
+      "id": "111091",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-10",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[9]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "25984",
+      "texts": [
+        "幕间-10",
+        "推荐战力",
+        "25984"
+      ],
+      "id": "111101",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-11",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[10]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "26240",
+      "texts": [
+        "幕间-11",
+        "推荐战力",
+        "26240"
+      ],
+      "id": "111111",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-12",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[11]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "26240",
+      "texts": [
+        "幕间-12",
+        "推荐战力",
+        "26240"
+      ],
+      "id": "111121",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-13",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[12]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "26496",
+      "texts": [
+        "幕间-13",
+        "推荐战力",
+        "26496"
+      ],
+      "id": "111131",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-14",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[13]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "26496",
+      "texts": [
+        "幕间-14",
+        "推荐战力",
+        "26496"
+      ],
+      "id": "111141",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-15",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[14]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "26752",
+      "texts": [
+        "幕间-15",
+        "推荐战力",
+        "26752"
+      ],
+      "id": "111151",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-16",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[15]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "26880",
+      "texts": [
+        "幕间-16",
+        "推荐战力",
+        "26880"
+      ],
+      "id": "111161",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-17",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[16]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "27136",
+      "texts": [
+        "幕间-17",
+        "推荐战力",
+        "27136"
+      ],
+      "id": "111171",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-18",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[17]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "27520",
+      "texts": [
+        "幕间-18",
+        "推荐战力",
+        "27520"
+      ],
+      "id": "111181",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-19",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[18]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "27904",
+      "texts": [
+        "幕间-19",
+        "推荐战力",
+        "27904"
+      ],
+      "id": "111191",
+      "stamina": 5
+    },
+    {
+      "label": "幕间-20",
+      "path": "QuestScreen/MainArea/RightSide/QuestStageSelector/PageSlide/Scroll View/Viewport/Content/QuestStageListCell/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[19]",
+      "kind": "stage",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "28160",
+      "texts": [
+        "幕间-20",
+        "推荐战力",
+        "28160"
+      ],
+      "id": "111201",
+      "stamina": 5
+    }
+  ],
+  "extras": []
+}

@@ -1,0 +1,1574 @@
+{
+  "version": 1,
+  "routes": [
+    {
+      "id": "main-part1-chapter1",
+      "name": "主线第1部 · 第1章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第1章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter1-hard",
+      "name": "主线第1部 · 第1章 · HARD",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "HARD"
+        },
+        {
+          "labelPrefix": "第1章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "event-current-adventure",
+      "name": "当前活动 · 活动冒险",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "活动",
+        "活动冒险",
+        {
+          "label": "NORMAL",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter2",
+      "name": "主线第1部 · 第2章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第2章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter7",
+      "name": "主线第1部 · 第7章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第7章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "rescue-main-state",
+      "name": "归一 · 回到主线任务标签层或分部列表（探针，非战斗关卡）",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        {
+          "label": "返回",
+          "optional": true
+        },
+        {
+          "label": "返回",
+          "optional": true
+        },
+        {
+          "label": "返回",
+          "optional": true
+        },
+        {
+          "label": "主线任务",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        }
+      ],
+      "levelSelector": {
+        "pathIncludes": "QuestScreen/MainArea/RightSide/"
+      }
+    },
+    {
+      "id": "main-part1-chapter3",
+      "name": "主线第1部 · 第3章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第3章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter4",
+      "name": "主线第1部 · 第4章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第4章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter5",
+      "name": "主线第1部 · 第5章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第5章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter6",
+      "name": "主线第1部 · 第6章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第6章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter8",
+      "name": "主线第1部 · 第8章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第8章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter9",
+      "name": "主线第1部 · 第9章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第9章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter10",
+      "name": "主线第1部 · 第10章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第10章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter11",
+      "name": "主线第1部 · 第11章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第11章",
+          "boundary": true
+        }
+      ],
+      "levelSelector": {
+        "pathIncludes": "QuestStageItemCell"
+      }
+    },
+    {
+      "id": "main-part1-chapter2-hard",
+      "name": "主线第1部 · 第2章 · HARD",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "HARD"
+        },
+        {
+          "labelPrefix": "第2章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter3-hard",
+      "name": "主线第1部 · 第3章 · HARD",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "HARD"
+        },
+        {
+          "labelPrefix": "第3章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter4-hard",
+      "name": "主线第1部 · 第4章 · HARD",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "HARD"
+        },
+        {
+          "labelPrefix": "第4章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter5-hard",
+      "name": "主线第1部 · 第5章 · HARD",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "HARD"
+        },
+        {
+          "labelPrefix": "第5章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter6-hard",
+      "name": "主线第1部 · 第6章 · HARD",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "HARD"
+        },
+        {
+          "labelPrefix": "第6章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter7-hard",
+      "name": "主线第1部 · 第7章 · HARD",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "HARD"
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第7章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter8-hard",
+      "name": "主线第1部 · 第8章 · HARD",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "HARD"
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第8章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter9-hard",
+      "name": "主线第1部 · 第9章 · HARD",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "HARD"
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第9章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter10-hard",
+      "name": "主线第1部 · 第10章 · HARD",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "HARD"
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第10章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter11-hard",
+      "name": "主线第1部 · 第11章 · HARD",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "HARD"
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第11章",
+          "boundary": true
+        }
+      ],
+      "levelSelector": {
+        "pathIncludes": "QuestStageItemCell"
+      }
+    },
+    {
+      "id": "main-part2-chapter12",
+      "name": "主线第2部 · 第12章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第2部",
+            "2部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第12章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part2-chapter13",
+      "name": "主线第2部 · 第13章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第2部",
+            "2部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第13章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part2-chapter14",
+      "name": "主线第2部 · 第14章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第2部",
+            "2部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第14章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part2-chapter15",
+      "name": "主线第2部 · 第15章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第2部",
+            "2部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第15章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part2-chapter16",
+      "name": "主线第2部 · 第16章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第2部",
+            "2部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第16章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part2-chapter17",
+      "name": "主线第2部 · 第17章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第2部",
+            "2部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第17章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part2-chapter18",
+      "name": "主线第2部 · 第18章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第2部",
+            "2部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第18章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part2-chapter19",
+      "name": "主线第2部 · 第19章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第2部",
+            "2部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第19章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part2-chapter20",
+      "name": "主线第2部 · 第20章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第2部",
+            "2部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第20章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part2-chapter21",
+      "name": "主线第2部 · 第21章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第2部",
+            "2部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第21章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part2-chapter22",
+      "name": "主线第2部 · 第22章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第2部",
+            "2部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第22章",
+          "boundary": true
+        }
+      ],
+      "levelSelector": {
+        "pathIncludes": "QuestStageItemCell"
+      }
+    },
+    {
+      "id": "main-part3-chapter23",
+      "name": "主线第3部 · 第23章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labels": [
+            "第3部",
+            "3部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第23章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part3-chapter24",
+      "name": "主线第3部 · 第24章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labels": [
+            "第3部",
+            "3部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第24章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part3-chapter25",
+      "name": "主线第3部 · 第25章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labels": [
+            "第3部",
+            "3部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第25章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part3-chapter26",
+      "name": "主线第3部 · 第26章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labels": [
+            "第3部",
+            "3部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第26章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part3-chapter27",
+      "name": "主线第3部 · 第27章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labels": [
+            "第3部",
+            "3部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第27章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part3-chapter28",
+      "name": "主线第3部 · 第28章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labels": [
+            "第3部",
+            "3部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第28章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part3-chapter29",
+      "name": "主线第3部 · 第29章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labels": [
+            "第3部",
+            "3部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第29章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part3-chapter30",
+      "name": "主线第3部 · 第30章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labels": [
+            "第3部",
+            "3部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第30章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part3-chapter31",
+      "name": "主线第3部 · 第31章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labels": [
+            "第3部",
+            "3部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第31章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part3-chapter32",
+      "name": "主线第3部 · 第32章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labels": [
+            "第3部",
+            "3部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第32章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part3-chapter33",
+      "name": "主线第3部 · 第33章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labels": [
+            "第3部",
+            "3部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "label": "上一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/LeftArrowButton",
+          "optional": true
+        },
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestAreaSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labelPrefix": "第33章",
+          "boundary": true
+        }
+      ],
+      "levelSelector": {
+        "pathIncludes": "QuestStageItemCell"
+      }
+    },
+    {
+      "id": "main-part4-chapter34",
+      "name": "主线第4部 · 第34章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labels": [
+            "第4部",
+            "4部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第34章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part4-chapter35",
+      "name": "主线第4部 · 第35章 · NORMAL",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "label": "下一页",
+          "pathIncludes": "QuestPartSelector/AnimationTarget/RightArrowButton"
+        },
+        {
+          "labels": [
+            "第4部",
+            "4部"
+          ]
+        },
+        {
+          "label": "NORMAL",
+          "optional": true
+        },
+        {
+          "labelPrefix": "第35章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part1-chapter1-expert",
+      "name": "主线第1部 · 第1章 · EXPERT",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第1部",
+            "1部"
+          ]
+        },
+        {
+          "label": "EXPERT"
+        },
+        {
+          "labelPrefix": "第1章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "main-part2-chapter12-hard",
+      "name": "主线第2部 · 第12章 · HARD",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "Canvas/SafeArea/MyPageFooter/Footer/Tab/MypageButton"
+        },
+        "冒险",
+        "主线任务",
+        {
+          "labels": [
+            "第2部",
+            "2部"
+          ]
+        },
+        {
+          "label": "HARD"
+        },
+        {
+          "labelPrefix": "第12章",
+          "boundary": true
+        }
+      ]
+    },
+    {
+      "id": "event-current-boss",
+      "name": "Re0当前活动 · 首领战",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "MyPageFooter"
+        },
+        "冒险",
+        "活动",
+        "首领战"
+      ],
+      "levelSelector": {
+        "pathIncludes": "EventQuestBossStageItemCell"
+      }
+    },
+    {
+      "id": "worldboss-current",
+      "name": "世界Boss · 当前白鲸",
+      "steps": [
+        {
+          "label": "首页",
+          "pathIncludes": "MyPageFooter"
+        },
+        {
+          "label": "世界BOSS",
+          "pathIncludes": "MyPageScreen/MainArea/RightSide/ButtonAreaVert/MissionButton"
+        }
+      ],
+      "levelSelector": {
+        "pathIncludes": "WorldBossScreen"
+      }
+    }
+  ]
+}

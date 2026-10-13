@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SQWeb 数据与作战助手</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">SQWEB<span>数据与作战助手 · 1.0.0</span></div>
+    <nav aria-label="功能页面">
+      <button data-view="market" aria-controls="page-market">行情采集</button>
+      <button data-view="battle" aria-controls="page-battle">作战</button>
+      <button data-view="gacha" aria-controls="page-gacha">自动召唤</button>
+      <button data-view="maps" aria-controls="page-maps">录入</button>
+      <button data-view="plans" aria-controls="page-plans">计划</button>
+      <button data-view="trading" aria-controls="page-trading">炒股看板</button>
+    </nav>
+    <div class="sidebar-footer"><p>多个主控共用任务<br>一个登录游戏窗口</p><button id="new-controller">另开主控</button><button id="exit-assistant" class="link">退出整个助手</button></div>
+  </aside>
+  <main>
+    <header class="page-header">
+      <div><p class="eyebrow">SQWEB ASSISTANT</p><h1 id="page-title">行情采集</h1></div>
+      <div class="actions"><button id="open-battle">打开游戏</button><button id="restart-game">手动重启游戏</button></div>
+    </header>
+    <p id="network-mode" class="hint">正在设置游戏直连…</p>
+    <div class="account-strip"><span id="game-account">等待账号与体力信息…</span><button id="refresh-account">刷新体力 / 余额</button></div>
+    <p id="action-status" class="hint"></p><div id="unknown-actions" class="market-actions"></div>
+    <section id="page-market" class="page" data-page="market">
+      <p class="intro">后台记录现货与期货，每十秒采样，变化才写入 CSV。</p>
+      <section class="route market">
+        <span>后台行情请求 · 现货 / 期货</span><strong>默认自动采集</strong>
+        <p>启动助手即等待有效会话；网络恢复后继续。各个主控显示同一采集任务。</p>
+        <div class="market-actions"><button id="collect-market" class="primary">恢复采集</button><button id="stop-market" disabled>停止采集</button></div>
+        <div class="market-actions"><button id="choose-directory">选择保存目录</button><button id="data">打开 CSV 目录</button></div>
+        <p id="directory" class="directory"></p><p id="stats" class="stats"></p>
+        <div class="status" aria-live="polite"><span id="market-phase">待执行</span><p id="market-message">正在初始化…</p></div>
+      </section>
+      <p class="hint">手动停止影响所有主控；下次启动默认开启。钱包、订单与历史图仅在炒股看板展示，CSV字段保持原样。</p>
+      <p class="hint">模型模拟 / 数据分析：预留模块，后续实现。</p>
+    </section>
+    <section id="page-battle" class="page" data-page="battle" hidden>
+      <section class="route"><span>已录入地图 · 主线作战 / 扫荡</span><strong>选择地图与关卡</strong>
+        <div class="combat-selectors"><label>类别<select id="battle-kind"><option value="main">主线</option><option value="activity">活动</option><option value="event-boss">活动首领战</option><option value="worldboss">世界Boss</option></select></label><div id="main-selectors"><label>部<select id="battle-part"></select></label><label>难度<select id="battle-mode"></select></label><label>章<select id="battle-chapter"></select></label></div><div id="activity-selectors" hidden><label>关卡入口<select id="battle-entry"></select></label></div></div>
+        <select id="battle-route" hidden aria-label="当前选关配置"></select><p id="battle-catalog-note" class="hint"></p>
+        <div class="market-actions"><button id="refresh-stages">读取关卡 / 体力</button><button id="buy-stamina">回复体力</button><button id="open-selected-entry">打开所选入口</button><span id="maps-resources" class="stats"></span></div>
+        <label for="sweep-stage">关卡</label><select id="sweep-stage" aria-label="作战或扫荡关卡"></select>
+        <div class="combat-actions"><div class="operation-card"><strong>作战 / 自动推图</strong><p>挑战 → AUTO + 快进 → 最终结算</p><div class="form-row"><label><input id="auto-next" type="checkbox">自动下一关</label><label for="campaign-limit">最多</label><input id="campaign-limit" type="number" min="0" value="0" title="0表示直到无下一关、体力不足或停止"><span>关（0不限）</span></div><div class="market-actions"><button id="run-battle" class="primary">执行作战</button><button id="stop-battle" disabled>停止作战</button></div></div>
+          <div class="operation-card"><strong>扫荡</strong><div class="form-row"><label for="sweep-count">次数</label><input id="sweep-count" type="number" min="1" max="100" value="1"><button id="sweep-prepare" class="primary">扫荡</button></div><p id="sweep-message" class="hint">扫荡要求三冠，费用和次数按原站规则核对。</p></div></div>
+        <div class="status" aria-live="polite"><span id="battle-phase">待执行</span><p id="battle-message">选择已录入地图并读取关卡。</p></div>
+      </section><div class="market-actions"><button id="reload-battle-catalog">刷新完整关卡目录</button></div><p class="hint">未解锁关卡可选择查看；实际挑战遵守原站条件。自动推图不会自动买体力，活动按人工适配配置执行。</p>
+    </section>
+    <section id="page-gacha" class="page" data-page="gacha" hidden>
+      <p class="intro">API召唤逐批核对实时费用，并记录角色或道具奖励，可与推图同时运行。</p>
+      <section class="route"><span>艾莉丝 · 按批次实时核价</span><strong>自动单抽 / 十连</strong><p>每批重新核价；上一笔结果未确认时暂停新召唤。</p>
+        <select id="gacha-pool" aria-label="召唤卡池"></select>
+        <label for="gacha-batches">批次数（每批1抽或10抽）</label><input id="gacha-batches" type="number" min="1" max="100" value="1">
+        <div class="market-actions"><button id="gacha-single" class="primary">自动单抽</button><button id="gacha-ten" class="primary">自动十连</button><button id="stop-gacha" disabled>停止召唤</button></div>
+        <div class="status" aria-live="polite"><span id="gacha-phase">待执行</span><p id="gacha-message">选择卡池和批次，按实时价格执行。</p></div>
+      </section>
+      <section class="route gacha-record-card"><strong>抽卡记录</strong><p id="gacha-record-note" class="hint">悬停抽卡结果查看卡片信息。</p><div id="gacha-records" class="gacha-record-list"></div></section>
+    </section>
+    <section id="page-maps" class="page" data-page="maps" hidden>
+      <div class="actions" role="tablist" aria-label="录入类型"><button id="record-maps" role="tab" aria-selected="true" aria-controls="record-map-panel">地图录入</button><button id="record-pools" role="tab" aria-selected="false" aria-controls="record-pool-panel">卡池录入</button></div>
+      <section id="record-map-panel" class="route" role="tabpanel" aria-labelledby="record-maps"><span>外部配置 · 热加载</span><strong>地图路线与关卡记录</strong><p>扫描包括滚动区域外的已加载条目，不启动挑战。</p>
+        <select id="map-route" aria-label="地图路线"></select>
+        <div class="market-actions"><button id="scan-map" class="primary">按路线扫描</button><button id="scan-current">扫描当前页面</button><button id="stop-map-scan" disabled>停止扫描</button></div>
+        <div class="market-actions"><button id="map-config">编辑路线配置</button><button id="combat-adapters">编辑活动适配</button><button id="inspect-map-buttons">查看当前按钮</button><button id="reload-map-routes">重新加载配置</button><button id="map-data">打开地图目录</button><button id="map-workflow">打开路线流程文档</button></div>
+        <p id="map-file" class="directory"></p><p id="map-workflow-file" class="directory"></p>
+        <div class="status" aria-live="polite"><span id="map-phase">待执行</span><p id="map-message">保存routes.json后，下次扫描自动读取新配置。</p></div>
+        <details open><summary>已记录关卡</summary><ul id="map-levels" aria-label="识别到的关卡"></ul></details>
+        <details><summary>当前导航按钮名称与路径</summary><ul id="map-buttons"></ul></details>
+      </section>
+      <section id="record-pool-panel" class="route" role="tabpanel" aria-labelledby="record-pools" hidden><span>原站卡池一览 · 只读</span><strong>卡池名称、类型与费用</strong><p>进入召唤卡池一览，核对列表后保存记录。显示费用为录入时的值，抽卡前重新核价。</p><div class="market-actions"><button id="scan-pools" class="primary">扫描并录入卡池</button><button id="stop-pool-scan" disabled>停止录入</button><button id="reload-pools">重新加载</button><button id="pool-data">打开卡池目录</button></div><p id="pool-message" class="stats"></p><div class="table-scroll pool-scroll"><table><thead><tr><th>卡池</th><th>类型 / 开放时间</th><th>单抽</th><th>十连</th><th>自动召唤</th></tr></thead><tbody id="pool-records"></tbody></table></div></section>
+    </section>
+    <section id="page-plans" class="page" data-page="plans" hidden>
+      <section class="route"><span>系统时间 · 单次定时任务</span><strong>召唤 / 扫荡计划</strong><p id="system-clock" class="stats"></p><label>任务类型<select id="plan-kind"><option value="gacha">自动召唤</option><option value="sweep">自动扫荡</option></select></label>
+        <div class="plan-form"><label for="plan-at">执行时间</label><input id="plan-at" type="datetime-local" step="60"><button id="plan-next-minute">填入下一分钟</button></div>
+        <div id="plan-gacha-fields" class="plan-form"><label for="plan-pool">卡池</label><select id="plan-pool"></select><label for="plan-mode">模式</label><select id="plan-mode"><option value="single">单抽</option><option value="ten">十连</option></select><label for="plan-batches">批次</label><input id="plan-batches" type="number" min="1" max="100" value="1"></div>
+        <div id="plan-sweep-fields" hidden><div class="plan-form"><button id="plan-use-stage">使用作战页当前关卡</button><span id="plan-sweep-target">尚未选择关卡</span></div><div class="plan-form"><label for="plan-total-count">扫荡总次数</label><input id="plan-total-count" type="number" min="1" value="100"><label for="plan-command-limit">单条最多</label><input id="plan-command-limit" type="number" min="1" max="100" value="100"><label><input id="plan-refill" type="checkbox" checked>不足时自动买体力</label></div><p id="plan-sweep-preview" class="hint">每次按最大可购买数量回复到接近体力持有上限，受余额及每日购买次数限制；逐次重新核价，不自动购买跳过券。</p><button id="stop-sweep-plan" disabled>停止当前扫荡计划</button></div>
+        <div class="market-actions"><button id="add-plan" class="primary">添加计划</button></div>
+        <p id="plan-message" class="hint">到点重新核价，按余额校验。助手需保持运行；忙碌、离线或错过超过30秒时不补执行。</p>
+      </section><section class="route plan-list"><strong>计划记录</strong><div class="table-scroll"><table><thead><tr><th>执行时间</th><th>任务 / 目标</th><th>状态</th><th>结果</th><th>操作</th></tr></thead><tbody id="plan-records"></tbody></table></div></section>
+    </section>
+    <section id="page-trading" class="page" data-page="trading" hidden>
+      <p class="intro">现货与期货行情、钱包、订单及服务器历史走势。可独立观察两个市场并提交交易。</p>
+      <div class="exchange-toolbar"><div role="tablist" aria-label="市场"><button id="trade-spot" role="tab" aria-selected="true" aria-controls="trade-spot-panel">现货</button><button id="trade-futures" role="tab" aria-selected="false" aria-controls="trade-futures-panel">期货</button></div><p id="trading-status" class="hint" aria-live="polite">等待有效行情…</p></div>
+      <section class="wallet-card"><div><span>交易所钱包 · 待提取艾莉丝</span><strong id="wallet-money">—</strong></div><div><span>待提取跳过券</span><strong id="wallet-tickets">—</strong></div><p id="wallet-time" class="hint">钱包随现货接口刷新，区别于账号存档余额。</p></section>
+      <section id="trade-spot-panel" role="tabpanel" aria-labelledby="trade-spot">
+        <div id="spot-quotes" class="quote-grid"></div>
+        <section class="route chart-card"><div class="card-heading"><strong>现货历史走势</strong><span id="spot-chart-summary">等待数据</span></div><canvas id="spot-chart" aria-label="现货历史价格图"></canvas><p id="spot-chart-pick" class="chart-pick">移动鼠标查看时间与价格</p></section>
+        <section class="route operation-card"><strong>现货交易</strong><label for="spot-qty">跳过券张数</label><input id="spot-qty" type="number" min="1" value="100"><div class="market-actions"><button id="spot-buy" class="primary">买入</button><button id="spot-sell">卖出</button><button id="spot-withdraw">提取交易所钱包</button></div><p id="spot-action-message" class="hint">按原站积分报价与手续费，保留2%价格限制。</p></section>
+        <section class="route"><strong>现货订单 · 成交记录</strong><p class="hint">接口返回最近成交记录，不表示未成交挂单。</p><div class="table-scroll"><table><thead><tr><th>北京时间</th><th>方向</th><th>张数</th><th>金额（艾莉丝）</th><th>均价</th></tr></thead><tbody id="spot-orders"></tbody></table></div></section>
+      </section>
+      <section id="trade-futures-panel" role="tabpanel" aria-labelledby="trade-futures" hidden>
+        <p id="futures-round" class="hint"></p><div id="futures-quotes" class="quote-grid"></div>
+        <section class="route chart-card"><div class="card-heading"><strong>期货历史走势</strong><span id="futures-chart-summary">等待数据</span></div><canvas id="futures-chart" aria-label="期货历史价格图"></canvas><p id="futures-chart-pick" class="chart-pick">移动鼠标查看时间与价格</p></section>
+        <section class="route operation-card"><strong>期货开仓 / 平仓</strong><label for="futures-margin">保证金</label><input id="futures-margin" type="number" min="1" value="1"><label for="futures-leverage">杠杆</label><select id="futures-leverage"><option value="1">1×</option><option value="5">5×</option><option value="10">10×</option><option value="20">20×</option><option value="50">50×</option><option value="100">100×</option></select><div class="market-actions"><button id="futures-long" class="primary">看涨开仓</button><button id="futures-short">看跌开仓</button></div><select id="futures-position" aria-label="当前持仓"></select><div class="market-actions"><button id="futures-close">平仓选中仓位</button><label for="futures-add-amount">追加保证金</label><input id="futures-add-amount" type="number" min="1" value="1"><button id="futures-add">追加</button></div><p id="futures-action-message" class="hint">确认框显示费用和参考爆仓价；持仓时长、交易互斥由原站校验。</p></section>
+        <section class="route"><strong>我的期货仓位</strong><div class="table-scroll"><table><thead><tr><th>开仓时间</th><th>方向 / 状态</th><th>保证金</th><th>杠杆</th><th>开仓价</th><th>爆仓价</th><th>盈亏</th><th>锁定盈亏</th><th>追缴债务</th></tr></thead><tbody id="futures-positions"></tbody></table></div></section>
+        <section class="route"><strong>历史结算</strong><div class="table-scroll"><table><thead><tr><th>期号</th><th>结算时间</th><th>结算价</th><th>我的盈亏</th></tr></thead><tbody id="futures-settlements"></tbody></table></div></section>
+      </section>
+      <p id="exchange-note" class="hint">展示数据只在内存保存；关闭助手或会话失效后清空。</p>
+      
+    </section>
+    <footer class="main-footer"><details><summary>运行记录</summary><ul id="history" aria-label="运行记录"></ul><button id="logs" class="link">打开日志与结算截图</button></details><p class="hint">关掉一个主控，其余窗口与任务继续；关掉最后一个主控退出助手。游戏加载不可用时按十秒周期重试。</p></footer>
+  </main>
+  <script src="compact-layout.js"></script>
+  <script src="navigation.js"></script>
+  <script src="price-chart.js"></script>
+  <script src="exchange.js"></script>
+  <dialog id="action-confirm"><h2>确认本次操作</h2><p id="action-confirm-text"></p><div class="market-actions"><button id="action-confirm-submit" class="primary">确认提交一次</button><button id="action-confirm-cancel">取消</button></div></dialog>
+  <script src="actions.js"></script>
+  <script src="combat.js"></script>
+  <script src="recording.js"></script>
+  <script src="plans.js"></script>
+  <script src="gacha-records.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

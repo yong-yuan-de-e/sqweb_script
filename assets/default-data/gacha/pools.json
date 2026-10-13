@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "scannedAt": "2026-10-13T17:15:34.332Z",
+  "pools": [
+    {
+      "id": "100001",
+      "name": "高级召唤",
+      "kind": "召唤",
+      "schedule": "常驻",
+      "buttons": [
+        {
+          "button": "CENTER",
+          "count": 1,
+          "cost": 3735,
+          "currency": "艾莉丝",
+          "ticket": false,
+          "baseCost": 3000
+        },
+        {
+          "button": "RIGHT",
+          "count": 10,
+          "cost": 34860,
+          "currency": "艾莉丝",
+          "ticket": false,
+          "baseCost": 28000
+        }
+      ],
+      "pathIncludes": "GachaListArea/",
+      "verifiedUI": true,
+      "modes": [
+        "single",
+        "ten"
+      ],
+      "automatic": true
+    },
+    {
+      "id": "900250",
+      "name": "Re:從零開始的異世界生活！增殖的兔子！",
+      "kind": "召唤",
+      "schedule": "联动限定",
+      "buttons": [
+        {
+          "button": "CENTER",
+          "count": 1,
+          "cost": 3735,
+          "currency": "艾莉丝",
+          "ticket": false,
+          "baseCost": 3000
+        },
+        {
+          "button": "RIGHT",
+          "count": 10,
+          "cost": 34860,
+          "currency": "艾莉丝",
+          "ticket": false,
+          "baseCost": 28000
+        }
+      ],
+      "pathIncludes": "GachaListArea/",
+      "verifiedUI": true,
+      "modes": [
+        "single",
+        "ten"
+      ],
+      "automatic": true
+    },
+    {
+      "id": "900251",
+      "name": "Re:從零開始的異世界生活！飛天的鯨魚！",
+      "kind": "召唤",
+      "schedule": "联动限定",
+      "buttons": [
+        {
+          "button": "CENTER",
+          "count": 1,
+          "cost": 3735,
+          "currency": "艾莉丝",
+          "ticket": false,
+          "baseCost": 3000
+        },
+        {
+          "button": "RIGHT",
+          "count": 10,
+          "cost": 34860,
+          "currency": "艾莉丝",
+          "ticket": false,
+          "baseCost": 28000
+        }
+      ],
+      "pathIncludes": "GachaListArea/",
+      "verifiedUI": true,
+      "modes": [
+        "single",
+        "ten"
+      ],
+      "automatic": true
+    }
+  ]
+}

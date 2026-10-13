@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "event-current-boss",
+      "name": "Re0 · 大兔首领战",
+      "kind": "event-boss",
+      "eventId": "23053",
+      "routeId": "event-current-boss",
+      "stages": [
+        {
+          "id": "511661",
+          "label": "首领 NORMAL",
+          "detailLabel": "NORMAL",
+          "stamina": 0,
+          "power": 7590,
+          "bossTicket": 10,
+          "selector": {
+            "labels": [
+              "首领 NORMAL"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestBossStageSelector/Contents/Contets/ScrollArea/Scroll View/Viewport/Content/EventQuestBossStageItemCell[1]"
+          }
+        },
+        {
+          "id": "511662",
+          "label": "首领 HARD",
+          "detailLabel": "HARD",
+          "stamina": 0,
+          "power": 13750,
+          "bossTicket": 15,
+          "selector": {
+            "labels": [
+              "首领 HARD"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestBossStageSelector/Contents/Contets/ScrollArea/Scroll View/Viewport/Content/EventQuestBossStageItemCell[2]"
+          }
+        },
+        {
+          "id": "511663",
+          "label": "首领 EXPERT",
+          "detailLabel": "EXPERT",
+          "stamina": 0,
+          "power": 22000,
+          "bossTicket": 20,
+          "selector": {
+            "labels": [
+              "首领 EXPERT"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestBossStageSelector/Contents/Contets/ScrollArea/Scroll View/Viewport/Content/EventQuestBossStageItemCell[3]"
+          }
+        }
+      ],
+      "eventName": "Re:为从零开始的异世界献上祝福！～增殖的兔子 & 飞天的鲸鱼～"
+    },
+    {
+      "id": "worldboss-current",
+      "name": "世界Boss · 白鲸",
+      "kind": "worldboss",
+      "routeId": "worldboss-current",
+      "stages": [
+        {
+          "id": "whale-6",
+          "label": "白鲸",
+          "stamina": 0,
+          "manualBattle": true,
+          "public": {
+            "enemy": "22400029",
+            "art": "whale",
+            "start": 1791734400000,
+            "end": 1794326400000,
+            "dailyTries": 3
+          }
+        }
+      ]
+    }
+  ]
+}
