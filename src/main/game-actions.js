@@ -4,16 +4,20 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { randomUUID } = require('node:crypto');
 const { readGameState, requestNative, sweepCost } = require('../game/native-bridge');
-const { spotQuote } = require('../game/trade-quote');
+const { createTrade, requoteTrade } = require('../game/trade-policy');
+const { staminaItemBody } = require('../game/stamina-recovery');
+const { isPriceConfirmation } = require('../shared/trade-tolerance');
+const { formatNumber: fmt } = require('../shared/number-format');
 
 const integer = (value, label, min = 1, max = Number.MAX_SAFE_INTEGER) => { if (!Number.isSafeInteger(value) || value < min || value > max) throw new Error(`${label}应为${min}至${max}的整数。`); return value; };
-const domains = { spot: 'spot', withdraw: 'spot', futures: 'futures', close: 'futures', add: 'futures', sweep: 'sweep', stamina: 'sweep' };
-const names = { spot: '现货交易', withdraw: '钱包提取', futures: '期货开仓', close: '期货平仓', add: '追加保证金', sweep: '关卡扫荡', stamina: '体力购买' };
+const domains = { spot: 'spot', withdraw: 'spot', futures: 'futures', close: 'futures', add: 'futures', sweep: 'sweep', stamina: 'sweep', 'stamina-item': 'sweep' };
+const names = { spot: '现货交易', withdraw: '钱包提取', futures: '期货开仓', close: '期货平仓', add: '追加保证金', sweep: '关卡扫荡', stamina: '体力购买', 'stamina-item': '道具回复体力' };
 
 class GameActions {
-  constructor({ game, maps, artifacts, report }) {
-    Object.assign(this, { game, maps, artifacts, report }); this.drafts = new Map(); this.busy = new Set(); this.reading = false;
-    this.status = { account: null, message: '可读取体力与主线扫荡信息。', busy: [], unknown: [], receipts: [] };
+  constructor({ game, maps, artifacts, report, isSweepBusy }) {
+    Object.assign(this, { game, maps, artifacts, report, isSweepBusy }); this.drafts = new Map(); this.busy = new Set(); this.reading = false;
+    this.refreshJobs=new Map();this.refreshChain=Promise.resolve();this.generation=0;
+    this.status = { account: null, routeStates: {}, message: '切换章节后自动核对关卡与体力。', busy: [], unknown: [], receipts: [] };
     this.file = path.join(artifacts.root, 'action-receipts.jsonl');
     const pending = new Map();
     try { if (fs.existsSync(this.file)) for (const line of fs.readFileSync(this.file, 'utf8').trim().split(/\r?\n/).filter(Boolean)) {
@@ -24,21 +28,30 @@ class GameActions {
   }
 
   get busyCount() { return this.busy.size; }
-  clear() { this.drafts.clear(); this.publish({ account: null, message: '等待游戏登录后读取体力与余额。' }); }
-  publish(event = {}) { this.status = { ...this.status, ...event, busy: [...this.busy], unknown: [...new Set(this.unresolved.values())] }; this.report(); }
+  clear() { this.generation++;this.drafts.clear(); this.publish({ account: null, routeStates: {}, message: '等待游戏登录后读取体力与余额。' }); }
+  publish(event = {}) {
+    const account=event.account;
+    if(account?.routeId&&account.stageCapturedAt){const routes={...this.status.routeStates,[account.routeId]:{stages:account.stages,capturedAt:account.stageCapturedAt,error:account.stageError||null}};while(Object.keys(routes).length>128)delete routes[Object.keys(routes)[0]];event={...event,routeStates:routes};}
+    this.status = { ...this.status, ...event, busy: [...this.busy], unknown: [...new Set(this.unresolved.values())] }; this.report();
+  }
   journal(event) { fs.appendFileSync(this.file, JSON.stringify({ time: new Date().toISOString(), ...event }) + '\n', { flush: true }); }
   async page() { if (this.game.activeRun || this.game.restarting) throw new Error('请先完成当前作战、召唤或地图导航。'); if (!this.game.window || this.game.window.isDestroyed()) throw new Error('请先打开并登录游戏窗口。'); return this.game.session.page(); }
 
-  async refresh(routeId, sync = false, providedRoute) {
-    if (this.reading || this.busyCount || this.game.activeRun || this.game.restarting) return this.status.account;
-    this.reading = true;
-    try {
-      const route = providedRoute || (routeId ? this.maps.get(routeId).route : undefined);
-      const state = await readGameState(await this.page(), route, sync);
-      state.routeId = routeId || this.status.account?.routeId || null;
-      if (!routeId) state.stages = this.status.account?.stages || [];
-      this.publish({ account: state, message: state.stageError || '体力与关卡信息已更新。' }); return state;
-    } finally { this.reading = false; }
+  refresh(routeId, sync = false, providedRoute) {
+    const key=routeId||'account';if(this.refreshJobs.has(key))return this.refreshJobs.get(key);
+    const generation=this.generation;
+    const job=this.refreshChain.catch(()=>{}).then(async()=>{
+      if(this.busyCount||this.game.activeRun||this.game.restarting||this.isSweepBusy?.()||generation!==this.generation)return null;
+      this.reading=true;
+      try{
+        const route=providedRoute||(routeId?this.maps.get(routeId).route:undefined),state=await readGameState(await this.page(),route,sync);
+        if(generation!==this.generation)return null;
+        state.routeId=routeId||this.status.account?.routeId||null;
+        if(!routeId){state.stages=this.status.account?.stages||[];state.stageCapturedAt=this.status.account?.stageCapturedAt;}
+        this.publish({account:state,message:state.stageError||'体力与关卡信息已更新。'});return state;
+      }finally{this.reading=false;}
+    }).finally(()=>this.refreshJobs.delete(key));
+    this.refreshJobs.set(key,job);this.refreshChain=job;return job;
   }
 
   async prepare(options) {
@@ -50,46 +63,23 @@ class GameActions {
     try {
       const page = await this.page(), account = await readGameState(page, undefined, true);
       if (account.inBattle) throw new Error('游戏仍在战斗中，请先完成战斗。');
-      let endpoint, body, description;
-      if (options.kind === 'spot') {
-        if (!['buy', 'sell'].includes(options.side)) throw new Error('请选择买入或卖出。');
-        const qty = integer(options.qty, '张数'), market = (await requestNative(page, '/exchange/market')).data;
-        if (!market.enabled || market.config?.enabled === false || market.tradeBlockReason) throw new Error(market.tradeBlockReason || '现货暂停交易。');
-        if (qty > market.config.maxPerTrade) throw new Error('张数超过原站单笔上限。');
-        const quote = spotQuote(options.side, market.price, qty, market.stock, market.config);
-        if (options.side === 'buy' && quote.limit > account.money) throw new Error('艾莉丝不足以覆盖报价及原站2%价格限制。');
-        if (options.side === 'sell' && qty > account.tickets) throw new Error('跳过券不足。');
-        endpoint = '/exchange/trade'; body = { side: options.side, qty, limit: quote.limit, requestId: randomUUID() };
-        description = `${options.side === 'buy' ? '买入' : '卖出'} ${qty} 张\n预计${options.side === 'buy' ? '花费' : '到手'} ${quote.money.toLocaleString()} 艾莉丝，含手续费 ${quote.fee}\n原站价格限制：${quote.limit.toLocaleString()}，报价均价 ${quote.average}。`;
+      let endpoint, body, description, trade;
+      if (['spot','futures','close'].includes(options.kind)) {
+        const state=(await requestNative(page,options.kind==='spot'?'/exchange/market':'/futures/state')).data;
+        ({endpoint,body,description,trade}=createTrade(options,state,account));
       } else if (options.kind === 'withdraw') {
-        const market = (await requestNative(page, '/exchange/market')).data;
-        if (!market.wallet || !(market.wallet.money > 0 || market.wallet.tickets > 0)) throw new Error('交易所钱包没有待提取余额。');
-        endpoint = '/exchange/withdraw'; body = {}; description = `提取交易所钱包：艾莉丝 ${market.wallet.money}，跳过券 ${market.wallet.tickets}。`;
-      } else if (['futures', 'close', 'add'].includes(options.kind)) {
-        const state = (await requestNative(page, '/futures/state')).data;
-        if (!Number.isFinite(state.index) || !['maxLeverage', 'openFeeRate', 'maxNotionalPerUser', 'maintenance', 'minHoldMinutes'].every(key => Number.isFinite(state.config?.[key]))) throw new Error('期货报价配置缺失，未提交操作。');
-        if (options.kind === 'futures') {
-          if (!['long', 'short'].includes(options.side)) throw new Error('请选择看涨或看跌。');
-          const margin = integer(options.margin, '保证金'), leverage = integer(options.leverage, '杠杆', 1, state.config?.maxLeverage || 100);
-          if (!state.eligible || !state.config?.enabled || state.round?.status !== 'open' || Date.now() >= state.round.cutoffAt) throw new Error(state.reason || '本期不可开仓。');
-          const notional = margin * leverage, fee = Math.ceil(Math.round(notional * state.config.openFeeRate * 1e6) / 1e6);
-          if (!Number.isSafeInteger(notional) || notional > state.config.maxNotionalPerUser) throw new Error('名义价值超过原站上限。');
-          if (margin + fee > account.money) throw new Error('保证金与手续费超过余额。');
-          const liquidation = options.side === 'long' ? state.index - (1 - state.config.maintenance) * Math.max(Math.abs(state.index), 1) / leverage : state.index + (1 - state.config.maintenance) * Math.max(Math.abs(state.index), 1) / leverage;
-          endpoint = '/futures/open'; body = { side: options.side, margin, leverage, requestId: randomUUID() };
-          description = `${options.side === 'long' ? '看涨' : '看跌'}开仓\n保证金 ${margin}，杠杆 ${leverage}×，名义价值 ${notional}，手续费 ${fee}\n参考开仓价 ${state.index}，参考爆仓价 ${liquidation}。`;
-        } else {
-          const position = state.myPositions?.find(item => String(item.id) === String(options.positionId));
-          if (!position || position.status !== 'open') throw new Error('仓位不存在或已结束。');
-          if (options.kind === 'close') {
-            const left = Math.max(0, position.createdAt + state.config.minHoldMinutes * 60000 - Date.now());
-            if (left) throw new Error(`尚需持仓${Math.ceil(left / 1000)}秒才能平仓。`);
-            endpoint = '/futures/close'; body = { positionId: position.id }; description = `平仓 ${position.id}\n方向 ${position.side}，保证金 ${position.margin}，当前盈亏 ${position.pnl}。盈利按原站结算规则到账。`;
-          } else {
-            const amount = integer(options.amount, '追加保证金'); if (amount > account.money) throw new Error('艾莉丝不足。');
-            endpoint = '/futures/addMargin'; body = { positionId: position.id, amount, requestId: randomUUID() }; description = `为仓位 ${position.id} 追加保证金 ${amount}，原站不收此项手续费。`;
-          }
-        }
+        const market=(await requestNative(page,'/exchange/market')).data;
+        if(!market.wallet||!(market.wallet.money>0||market.wallet.tickets>0))throw Error('交易所钱包没有待提取余额。');
+        endpoint='/exchange/withdraw';body={};description=`提取交易所钱包：艾莉丝 ${fmt(market.wallet.money)}，跳过券 ${fmt(market.wallet.tickets)}。`;
+      } else if (options.kind === 'add') {
+        const state=(await requestNative(page,'/futures/state')).data,position=state.myPositions?.find(p=>String(p.id)===String(options.positionId));
+        if(!position||position.status!=='open')throw Error('仓位不存在或已结束。');
+        const amount=integer(options.amount,'追加保证金');if(amount>account.money)throw Error('艾莉丝不足。');
+        endpoint='/futures/addMargin';body={positionId:position.id,amount,requestId:randomUUID()};description=`为仓位 ${position.id} 追加保证金 ${fmt(amount)}，原站不收此项手续费。`;
+      } else if (options.kind === 'stamina-item') {
+        endpoint = '/rpc/useStaminaItem'; body = staminaItemBody(account, options.itemId, options.count);
+        const item = account.staminaItems.find(item => item.id === options.itemId);
+        description = `使用${item.name} × ${fmt(options.count)}\n体力 ${fmt(account.stamina)} → ${fmt(account.stamina + item.gain * options.count)} / 持有上限 ${fmt(account.limit)}\n道具库存 ${fmt(item.count)} → ${fmt(item.count - options.count)}；不消耗艾莉丝。`;
       } else if (options.kind === 'stamina') {
         const recovery = account.recovery;
         if (!recovery || recovery.remaining === 0 || recovery.cost > account.money || account.stamina + recovery.gain > account.limit) throw new Error('余额、今日购买次数或体力上限不满足原站条件。');
@@ -106,8 +96,8 @@ class GameActions {
       }
       for (const [id, draft] of this.drafts) if (draft.expiresAt < Date.now()) this.drafts.delete(id);
       if (this.drafts.size >= 100) this.drafts.delete(this.drafts.keys().next().value);
-      const draft = { id: randomUUID(), domain, kind: options.kind, endpoint, body, description, expiresAt: Date.now() + 60000, windowId: this.game.window.id };
-      this.drafts.set(draft.id, draft); account.stages = this.status.account?.stages || []; account.routeId = this.status.account?.routeId || null; this.publish({ account, message: '报价已读取，确认后仅提交一次。' });
+      const draft = { id: randomUUID(), domain, kind: options.kind, endpoint, body, description, trade, generation:this.generation, expiresAt: Date.now() + 60000, windowId: this.game.window.id };
+      this.drafts.set(draft.id, draft); account.stages = this.status.account?.stages || []; account.routeId = this.status.account?.routeId || null; this.publish({ account, message: trade?'报价已读取，请确认金额与涨跌接受度。':'报价已读取，确认后仅提交一次。' });
       return { id: draft.id, description, expiresAt: draft.expiresAt };
     } finally { this.busy.delete(domain); this.publish(); }
   }
@@ -117,30 +107,64 @@ class GameActions {
     if (!draft || draft.expiresAt < Date.now() || draft.windowId !== this.game.window?.id) throw new Error('报价已失效，请重新读取。');
     if (this.busy.has(draft.domain) || [...this.unresolved.values()].includes(draft.domain)) throw new Error('此类操作尚未结束。');
     this.drafts.delete(id); this.busy.add(draft.domain); this.publish();
-    let submitted = false;
+    let attempts=0;
     try {
       const page = await this.page();
-      this.journal({ id, domain: draft.domain, kind: draft.kind, state: 'pending', input: draft.body });
-      submitted = true; this.unresolved.set(id, draft.domain);
-      const result = await requestNative(page, draft.endpoint, draft.body);
-      const receipt = { id, kind: draft.kind, ok: result.ok, status: result.status, sentAt: result.sentAt, receivedAt: result.receivedAt, message: result.ok ? `${names[draft.kind]}已由服务器确认。` : result.error || '服务器拒绝此操作。' };
-      this.journal({ ...receipt, domain: draft.domain, state: 'resolved' }); this.unresolved.delete(id);
-      this.publish({ message: receipt.message, receipts: [...this.status.receipts.slice(-19), receipt] }); return receipt;
+      for(let attempt=1;attempt<=(draft.trade?2:1);attempt++){
+        const quote=draft.trade?await this.reprice(page,draft):null,body=quote?.body||draft.body;
+        attempts=attempt;
+        const receipt=await this.submitAttempt(page,{...draft,id:attempt===1?id:randomUUID(),body},attempt,attempt===1?null:id);
+        if(draft.trade&&attempt===1&&isPriceConfirmation(receipt)){
+          this.publish({message:'服务端要求价格确认，正在按原确认价核对涨跌接受度并重报一次。'});continue;
+        }
+        const result={...receipt,transactionId:id,attempts};
+        if(attempt===2)result.message=receipt.ok?`${names[draft.kind]}已确认，自动重报1次；相对原报价${quote.move.changePct>=0?'上涨':'下跌'} ${fmt(Math.round(Math.abs(quote.move.changePct)*1e6)/1e6)}%。`:`${receipt.message}${isPriceConfirmation(receipt)?' 已重报1次，请重新报价。':''}`;
+        this.publish({message:result.unknown?`${result.message} 结果未知，停止同类操作，请核对游戏。`:result.message});return result;
+      }
     } catch (error) {
-      const rejected = submitted && error.status >= 400 && error.status < 500 && error.status !== 408;
-      const receipt = { id, kind: draft.kind, ok: false, status: error.status, sentAt: error.sentAt, receivedAt: error.receivedAt, unknown: submitted && !rejected, message: error.message };
-      if (rejected) { this.journal({ ...receipt, domain: draft.domain, state: 'resolved' }); this.unresolved.delete(id); }
-      this.publish({ message: receipt.unknown ? `${error.message} 结果未知，停止同类操作，请核对游戏。` : error.message, receipts: [...this.status.receipts.slice(-19), receipt] }); return receipt;
+      const unknown=[...this.unresolved.values()].includes(draft.domain);
+      const receipt={id,kind:draft.kind,ok:false,unknown,attempts,message:error.message};
+      this.publish({message:unknown?`${receipt.message} 结果未知，请核对游戏。`:receipt.message,receipts:[...this.status.receipts.slice(-19),receipt]});return receipt;
     } finally {
       this.busy.delete(draft.domain); this.publish();
       if (refresh && !this.busyCount) await this.refresh(undefined, true).catch(() => {});
     }
   }
 
+  async reprice(page,draft){
+    if(draft.generation!==this.generation||draft.windowId!==this.game.window?.id||Date.now()>draft.expiresAt)throw Error('原确认报价或登录会话已失效，请重新报价。');
+    const state=(await requestNative(page,draft.kind==='spot'?'/exchange/market':'/futures/state')).data,account=await readGameState(page);
+    if(account.inBattle)throw Error('游戏仍在战斗中，请先完成战斗。');
+    if(draft.generation!==this.generation||draft.windowId!==this.game.window?.id||Date.now()>draft.expiresAt)throw Error('原报价或登录会话发生变化，请重新报价。');
+    return requoteTrade(draft.trade,state,account);
+  }
+
+  async submitAttempt(page,draft,attempt,retryOf){
+    const id=draft.id;let submitted=false;
+    const meta={attempt,...(retryOf?{retryOf}:{})};
+    try{
+      this.journal({id,domain:draft.domain,kind:draft.kind,state:'pending',input:draft.body,...meta});
+      submitted=true;this.unresolved.set(id,draft.domain);
+      const result=await requestNative(page,draft.endpoint,draft.body);
+      if(result.status>=500||result.status===408)throw Object.assign(Error(result.error||'交易服务暂时不可用。'),{status:result.status,sentAt:result.sentAt,receivedAt:result.receivedAt});
+      const receipt={id,kind:draft.kind,ok:result.ok,status:result.status,sentAt:result.sentAt,receivedAt:result.receivedAt,...meta,message:result.ok?`${names[draft.kind]}已由服务器确认。`:result.error||'服务器拒绝此操作。'};
+      this.journal({...receipt,domain:draft.domain,state:'resolved'});this.unresolved.delete(id);
+      this.publish({message:receipt.message,receipts:[...this.status.receipts.slice(-19),receipt]});return receipt;
+    }catch(error){
+      const outcome={ok:false,status:error.status,message:error.message};
+      const rejected=submitted&&(error.status>=400&&error.status<500&&error.status!==408||isPriceConfirmation(outcome));
+      const receipt={id,kind:draft.kind,...outcome,sentAt:error.sentAt,receivedAt:error.receivedAt,unknown:submitted&&!rejected,...meta};
+      if(rejected){this.journal({...receipt,domain:draft.domain,state:'resolved'});this.unresolved.delete(id);}
+      this.publish({message:receipt.unknown?`${receipt.message} 结果未知，停止同类操作，请核对游戏。`:receipt.message,receipts:[...this.status.receipts.slice(-19),receipt]});return receipt;
+    }
+  }
+
   planDraft(kind, body, description) {
-    if (!['sweep','stamina'].includes(kind) || this.ledgerError || [...this.unresolved.values()].includes('sweep') || this.busy.has('sweep')) throw Error('扫荡/体力存在未确认操作，计划暂停。');
-    if (kind === 'sweep' ? !Array.isArray(body?.args) || typeof body.args[0] !== 'string' || !Number.isInteger(body.args[1]) || body.args[1] < 1 || body.args[1] > 100 : JSON.stringify(body) !== JSON.stringify({args:['11000']})) throw Error('计划请求参数无效。');
-    const draft = { id: randomUUID(), domain:'sweep', kind, endpoint:kind === 'sweep' ? '/rpc/battleSkip' : '/rpc/shopBuy', body, description, expiresAt:Date.now()+60000, windowId:this.game.window.id }; this.drafts.set(draft.id,draft); return draft;
+    if (!['sweep','stamina','stamina-item'].includes(kind) || this.ledgerError || [...this.unresolved.values()].includes('sweep') || this.busy.has('sweep')) throw Error('扫荡/体力存在未确认操作，计划暂停。');
+    const args=body?.args,quantity=Array.isArray(args)&&args.length===2&&typeof args[0]==='string'&&args[0].length>0&&Number.isSafeInteger(args[1])&&args[1]>=1;
+    if (Object.keys(body||{}).join(',')!=='args' || (kind === 'stamina' ? JSON.stringify(body)!==JSON.stringify({args:['11000']}) : !quantity || (kind==='sweep'&&args[1]>100))) throw Error('计划请求参数无效。');
+    const endpoint={sweep:'/rpc/battleSkip',stamina:'/rpc/shopBuy','stamina-item':'/rpc/useStaminaItem'}[kind];
+    const draft = { id: randomUUID(), domain:'sweep', kind, endpoint, body, description, expiresAt:Date.now()+60000, windowId:this.game.window.id }; this.drafts.set(draft.id,draft); return draft;
   }
 
   acknowledge(domain) {

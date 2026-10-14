@@ -8,19 +8,6 @@
   "sourcePage": "https://sqweb.fun/#/quest",
   "levels": [
     {
-      "label": "播放视频 · 兔子①",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[1]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": null,
-      "texts": [
-        "播放视频 · 兔子①",
-        "视频",
-        "已观看"
-      ]
-    },
-    {
       "label": "1-1",
       "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[2]",
       "visibleButton": false,
@@ -31,7 +18,9 @@
         "1-1",
         "推荐战力",
         "2500"
-      ]
+      ],
+      "id": "511601",
+      "stamina": 5
     },
     {
       "label": "1-2",
@@ -44,6 +33,353 @@
         "1-2",
         "推荐战力",
         "2800"
+      ],
+      "id": "511602",
+      "stamina": 5
+    },
+    {
+      "label": "1-3",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[5]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "3200",
+      "texts": [
+        "1-3",
+        "推荐战力",
+        "3200"
+      ],
+      "id": "511603",
+      "stamina": 5
+    },
+    {
+      "label": "1-4",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[6]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "3400",
+      "texts": [
+        "1-4",
+        "推荐战力",
+        "3400"
+      ],
+      "id": "511604",
+      "stamina": 5
+    },
+    {
+      "label": "1-5",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[7]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "3800",
+      "texts": [
+        "1-5",
+        "推荐战力",
+        "3800"
+      ],
+      "id": "511605",
+      "stamina": 5
+    },
+    {
+      "label": "1-6",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[9]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "4000",
+      "texts": [
+        "1-6",
+        "推荐战力",
+        "4000"
+      ],
+      "id": "511606",
+      "stamina": 5
+    },
+    {
+      "label": "1-7",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[10]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "4300",
+      "texts": [
+        "1-7",
+        "推荐战力",
+        "4300"
+      ],
+      "id": "511607",
+      "stamina": 5
+    },
+    {
+      "label": "1-8",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[11]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "4600",
+      "texts": [
+        "1-8",
+        "推荐战力",
+        "4600"
+      ],
+      "id": "511608",
+      "stamina": 5
+    },
+    {
+      "label": "1-9",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[13]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "4900",
+      "texts": [
+        "1-9",
+        "推荐战力",
+        "4900"
+      ],
+      "id": "511609",
+      "stamina": 5
+    },
+    {
+      "label": "1-10",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[14]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "5200",
+      "texts": [
+        "1-10",
+        "推荐战力",
+        "5200"
+      ],
+      "id": "511610",
+      "stamina": 5
+    },
+    {
+      "label": "1-11",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[15]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "5500",
+      "texts": [
+        "1-11",
+        "推荐战力",
+        "5500"
+      ],
+      "id": "511611",
+      "stamina": 5
+    },
+    {
+      "label": "1-12",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[17]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "6700",
+      "texts": [
+        "1-12",
+        "推荐战力",
+        "6700"
+      ],
+      "id": "511612",
+      "stamina": 5
+    },
+    {
+      "label": "1-13",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[19]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "2600",
+      "texts": [
+        "1-13",
+        "推荐战力",
+        "2600"
+      ],
+      "id": "511701",
+      "stamina": 5
+    },
+    {
+      "label": "1-14",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[20]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "2800",
+      "texts": [
+        "1-14",
+        "推荐战力",
+        "2800"
+      ],
+      "id": "511702",
+      "stamina": 5
+    },
+    {
+      "label": "1-15",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[21]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "3000",
+      "texts": [
+        "1-15",
+        "推荐战力",
+        "3000"
+      ],
+      "id": "511703",
+      "stamina": 5
+    },
+    {
+      "label": "1-16",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[22]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "3400",
+      "texts": [
+        "1-16",
+        "推荐战力",
+        "3400"
+      ],
+      "id": "511704",
+      "stamina": 5
+    },
+    {
+      "label": "1-17",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[23]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "3700",
+      "texts": [
+        "1-17",
+        "推荐战力",
+        "3700"
+      ],
+      "id": "511705",
+      "stamina": 5
+    },
+    {
+      "label": "1-18",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[24]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "4000",
+      "texts": [
+        "1-18",
+        "推荐战力",
+        "4000"
+      ],
+      "id": "511706",
+      "stamina": 5
+    },
+    {
+      "label": "1-19",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[25]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "4300",
+      "texts": [
+        "1-19",
+        "推荐战力",
+        "4300"
+      ],
+      "id": "511707",
+      "stamina": 5
+    },
+    {
+      "label": "1-20",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[26]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "4600",
+      "texts": [
+        "1-20",
+        "推荐战力",
+        "4600"
+      ],
+      "id": "511708",
+      "stamina": 5
+    },
+    {
+      "label": "1-21",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[27]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "4900",
+      "texts": [
+        "1-21",
+        "推荐战力",
+        "4900"
+      ],
+      "id": "511709",
+      "stamina": 5
+    },
+    {
+      "label": "1-22",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[28]",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "5100",
+      "texts": [
+        "1-22",
+        "推荐战力",
+        "5100"
+      ],
+      "id": "511710",
+      "stamina": 5
+    },
+    {
+      "label": "1-23",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[29]",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "5500",
+      "texts": [
+        "1-23",
+        "推荐战力",
+        "5500"
+      ],
+      "id": "511711",
+      "stamina": 5
+    },
+    {
+      "label": "1-24",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[30]",
+      "visibleButton": true,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": "6100",
+      "texts": [
+        "1-24",
+        "推荐战力",
+        "6100"
+      ],
+      "id": "511712",
+      "stamina": 5
+    }
+  ],
+  "extras": [
+    {
+      "label": "播放视频 · 兔子①",
+      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[1]",
+      "visibleButton": false,
+      "interactable": true,
+      "hasClickHandler": true,
+      "recommendedPower": null,
+      "texts": [
+        "播放视频 · 兔子①",
+        "视频",
+        "已观看"
       ]
     },
     {
@@ -60,45 +396,6 @@
       ]
     },
     {
-      "label": "1-3",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[5]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "3200",
-      "texts": [
-        "1-3",
-        "推荐战力",
-        "3200"
-      ]
-    },
-    {
-      "label": "1-4",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[6]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "3400",
-      "texts": [
-        "1-4",
-        "推荐战力",
-        "3400"
-      ]
-    },
-    {
-      "label": "1-5",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[7]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "3800",
-      "texts": [
-        "1-5",
-        "推荐战力",
-        "3800"
-      ]
-    },
-    {
       "label": "播放视频 · 兔子③",
       "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[8]",
       "visibleButton": false,
@@ -109,45 +406,6 @@
         "播放视频 · 兔子③",
         "视频",
         "已观看"
-      ]
-    },
-    {
-      "label": "1-6",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[9]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "4000",
-      "texts": [
-        "1-6",
-        "推荐战力",
-        "4000"
-      ]
-    },
-    {
-      "label": "1-7",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[10]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "4300",
-      "texts": [
-        "1-7",
-        "推荐战力",
-        "4300"
-      ]
-    },
-    {
-      "label": "1-8",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[11]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "4600",
-      "texts": [
-        "1-8",
-        "推荐战力",
-        "4600"
       ]
     },
     {
@@ -164,45 +422,6 @@
       ]
     },
     {
-      "label": "1-9",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[13]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "4900",
-      "texts": [
-        "1-9",
-        "推荐战力",
-        "4900"
-      ]
-    },
-    {
-      "label": "1-10",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[14]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "5200",
-      "texts": [
-        "1-10",
-        "推荐战力",
-        "5200"
-      ]
-    },
-    {
-      "label": "1-11",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[15]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "5500",
-      "texts": [
-        "1-11",
-        "推荐战力",
-        "5500"
-      ]
-    },
-    {
       "label": "播放视频 · 兔子⑤",
       "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[16]",
       "visibleButton": false,
@@ -213,19 +432,6 @@
         "播放视频 · 兔子⑤",
         "视频",
         "已观看"
-      ]
-    },
-    {
-      "label": "1-12",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[17]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "6700",
-      "texts": [
-        "1-12",
-        "推荐战力",
-        "6700"
       ]
     },
     {
@@ -242,162 +448,6 @@
       ]
     },
     {
-      "label": "1-13",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[19]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "2600",
-      "texts": [
-        "1-13",
-        "推荐战力",
-        "2600"
-      ]
-    },
-    {
-      "label": "1-14",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[20]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "2800",
-      "texts": [
-        "1-14",
-        "推荐战力",
-        "2800"
-      ]
-    },
-    {
-      "label": "1-15",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[21]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "3000",
-      "texts": [
-        "1-15",
-        "推荐战力",
-        "3000"
-      ]
-    },
-    {
-      "label": "1-16",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[22]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "3400",
-      "texts": [
-        "1-16",
-        "推荐战力",
-        "3400"
-      ]
-    },
-    {
-      "label": "1-17",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[23]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "3700",
-      "texts": [
-        "1-17",
-        "推荐战力",
-        "3700"
-      ]
-    },
-    {
-      "label": "1-18",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[24]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "4000",
-      "texts": [
-        "1-18",
-        "推荐战力",
-        "4000"
-      ]
-    },
-    {
-      "label": "1-19",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[25]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "4300",
-      "texts": [
-        "1-19",
-        "推荐战力",
-        "4300"
-      ]
-    },
-    {
-      "label": "1-20",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[26]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "4600",
-      "texts": [
-        "1-20",
-        "推荐战力",
-        "4600"
-      ]
-    },
-    {
-      "label": "1-21",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[27]",
-      "visibleButton": false,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "4900",
-      "texts": [
-        "1-21",
-        "推荐战力",
-        "4900"
-      ]
-    },
-    {
-      "label": "1-22",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[28]",
-      "visibleButton": true,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "5100",
-      "texts": [
-        "1-22",
-        "推荐战力",
-        "5100"
-      ]
-    },
-    {
-      "label": "1-23",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[29]",
-      "visibleButton": true,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "5500",
-      "texts": [
-        "1-23",
-        "推荐战力",
-        "5500"
-      ]
-    },
-    {
-      "label": "1-24",
-      "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[30]",
-      "visibleButton": true,
-      "interactable": true,
-      "hasClickHandler": true,
-      "recommendedPower": "6100",
-      "texts": [
-        "1-24",
-        "推荐战力",
-        "6100"
-      ]
-    },
-    {
       "label": "播放视频 · 鲸鱼②",
       "path": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[31]",
       "visibleButton": true,
@@ -410,5 +460,7 @@
         "已观看"
       ]
     }
-  ]
+  ],
+  "idLinkedAt": "2026-10-14T07:41:41.215Z",
+  "idSource": "master/questx59.json · event 23053 · exact unique name match"
 }

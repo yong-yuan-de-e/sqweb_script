@@ -3,6 +3,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { randomUUID } = require('node:crypto');
+const { sweepGoal } = require('../shared/sweep-goal');
+const { tradeTolerance } = require('../shared/trade-tolerance');
 const states = new Set(['pending', 'running', 'completed', 'failed', 'missed', 'cancelled', 'needs_review']);
 
 // 按系统绝对时间检查；先持久化running再调用付费流程，崩溃后的任务不重放。
@@ -18,8 +20,9 @@ class Scheduler {
         if (data.version !== 1 || !Array.isArray(data.plans) || data.plans.length > 500) throw Error('计划文件格式无效。');
         const ids = new Set();
         for (const p of data.plans) {
-          const shape=p.kind==='gacha'?['single','ten'].includes(p.mode)&&Number.isInteger(p.batches)&&p.batches>=1&&p.batches<=100&&typeof p.poolId==='string':p.kind==='sweep'&&Number.isSafeInteger(p.totalCount)&&p.totalCount>0&&typeof p.stageId==='string'&&typeof p.buyStamina==='boolean'&&p.selection&&Number.isInteger(p.requestLimit)&&p.requestLimit>=1&&p.requestLimit<=100;
+          const shape=p.kind==='gacha'?['single','ten'].includes(p.mode)&&Number.isInteger(p.batches)&&p.batches>=1&&p.batches<=100&&typeof p.poolId==='string':p.kind==='sweep'&&typeof p.stageId==='string'&&typeof p.buyStamina==='boolean'&&p.selection&&Boolean(sweepGoal(p));
           if (typeof p.id !== 'string' || ids.has(p.id) || !shape || !states.has(p.state) || !Number.isSafeInteger(p.runAt)) throw Error('计划记录无效。');
+          if (p.kind === 'gacha') p.tolerance = tradeTolerance(p.tolerance);
           ids.add(p.id);
           if (typeof p.message === 'string') p.message = p.message.replace(/\s*累计测试消耗 \d+ \/ \d+ 艾莉丝[。.]?/, '');
           if (p.state === 'running') { p.state = 'needs_review'; p.message = '上次退出时任务正在执行，请核对游戏与操作回执；不会自动重试。'; }
@@ -40,12 +43,12 @@ class Scheduler {
     let fields;
     if((options.kind||'gacha')==='gacha'){
       if(!['single','ten'].includes(options.mode)||!Number.isInteger(options.batches)||options.batches<1||options.batches>100)throw Error('请选择单抽/十连及1至100批。');
-      const pool=this.resolvePool(options.poolId);if(!pool.modes.includes(options.mode))throw Error('该卡池未录入所选召唤模式。');fields={kind:'gacha',poolId:pool.id,poolName:pool.name,mode:options.mode,batches:options.batches};
+      const pool=this.resolvePool(options.poolId);if(!pool.modes.includes(options.mode))throw Error('该卡池未录入所选召唤模式。');fields={kind:'gacha',poolId:pool.id,poolName:pool.name,mode:options.mode,batches:options.batches,tolerance:tradeTolerance(options.tolerance)};
     }else if(options.kind==='sweep'){
-      if(!Number.isSafeInteger(options.totalCount)||options.totalCount<1||typeof options.buyStamina!=='boolean'||!Number.isInteger(options.requestLimit)||options.requestLimit<1||options.requestLimit>100)throw Error('请选择扫荡总次数、单条1至100次和体力回复选项。');
-      const target=this.resolveSweep(options);fields={kind:'sweep',selection:JSON.parse(JSON.stringify(options.selection)),stageId:target.stage.id,stageName:target.stage.label,routeName:target.route.name,totalCount:options.totalCount,buyStamina:options.buyStamina,requestLimit:options.requestLimit};
+      const goal=sweepGoal(options);if(typeof options.buyStamina!=='boolean')throw Error('请选择体力回复选项。');
+      const target=this.resolveSweep(options);fields={kind:'sweep',selection:JSON.parse(JSON.stringify(options.selection)),stageId:target.stage.id,stageName:target.stage.label,routeName:target.route.name,...goal,buyStamina:options.buyStamina};
     }else throw Error('只支持召唤或扫荡计划。');
-    const plan = { id: randomUUID(), ...fields, runAt: options.runAt,state: 'pending', createdAt: Date.now(), message: fields.kind==='sweep'?'到点按资源取最大批次，体力不足时按最大可购买数量补充。':'到点读取最新费用并执行，余额不足或召唤忙碌时停止。' };
+    const plan = { id: randomUUID(), ...fields, runAt: options.runAt,state: 'pending', createdAt: Date.now(), message: fields.kind==='sweep'?'到点按资源取最大批次，体力不足时按保存的回复渠道补充至可回复的最大值。':'到点首次报价为本次基准，后续费用受保存的涨跌接受幅度限制。' };
     this.plans.push(plan); try { this.save(); } catch (error) { this.plans.pop(); throw error; }
     this.report(); return { ...plan };
   }

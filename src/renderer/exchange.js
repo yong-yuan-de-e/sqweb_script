@@ -2,17 +2,17 @@
 
 (() => {
   const $ = id => document.getElementById(id);
-  const fmt = value => value === null || value === undefined ? '—' : String(value).replace(/^(\-?\d+)(.*)$/, (_all, whole, rest) => whole.replace(/\B(?=(\d{3})+(?!\d))/g, ',') + rest);
+  const fmt = window.formatNumber;
   const time = value => value ? new Date(value).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai', hour12: false }) : '—';
   const quoteDefs = {
-    spot: [['price', '巴尼尔现价'], ['fair_price', '基本面价'], ['stock', '全服存量'], ['turnover_24h', '24小时换手'], ['price_index', '物价指数'], ['change_24h_pct', '24小时涨跌', '%']],
+    spot: [['price', '巴尼尔现价'], ['fair_price', '基本面价'], ['stock', '全服存量'], ['turnover_24h', '24小时换手'], ['price_index', '物价指数'], ['change_24h_pct', '24小时涨跌', '%'], ['vanir_cash','巴尼尔库存','',data=>data?.vanir?.cash], ['vanir_tickets','库存跳过券','',data=>data?.vanir?.tickets]],
     futures: [['price', '当前价'], ['period_change_pct', '本期涨幅', '%'], ['long_people', '多头人数'], ['long_funds', '多头保证金'], ['short_people', '空头人数'], ['short_funds', '空头保证金']],
   };
   const quoteNodes = {};
-  for (const kind of ['spot', 'futures']) for (const [field, label, suffix = ''] of quoteDefs[kind]) {
+  for (const kind of ['spot', 'futures']) for (const [field, label, suffix = '', read = data=>data?.values?.[field]] of quoteDefs[kind]) {
     const card = document.createElement('div'), caption = document.createElement('span'), value = document.createElement('strong');
     card.className = 'quote'; caption.textContent = label; value.textContent = '—'; card.append(caption, value); $(`${kind}-quotes`).append(card);
-    quoteNodes[kind + field] = { node: value, suffix };
+    quoteNodes[kind + field] = { node: value, suffix, read };
   }
   const charts = Object.fromEntries(['spot', 'futures'].map(kind => [kind, new window.PriceChart($(`${kind}-chart`), $(`${kind}-chart-summary`), $(`${kind}-chart-pick`))]));
   const statusLabels = { running: '采集中', waiting_login: '等待登录', waiting_update: '服务器更新中', waiting_network: '等待网络恢复', waiting_data: '等待有效字段', waiting_battle: '等待战斗结束', waiting_storage: '等待CSV恢复', stopped: '采集已停止', error: '采集需要处理', idle: '待采集' };
@@ -35,8 +35,8 @@
       if (versions[kind] !== version) {
         versions[kind] = version;
         for (const [field] of quoteDefs[kind]) {
-          const { node, suffix } = quoteNodes[kind + field], value = data?.values?.[field];
-          node.textContent = fmt(value) + (value === null || value === undefined ? '' : suffix); node.title = value ?? '';
+          const { node, suffix, read } = quoteNodes[kind + field], value = read(data);
+          node.textContent = fmt(value) + (value === null || value === undefined ? '' : suffix); node.title = fmt(value);
           node.className = field.endsWith('_pct') && value ? (Number(value) > 0 ? 'up' : Number(value) < 0 ? 'down' : '') : '';
         }
         charts[kind].update(data?.chart, kind === 'futures' ? data?.openPrice ?? null : null);

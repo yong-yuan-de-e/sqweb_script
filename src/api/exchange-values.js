@@ -23,6 +23,7 @@ function parseExchangeDisplay(kind, data, sample) {
   };
   const result = { capturedAt: sample.capturedAt, values: sample.values };
   if (kind === 'spot') {
+    result.vanir=data.vanir&&typeof data.vanir==='object'&&!Array.isArray(data.vanir)?{cash:number(data.vanir.cash),tickets:number(data.vanir.tickets)}:null;
     result.wallet = data.wallet && typeof data.wallet === 'object' && !Array.isArray(data.wallet)
       ? { money: number(data.wallet.money), tickets: number(data.wallet.tickets) } : null;
     result.orders = list(data.myTrades, item => ({ at: time(item.at), side: ['buy', 'sell'].includes(item.side) ? item.side : null,

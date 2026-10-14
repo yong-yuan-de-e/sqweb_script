@@ -191,3 +191,35 @@ dialog h2 { font-size:18px; }
 #plan-sweep-preview { margin:7px 0; }
 #plan-total-count,#plan-command-limit { width:80px; }
 @media(max-height:650px){#page-plans .plan-form{margin-top:6px;gap:6px;}#page-plans .plan-list{min-height:60px;}#page-plans>.route{padding:10px;}}
+/* 扫荡目标与互算保持在主要操作卡片内。 */
+#sweep-count,#sweep-ticket-budget,#plan-total-count,#plan-ticket-budget { width:120px; }
+#sweep-goal-mode,#plan-goal-mode { width:104px; margin:0; }
+.sweep-estimate { color:#b5dfcc; font-size:11px!important; line-height:1.5; margin:7px 0; }
+.refill-option { font-size:10px; display:flex; align-items:center; gap:4px; }
+.refill-option input { margin:0; }
+.refill-controls { display:flex; flex-wrap:wrap; align-items:center; gap:5px 8px; }
+.refill-controls select { margin:0; padding:4px; font-size:10px; width:auto; }
+#stamina-dialog { width:min(490px,calc(100vw - 40px)); }
+#stamina-dialog select { width:100%; }
+#stamina-dialog .form-row { margin-top:12px; }
+#stamina-count { width:110px; }
+#stamina-dialog p { line-height:1.6; }
+#stage-verification { margin:4px 0; min-height:15px; }
+#plan-sweep-preview { line-height:1.5; }
+#page-battle>.route { padding-top:12px; }
+#page-battle>.route>strong { font-size:17px; }
+#page-battle .combat-actions>.operation-card { padding:12px; }
+#page-battle .status { margin-top:8px; padding-top:8px; }
+#plan-sweep-target { min-width:0; overflow-wrap:anywhere; }
+#sweep-interval-ms,#plan-interval-ms { width:72px; }
+.sweep-pacing { gap:5px; }
+.sweep-pacing span { font-size:9px; }
+#spot-quotes { grid-template-columns:1.25fr repeat(3,minmax(0,1fr)); }
+.trade-tolerance { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:8px; }
+.trade-tolerance label { font-size:10px; min-width:0; }
+.trade-tolerance input[type="number"] { width:100%; margin:3px 0 0; padding:5px; }
+.gacha-price-controls { margin-top:10px; }
+.gacha-price-controls input,#plan-gacha-tolerance-up,#plan-gacha-tolerance-down { width:80px; margin:0; }
+.gacha-parameter { display:inline-flex; align-items:center; gap:6px; white-space:nowrap; }
+#plan-gacha-fields>p { width:100%; margin:0; }
+@media(max-height:650px){#page-gacha>.route:first-of-type{padding:10px;}#page-gacha .status{margin-top:8px;padding-top:8px;}.gacha-price-controls{margin-top:6px;}#page-gacha .gacha-record-card{min-height:90px;}}

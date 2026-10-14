@@ -1,6 +1,7 @@
 'use strict';
 
 const { origin } = require('../shared/config');
+const { ticketTotal } = require('../shared/sweep-goal');
 const cache = new WeakMap();
 
 async function nativeContext(page) {
@@ -30,7 +31,7 @@ async function readGameState(page, route, sync = false) {
   if(route?.activity?.kind==='worldboss'){
     const account=await readGameState(page,undefined,sync),boss=await require('./world-boss').readWorldBoss(page),stage=route.stages[0];
     if(!stage||stage.id!==boss.id)return {...account,stageError:'世界Boss已轮换，请重新录入当前Boss。'};
-    return {...account,worldBoss:boss,stages:[{id:boss.id,label:boss.name,stamina:0,skip:false,locked:Boolean(boss.closed),challengeLeft:boss.triesLeft,kind:'worldboss',manualBattle:true}]};
+    return {...account,routeId:route.id,stageCapturedAt:new Date().toISOString(),worldBoss:boss,stages:[{id:boss.id,label:boss.name,stamina:0,skip:false,locked:Boolean(boss.closed),challengeLeft:boss.triesLeft,kind:'worldboss',manualBattle:true,closed:boss.closed,pendingBattle:boss.pending}]};
   }
   const info = await nativeContext(page);
   return page.evaluate(async ({ info, route, sync }) => {
@@ -41,9 +42,10 @@ async function readGameState(page, route, sync = false) {
     const economy = await master.s();
     const shop = economy.shop.find(item => item.id === '11000');
     const current = api.save();
-    const result = { capturedAt: new Date().toISOString(), stamina: api.stamina(), maximum: api.staminaMax(), nextSeconds: api.staminaNext(), limit: api.STAMINA_LIMIT,
+    const result = { capturedAt: new Date().toISOString(), ...(route ? {routeId:route.id,stageCapturedAt:new Date().toISOString()} : {}), stamina: api.stamina(), maximum: api.staminaMax(), nextSeconds: api.staminaNext(), limit: api.STAMINA_LIMIT,
       money: api.money(), tickets: api.count(8, '1'), inBattle: Boolean(current.battle), recovery: shop ? { id: '11000', cost: master.pt(shop.price[2]),
-        gain: shop.get.find(([type]) => type === 9)?.[2] ?? null, remaining: Number.isFinite(api.remaining('shop:11000', shop.limit)) ? api.remaining('shop:11000', shop.limit) : null } : null, stages: [] };
+        gain: shop.get.find(([type]) => type === 9)?.[2] ?? null, remaining: Number.isFinite(api.remaining('shop:11000', shop.limit)) ? api.remaining('shop:11000', shop.limit) : null } : null,
+      staminaItems: Object.entries(economy.stItem || {}).map(([id, gain]) => ({ id, gain, name: master.m(economy, master.r.STAMINA_ITEM, id).name, count: api.count(master.r.STAMINA_ITEM, id) })), stages: [] };
     if (!route) return result;
     if (route.activity) {
       const stages = route.activity.stages || [];
@@ -69,7 +71,7 @@ async function readGameState(page, route, sync = false) {
 }
 
 async function requestNative(page, endpoint, body) {
-  const allowed = new Set(['/exchange/market', '/futures/state', '/exchange/trade', '/exchange/withdraw', '/futures/open', '/futures/close', '/futures/addMargin', '/rpc/battleSkip', '/rpc/shopBuy', '/rpc/releasedGachaPools', '/rpc/gachaDraw', '/auth/me']);
+  const allowed = new Set(['/exchange/market', '/futures/state', '/exchange/trade', '/exchange/withdraw', '/futures/open', '/futures/close', '/futures/addMargin', '/rpc/battleSkip', '/rpc/shopBuy', '/rpc/useStaminaItem', '/rpc/releasedGachaPools', '/rpc/gachaDraw', '/auth/me']);
   if (!allowed.has(endpoint)) throw new Error('不允许的游戏操作。');
   const info = await nativeContext(page), sentAt = new Date().toISOString();
   let observed, request;
@@ -92,7 +94,17 @@ async function requestNative(page, endpoint, body) {
 
 async function sweepCost(page, id, count) {
   const info = await nativeContext(page);
-  return page.evaluate(async ({ info, id, count }) => { const member = await import(info.member); const stage = await member[info.stageInfo](id); const hard = await import(info.hardTicket); return { ...stage, tickets: count + (stage.hard ? hard.t(count, stage.hard.used) : 0) }; }, { info, id, count });
+  return page.evaluate(async ({ info, id, count }) => { const member = await import(info.member); const stage = await member[info.stageInfo](id); const hard = await import(info.hardTicket); return { ...stage, tickets: hard.t(count, stage.hard?.used ?? null) }; }, { info, id, count });
 }
 
-module.exports = { nativeContext, readGameState, requestNative, sweepCost };
+async function sweepPricing(page, id) {
+  const info = await nativeContext(page);
+  const pricing = await page.evaluate(async ({info,id}) => {
+    const member=await import(info.member),stage=await member[info.stageInfo](id),hard=await import(info.hardTicket),used=stage.hard?.used??null;
+    return {...stage,used,costs:Array.from({length:101},(_,n)=>hard.t(n,used)),future:[1,3,10,100].map(n=>({n,used:used===null?null:used+100,tickets:hard.t(n,used===null?null:used+100)}))};
+  }, {info,id});
+  if (pricing.costs.some((value,n)=>value!==ticketTotal(n,pricing.used)) || pricing.future.some(p=>p.tickets!==ticketTotal(p.n,p.used))) throw Error('原站扫荡券算法已变更，需适配后再计算目标，未提交扫荡。');
+  return pricing;
+}
+
+module.exports = { nativeContext, readGameState, requestNative, sweepCost, sweepPricing };

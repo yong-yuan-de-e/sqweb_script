@@ -24,7 +24,7 @@ for (const action of ['scan-map', 'scan-current']) {
 let mapHash, renderedResult, renderedButtons, campaignSignature;
 for (const mode of ['single', 'ten']) {
   document.getElementById(`gacha-${mode}`).addEventListener('click', async () => {
-    try { await window.assistant.command('run-gacha', { mode, batches: Number(document.getElementById('gacha-batches').value), poolId: document.getElementById('gacha-pool').value }); }
+    try { await window.assistant.command('run-gacha', { mode, batches: Number(document.getElementById('gacha-batches').value), poolId: document.getElementById('gacha-pool').value, tolerance:window.tradeSettings.read('gacha') }); }
     catch (error) { document.getElementById('gacha-message').textContent = error.message; }
   });
 }
@@ -105,6 +105,7 @@ window.assistant.onStatus(status => {
   const stats = status.market.stats;
   document.getElementById('stats').textContent = stats ? `采样 ${stats.cycles} 轮 · 现货 ${stats.spotWritten} 条 · 期货 ${stats.futuresWritten} 条 · 未变化 ${stats.unchanged} 次 · 失败 ${stats.errors} 次${stats.lastSuccessAt ? ` · 最近成功 ${new Date(stats.lastSuccessAt).toLocaleTimeString()}` : ''}` : '';
   window.actionView.update(status);
+  window.sweepView.update(status);
   if(status.battle.active&&campaign)document.getElementById('sweep-stage').value=campaign.stageId;
 });
 window.assistant.command('sync-status').catch(() => {});

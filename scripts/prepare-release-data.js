@@ -18,5 +18,5 @@ for (const { id } of maps.snapshot().routes) for (const suffix of ['.json', '-wo
 const pools = new GachaCatalog(path.join(root,fs.existsSync(path.join(root,'dist/data/gacha/pools.json'))?'dist/data/gacha':'assets/default-data/gacha'));
 if (pools.error) throw Error(`发行卡池数据无效：${pools.error}`);
 if (fs.existsSync(pools.file)) copy(pools.file, path.join(target, 'gacha'));
-fs.writeFileSync(path.join(target, 'manifest.json'), JSON.stringify({ version: '1.0.0', preparedAt: new Date().toISOString(), routes: maps.snapshot().routes.length, mapRecords, pools: pools.data.pools.length }, null, 2) + '\n');
+fs.writeFileSync(path.join(target, 'manifest.json'), JSON.stringify({ version: require('../package.json').version, preparedAt: new Date().toISOString(), routes: maps.snapshot().routes.length, mapRecords, pools: pools.data.pools.length }, null, 2) + '\n');
 console.log(`已准备发行数据：${maps.snapshot().routes.length}条地图路线、${mapRecords}份地图记录、${pools.data.pools.length}个卡池。`);

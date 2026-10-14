@@ -43,11 +43,11 @@ class GachaLedger {
       manualConfirmed:Boolean(e.manualConfirmed),items:Array.isArray(e.items)?e.items.slice(0,100):[], results: Array.isArray(e.results) ? e.results.slice(0, 10).filter(r => r && /^[\w-]{1,64}$/.test(String(r.id))).map(r => ({ id: String(r.id), rare: r.rare, isNew: Boolean(r.isNew) })) : [] }));
   }
 
-  reserve({ cost, count, pool }) {
+  reserve({ cost, count, pool, baselineCost, tolerance, attempt, retryOf }) {
     const state = this.snapshot();
     if (state.reserved) throw new Error('上次召唤结果未确认。请先核实游戏记录，助手不会重复付费。');
     if (!Number.isSafeInteger(cost) || cost <= 0 || ![1, 10].includes(count)) throw new Error('无法核实召唤费用或次数。');
-    const event = { id: randomUUID(), state: 'reserved', cost, count, pool };
+    const event = { id: randomUUID(), state: 'reserved', cost, count, pool, ...(baselineCost === undefined ? {} : { baselineCost, tolerance, attempt, retryOf }) };
     this.write(event);
     return event;
   }

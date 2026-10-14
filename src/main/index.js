@@ -51,6 +51,7 @@ const publish = () => {
   publishTimer=setTimeout(()=>{publishTimer=null;if(quitting)return;controllers.broadcast(config.channels.status, {
     market: tasks.market.status, battle: tasks.battle.status, directory: settings.values.marketDirectory, maps: maps.snapshot(), network: networkStatus,
     exchange: exchange.snapshot(),
+    tradeTolerance: settings.values.tradeTolerance,
     actions: actions?.status,
     pools: pools?.snapshot(), plans: scheduler?.snapshot(),
     gachaHistory: gachaHistory?.snapshot(),
@@ -84,7 +85,7 @@ if (hasLock) app.whenReady().then(async () => {
   tasks.gacha = new GachaTask({ ledger: tasks.battle.ledger, artifacts, report: publish, isRestarting: () => tasks.battle.restarting,
     getPage: signal => { if (!tasks.battle.window || tasks.battle.window.isDestroyed()) throw Error('请先打开并登录游戏。'); return tasks.battle.session.page(signal); },
     onComplete: () => gachaHistory?.refresh().catch(() => {}) });
-  actions = new GameActions({ game: tasks.battle, maps, artifacts, report: publish });
+  actions = new GameActions({ game: tasks.battle, maps, artifacts, report: publish, isSweepBusy:()=>Boolean(tasks.sweep?.activeRun) });
   tasks.sweep=new SweepTask({game:tasks.battle,actions,catalog:battleCatalog,report:publish,artifacts});
   gachaHistory = new GachaHistory({ directory: artifacts.root, ledger: tasks.battle.ledger, report: publish,
     getPage: () => tasks.battle.session.page(), isBusy: () => Boolean(tasks.gacha.activeRun || tasks.battle.restarting) });
@@ -96,7 +97,7 @@ if (hasLock) app.whenReady().then(async () => {
       if(plan.kind==='sweep')return tasks.sweep.start(plan);
       const pool = pools.get(plan.poolId);
       if (pool.name !== plan.poolName) throw new Error('计划中的卡池名称已变更，请重新确认后添加计划。');
-      return tasks.gacha.start({ pool, mode: plan.mode, batches: plan.batches });
+      return tasks.gacha.start({ pool, mode: plan.mode, batches: plan.batches, tolerance: plan.tolerance });
     } });
   controllers = new Controllers({ publish, onEmpty: () => { if (!quitting) app.quit(); } });
   const start = (kind, options) => tasks[kind].start(options).catch(error => tasks[kind].publish({ message: error.message }));
@@ -105,20 +106,28 @@ if (hasLock) app.whenReady().then(async () => {
     switch (action) {
       case 'new-controller': controllers.create(options?.page || 'market'); break;
       case 'sync-status': publish(); break;
+      case 'set-trade-tolerance': { const result=settings.setTradeTolerance(options?.kind,options?.tolerance);publish();return result; }
       case 'plan-clock': return scheduler.clock();
-      case 'add-plan': return scheduler.add(options);
+      case 'add-plan': return scheduler.add((options?.kind||'gacha')==='gacha'?{...options,tolerance:options?.tolerance??settings.values.tradeTolerance.gacha}:options);
       case 'cancel-plan': scheduler.cancel(options?.id); break;
       case 'delete-plan': scheduler.remove(options?.id); break;
       case 'preview-sweep-plan': return tasks.sweep.preview(options);
+      case 'run-sweep': return tasks.sweep.start(options);
       case 'stop-sweep-plan': tasks.sweep.stop();break;
       case 'exit-assistant': app.quit(); break;
       case 'refresh-battle-catalog': await battleCatalog.refresh(true); break;
       case 'refresh-game-stats': {
-        if(options?.selection){const route=battleCatalog.resolve(options.selection);await actions.refresh(route.id,true,route);}else await actions.refresh(undefined,true);break;
+        if(options?.selection){const route=battleCatalog.resolve(options.selection);return actions.refresh(route.id,true,route);}return actions.refresh(undefined,true);
       }
-      case 'prepare-action': if(['sweep','stamina'].includes(options?.kind)&&tasks.sweep.activeRun)throw Error('扫荡计划运行中，请先停止计划。');return actions.prepare(options?.kind==='sweep'?{...options,resolvedRoute:battleCatalog.resolve(options.selection)}:options);
+      case 'prepare-action': {
+        if(['sweep','stamina','stamina-item'].includes(options?.kind)&&tasks.sweep.activeRun)throw Error('扫荡计划运行中，请先停止计划。');
+        const market=options?.kind==='spot'?'spot':['futures','close'].includes(options?.kind)?'futures':null;
+        const input=market?{...options,tolerance:options.tolerance??settings.values.tradeTolerance[market]}:options;
+        return actions.prepare(input?.kind==='sweep'?{...input,resolvedRoute:battleCatalog.resolve(input.selection)}:input);
+      }
       case 'commit-action': {
         if (typeof options?.id !== 'string' || options.id.length > 100) throw new Error('缺少有效报价。');
+        if(tasks.sweep.activeRun&&actions.drafts.get(options.id)?.domain==='sweep')throw Error('扫荡计划运行中，不能提交此前的手动扫荡或体力回复，请先停止计划并重新报价。');
         return actions.commit(options.id);
       }
       case 'acknowledge-action': actions.acknowledge(options?.domain); break;
@@ -140,7 +149,7 @@ if (hasLock) app.whenReady().then(async () => {
         if (!options || !['single', 'ten'].includes(options.mode) || !Number.isInteger(options.batches) || options.batches < 1 || options.batches > 100) throw new Error('请选择单抽或十连，批次数为1至100。');
         const pool = pools.get(options.poolId);
         if (!pool.modes.includes(options.mode)) throw new Error('卡池不支持所选召唤模式。');
-        start('gacha', { mode: options.mode, batches: options.batches, pool }); break;
+        start('gacha', { mode: options.mode, batches: options.batches, pool, tolerance:options.tolerance??settings.values.tradeTolerance.gacha }); break;
       }
       case 'stop-gacha': tasks.gacha.stop(); break;
       case 'scan-pools': start('battle', { operation: 'pool-scan', catalog: pools }); break;

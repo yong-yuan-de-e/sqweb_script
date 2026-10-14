@@ -1,34 +1,39 @@
 'use strict';
 
 (() => {
-  const $ = id => document.getElementById(id), stateNames = { pending: '待执行', running: '执行中', completed: '已完成', failed: '已停止', missed: '未执行', cancelled: '已取消', needs_review: '需核对' }; let version, submitting = false, sweepTarget,previewTimer,previewGeneration=0;
+  const $ = id => document.getElementById(id), stateNames = { pending: '待执行', running: '执行中', completed: '已完成', failed: '已停止', missed: '未执行', cancelled: '已取消', needs_review: '需核对' }; let version, submitting = false, sweepTarget,previewTimer,previewGeneration=0,resourceKey;
   const localInput = timestamp => { const d = new Date(timestamp), pad = n => String(n).padStart(2, '0'); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`; };
   const fillNext = async () => { const clock = await window.assistant.command('plan-clock'); $('plan-at').value = localInput(clock.nextMinute); };
   $('plan-next-minute').addEventListener('click', () => fillNext().catch(e => { $('plan-message').textContent = e.message; }));
   $('plan-kind').addEventListener('change',()=>{$('plan-gacha-fields').hidden=$('plan-kind').value!=='gacha';$('plan-sweep-fields').hidden=$('plan-kind').value!=='sweep';});
-  const sweepOptions=()=>({...sweepTarget,totalCount:Number($('plan-total-count').value),requestLimit:Number($('plan-command-limit').value),buyStamina:$('plan-refill').checked});
-  const preview=async()=>{if(!sweepTarget)return;const current=++previewGeneration;try{const q=await window.assistant.command('preview-sweep-plan',sweepOptions());if(current!==previewGeneration)return;$('plan-sweep-preview').textContent=`总次数${q.requested} · 当前最大一条${q.batchCount}次 · 每场${q.staminaPerRun}体力。自动回复按最大可购买数量：当前预计${q.refillCount}次回复，体力${q.stamina}→${q.refillTarget}（持有上限${q.limit}），当前价格估计${q.refillCost.toLocaleString()}艾莉丝；实际逐次核价，受余额/每日次数限制。`;}catch(e){if(current===previewGeneration)$('plan-sweep-preview').textContent=e.message;}};
+  const sweepOptions=()=>({...sweepTarget,...window.sweepView.options('plan')});
+  const goalText=p=>`${p.goalMode==='tickets'?`预算 ${window.formatNumber(p.ticketBudget)} 张券`:`${window.formatNumber(p.totalCount)} 次扫荡`} · 间隔 ${window.formatNumber(p.intervalMs??400)} ms · ${p.buyStamina?window.sweepView.recoveryLabel(p.recoveryMode):'不回复体力'}`;
+  const gachaText=p=>`${p.poolName} · ${p.mode==='single'?'单抽':'十连'} ${p.batches}批 · 允许涨 ${p.tolerance?.upPct??2}% / 跌 ${p.tolerance?.downPct??2}%`;
+  const preview=async()=>{if(!sweepTarget||window.assistantView.current()!=='plans')return;const current=++previewGeneration;try{const q=await window.assistant.command('preview-sweep-plan',sweepOptions());if(current!==previewGeneration)return;$('plan-sweep-preview').textContent=`${window.sweepView.summary(q)}当前最大一条 ${window.formatNumber(q.batchCount)} 次 / ${window.formatNumber(q.batchTickets)} 张券。${$('plan-refill').checked?window.sweepView.refill(q):'体力不足时停止，不购买体力。'}`;}catch(e){if(current===previewGeneration)$('plan-sweep-preview').textContent=e.message;}};
   $('plan-use-stage').addEventListener('click',()=>{sweepTarget={selection:window.combatView.selection(),stageId:$('sweep-stage').value};$('plan-sweep-target').textContent=$('sweep-stage').selectedOptions[0]?.textContent||'请先在作战页选择关卡';preview().catch(()=>{});});
-  for(const id of ['plan-total-count','plan-command-limit'])$(id).addEventListener('input',()=>{clearTimeout(previewTimer);previewTimer=setTimeout(()=>preview().catch(()=>{}),350);});
+  const queuePreview=()=>{previewGeneration++;clearTimeout(previewTimer);if(sweepTarget)$('plan-sweep-preview').textContent='正在按当前资源与累计用量重新估算…';previewTimer=setTimeout(()=>preview().catch(()=>{}),350);};
+  window.sweepView.bind('plan',queuePreview);$('plan-command-limit').addEventListener('input',queuePreview);
   $('stop-sweep-plan').addEventListener('click',()=>window.assistant.command('stop-sweep-plan').catch(e=>{$('plan-message').textContent=e.message;}));
   $('add-plan').addEventListener('click', async () => {
     if (submitting) return; submitting = true; $('add-plan').disabled = true;
-    try { const kind=$('plan-kind').value;if(kind==='sweep'&&!sweepTarget)throw Error('请使用作战页当前关卡。');const plan = await window.assistant.command('add-plan', { kind,runAt: new Date($('plan-at').value).getTime(), ...(kind==='gacha'?{poolId: $('plan-pool').value, mode: $('plan-mode').value, batches: Number($('plan-batches').value)}:sweepOptions()) }); $('plan-message').textContent = `计划已保存：${new Date(plan.runAt).toLocaleString('zh-CN',{hour12:false})} · ${plan.kind==='gacha'?`${plan.poolName} · ${plan.mode === 'single' ? '单抽' : '十连'} ${plan.batches}批`:`${plan.routeName} ${plan.stageName} · ${plan.totalCount}次扫荡`}`; }
+    try { const kind=$('plan-kind').value;if(kind==='sweep'&&!sweepTarget)throw Error('请使用作战页当前关卡。');const plan = await window.assistant.command('add-plan', { kind,runAt: new Date($('plan-at').value).getTime(), ...(kind==='gacha'?{poolId: $('plan-pool').value, mode: $('plan-mode').value, batches: Number($('plan-batches').value),tolerance:window.tradeSettings.read('plan-gacha')}:sweepOptions()) }); $('plan-message').textContent = `计划已保存：${new Date(plan.runAt).toLocaleString('zh-CN',{hour12:false})} · ${plan.kind==='gacha'?gachaText(plan):`${plan.routeName} ${plan.stageName} · ${goalText(plan)}`}`; }
     catch (error) { $('plan-message').textContent = error.message; }
     finally { submitting = false; $('add-plan').disabled = false; }
   });
   const clock = () => { $('system-clock').textContent = `当前系统时间 ${new Date().toLocaleString('zh-CN',{hour12:false})} · 按执行日期与时间触发`; };
   clock(); setInterval(() => { if (window.assistantView.current() === 'plans') clock(); }, 1000);
-  window.addEventListener('assistant-view-changed', () => { if (window.assistantView.current() === 'plans') { clock(); if (!$('plan-at').value) fillNext().catch(() => {}); } });
+  window.addEventListener('assistant-view-changed', () => { if (window.assistantView.current() === 'plans') { clock();queuePreview(); if (!$('plan-at').value) fillNext().catch(() => {}); } });
   window.plansView = { update(status) {
     const data = status.plans; if (!data) return;
+    const nextResources=JSON.stringify([status.actions?.account?.tickets,status.actions?.account?.stamina,status.actions?.account?.money,status.actions?.account?.recovery,status.actions?.account?.staminaItems,status.actions?.busy,status.sweep?.active,status.battle.active,status.battle.restarting]);
+    if(resourceKey!==nextResources){resourceKey=nextResources;if(sweepTarget&&window.assistantView.current()==='plans')queuePreview();}
     $('stop-sweep-plan').disabled=!status.sweep?.active;
     $('add-plan').disabled = submitting || Boolean(data.error); if (data.error) $('plan-message').textContent = data.error;
     const signature = JSON.stringify([data.error, data.plans]); if (version === signature) return; version = signature;
     const table = $('plan-records'); table.replaceChildren();
     for (const plan of [...data.plans].sort((a, b) => b.runAt - a.runAt)) {
       const row = document.createElement('tr');
-      for (const text of [new Date(plan.runAt).toLocaleString('zh-CN',{hour12:false}), plan.kind==='sweep'?`${plan.routeName} / ${plan.stageName} · ${plan.totalCount}次`:`${plan.poolName} · ${plan.mode === 'single' ? '单抽' : '十连'} ${plan.batches}批`, stateNames[plan.state] || plan.state, plan.message?.replace(/\s*累计测试消耗 \d+ \/ \d+ 艾莉丝[。.]?/, '')]) { const cell = document.createElement('td'); cell.textContent = text; row.append(cell); }
+      for (const text of [new Date(plan.runAt).toLocaleString('zh-CN',{hour12:false}), plan.kind==='sweep'?`${plan.routeName} / ${plan.stageName} · ${goalText(plan)}`:gachaText(plan), stateNames[plan.state] || plan.state, plan.message?.replace(/\s*累计测试消耗 \d+ \/ \d+ 艾莉丝[。.]?/, '')]) { const cell = document.createElement('td'); cell.textContent = text; row.append(cell); }
       const cell = document.createElement('td');
       const button = document.createElement('button'); button.textContent = plan.state === 'pending' ? '取消' : '删除记录'; button.disabled = plan.state === 'running';
       button.addEventListener('click', () => window.assistant.command(plan.state === 'pending' ? 'cancel-plan' : 'delete-plan', { id: plan.id }).catch(e => { $('plan-message').textContent = e.message; })); cell.append(button); row.append(cell); table.append(row);

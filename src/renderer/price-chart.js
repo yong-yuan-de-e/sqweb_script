@@ -67,7 +67,7 @@
         ctx.save(); ctx.setLineDash([3, 4]); ctx.strokeStyle = '#91a5bd'; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(x(selected), top); ctx.lineTo(x(selected), top + plotHeight); ctx.stroke(); ctx.restore();
       }
       ctx.fillStyle = color; ctx.beginPath(); ctx.arc(x(selected), y(values[selected]), 4, 0, Math.PI * 2); ctx.fill();
-      this.pick.textContent = `${this.selected === null ? '最后历史点' : '选中历史点'}：${date(this.points[selected].t)} · 价格 ${this.points[selected].price}`;
+      this.pick.textContent = `${this.selected === null ? '最后历史点' : '选中历史点'}：${date(this.points[selected].t)} · 价格 ${window.formatNumber(this.points[selected].price)}`;
       ctx.fillStyle = '#91a5bd'; ctx.fillText(new Date(start).toLocaleTimeString('zh-CN', { timeZone: 'Asia/Shanghai', hour: '2-digit', minute: '2-digit' }), left, height - 8);
       ctx.textAlign = 'right'; ctx.fillText(new Date(this.points.at(-1).t).toLocaleTimeString('zh-CN', { timeZone: 'Asia/Shanghai', hour: '2-digit', minute: '2-digit' }), left + plotWidth, height - 8);
     }

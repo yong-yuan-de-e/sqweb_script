@@ -1,6 +1,6 @@
 {
   "name": "sqweb-assistant",
-  "version": "1.0.0",
+  "version": "1.1.4",
   "description": "SQWeb 作战、召唤和行情 CSV 采集桌面助手",
   "main": "src/main/index.js",
   "author": "SQWeb Assistant contributors",

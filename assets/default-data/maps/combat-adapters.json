@@ -2,6 +2,304 @@
   "version": 1,
   "entries": [
     {
+      "id": "event-current-adventure",
+      "name": "Re0 · 活动冒险 · NORMAL",
+      "kind": "activity",
+      "eventId": "23053",
+      "eventName": "Re:为从零开始的异世界献上祝福！～增殖的兔子 & 飞天的鲸鱼～",
+      "routeId": "event-current-adventure",
+      "stages": [
+        {
+          "id": "511601",
+          "label": "1-1",
+          "detailLabel": "1-1",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-1"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[2]"
+          }
+        },
+        {
+          "id": "511602",
+          "label": "1-2",
+          "detailLabel": "1-2",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-2"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[3]"
+          }
+        },
+        {
+          "id": "511603",
+          "label": "1-3",
+          "detailLabel": "1-3",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-3"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[5]"
+          }
+        },
+        {
+          "id": "511604",
+          "label": "1-4",
+          "detailLabel": "1-4",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-4"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[6]"
+          }
+        },
+        {
+          "id": "511605",
+          "label": "1-5",
+          "detailLabel": "1-5",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-5"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[7]"
+          }
+        },
+        {
+          "id": "511606",
+          "label": "1-6",
+          "detailLabel": "1-6",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-6"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[9]"
+          }
+        },
+        {
+          "id": "511607",
+          "label": "1-7",
+          "detailLabel": "1-7",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-7"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[10]"
+          }
+        },
+        {
+          "id": "511608",
+          "label": "1-8",
+          "detailLabel": "1-8",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-8"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[11]"
+          }
+        },
+        {
+          "id": "511609",
+          "label": "1-9",
+          "detailLabel": "1-9",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-9"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[13]"
+          }
+        },
+        {
+          "id": "511610",
+          "label": "1-10",
+          "detailLabel": "1-10",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-10"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[14]"
+          }
+        },
+        {
+          "id": "511611",
+          "label": "1-11",
+          "detailLabel": "1-11",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-11"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[15]"
+          }
+        },
+        {
+          "id": "511612",
+          "label": "1-12",
+          "detailLabel": "1-12",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-12"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[17]"
+          }
+        },
+        {
+          "id": "511701",
+          "label": "1-13",
+          "detailLabel": "1-13",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-13"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[19]"
+          }
+        },
+        {
+          "id": "511702",
+          "label": "1-14",
+          "detailLabel": "1-14",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-14"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[20]"
+          }
+        },
+        {
+          "id": "511703",
+          "label": "1-15",
+          "detailLabel": "1-15",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-15"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[21]"
+          }
+        },
+        {
+          "id": "511704",
+          "label": "1-16",
+          "detailLabel": "1-16",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-16"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[22]"
+          }
+        },
+        {
+          "id": "511705",
+          "label": "1-17",
+          "detailLabel": "1-17",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-17"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[23]"
+          }
+        },
+        {
+          "id": "511706",
+          "label": "1-18",
+          "detailLabel": "1-18",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-18"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[24]"
+          }
+        },
+        {
+          "id": "511707",
+          "label": "1-19",
+          "detailLabel": "1-19",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-19"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[25]"
+          }
+        },
+        {
+          "id": "511708",
+          "label": "1-20",
+          "detailLabel": "1-20",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-20"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[26]"
+          }
+        },
+        {
+          "id": "511709",
+          "label": "1-21",
+          "detailLabel": "1-21",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-21"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[27]"
+          }
+        },
+        {
+          "id": "511710",
+          "label": "1-22",
+          "detailLabel": "1-22",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-22"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[28]"
+          }
+        },
+        {
+          "id": "511711",
+          "label": "1-23",
+          "detailLabel": "1-23",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-23"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[29]"
+          }
+        },
+        {
+          "id": "511712",
+          "label": "1-24",
+          "detailLabel": "1-24",
+          "stamina": 5,
+          "selector": {
+            "labels": [
+              "1-24"
+            ],
+            "pathIncludes": "QuestScreen/MainArea/RightSide/EventQuestStageSelector/ContentsArea/Contets/ScrollArea/Scroll View/Viewport/Content/QuestStageItemCell[30]"
+          }
+        }
+      ]
+    },
+    {
       "id": "event-current-boss",
       "name": "Re0 · 大兔首领战",
       "kind": "event-boss",
